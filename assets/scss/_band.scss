@@ -1,0 +1,21 @@
+.band {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  @include breakpoint('small') {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .band-name {
+    margin: 16px 0 16px 0;
+    width: 80%;
+    font-size: 24px;
+    line-height: 30px;
+    @include breakpoint('small') {
+      width: 80%;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
