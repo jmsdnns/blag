@@ -68,7 +68,7 @@ _The earliest known portrait of George Washington_
 John Adams was also becoming radicalized by these events. He publishes his first political essay, [A Dissertation on the Canon and Feudal Law](https://founders.archives.gov/documents/Adams/06-01-02-0052-0005), attacking the Brits for depriving the colonists of two rights guaranteed to Englishmen by the Magna Carta: _1.) the right to be taxed only by consent, and 2.) the right to be tried only by a jury of one's peers_. Adams becomes a force for the rule of law and questions why the colonists, controlled by Britain, aren't equal before the law with Englishmen, attacking the very foundation of the English system.
 
 ![John Adams as portrayed by Paul Giamatti](YungJohn.jpg)<br>
-_A picture of John Adams [from 2008](https://www.imdb.com/title/tt0472027/)_
+_A picture of John Adams [in 2008](https://www.imdb.com/title/tt0472027/)_
 
 Samuel Adams, John's cousin, takes a wilder route. He was bootlegger that was good at avoiding British oversight, letting them avoid paying taxes, letting him undercut legal markets for the same goods. The Brits can't seem to stop him, so they decide to join him, and set their prices so low that Samuel becomes the one who can't compete. Samuel reacts by organizing the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party), where he and members of the Sons Of Liberty dress as natives, sneak onto English boats, and then toss 342 chests of tea into the water.
 
@@ -77,14 +77,14 @@ _"Boston Tea Party.", The History of North America. London: E. Newberry, 1789_
 
 Needless to say, the English didn't like that. Nor did they like the growing aggression from colonists. They pass a series of laws meant restructure how they administer the colonies, and the colonists, not mincing any words, called them the [Intolerable Acts](https://en.wikipedia.org/wiki/Intolerable_Acts). The colonists organize a confederence, the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress), to determine what to do. Some attendees knew about Franklin's Albany Plan (_wonder how that happened_) and they propose a union, called the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association), and it's purpose would be to cancel Britain in a group boycott of British imports. Their goal was to exert economic pressure on Britain, forcing their hand into addressing their grievances. For them, this was a peaceful approach, as it attempts to use economics before violence.
 
-Franklin had been living in England since 1757, and he was still there in 1774, so he missed the confederence, but he understood what it meant that the colonies had formed a union. He had thought about it for 20 years by then. He moved back in 1775 and writes the [Articles of Confederation and Perpetual Union Between the States](hhttps://founders.archives.gov/documents/Franklin/01-22-02-0069) that same year, which become the v2.0 of the Union by the [Second Continental Congress](https://en.wikipedia.org/wiki/Second_Continental_Congress) in 1777.
+Franklin had been living in England since 1757, and he was still there in 1774, so he missed the confederence, but he understood what it meant that the colonies had formed a union. He had thought about it for 20 years by then. He moved back in 1775 and writes the [Articles of Confederation and Perpetual Union Between the States](https://founders.archives.gov/documents/Franklin/01-22-02-0069) that same year, which become the v2.0 of the Union by the [Second Continental Congress](https://en.wikipedia.org/wiki/Second_Continental_Congress) in 1777.
 
 
 # The First Union
 
 The Continental Association is first time the colonies expressed a collective will to work together in the form of a legal document. It was published October 20, 1774 but went into effect December 1, 1774. The US does not observe December 1 as a national holiday, though it should. It is barely in the cultural memory at all.
 
-We are, however, lucky that Abraham Lincoln understood it this way and memorialized awareness of it in his first inaugural address in 1861. Lincoln credits the Association as the origin of the union, which is matured by the Delcaration, the Articles of Confederation, creating union v2.0, and then matured again by the Constitution, which created union v3.0.
+We are, however, lucky that Abraham Lincoln understood it this way and memorialized awareness of it in his first inaugural address in 1861. Lincoln credits the Association as the origin of the union, which is matured by the Delcaration, the Articles of Confederation, creating union v2.0, and then matured again by the Constitution, which creates union v3.0.
 
 The way he frames it is quite beautiful.
 
@@ -93,9 +93,9 @@ The way he frames it is quite beautiful.
 > -- [First Inaugural Address of Abraham Lincoln](https://avalon.law.yale.edu/19th_century/lincoln1.asp)
 
 ![Picture of Abraham Lincoln hanging out with George Washington while wearing shirts that call each other "Best Buds"](realWL.jpg)<br>
-_A picture of Abraham Lincoln hanging out with his best friend George Washington [from 2021](https://www.netflix.com/title/80189631)_
+_A picture of Abraham Lincoln hanging out with his best friend George Washington [in 2021](https://www.netflix.com/title/80189631)_
 
-Some say Lincoln gave us union v4.0, and I see it this way too. The 13th, 14th, and 15th clauses made clear things that were previously ambugious in v3. In particular, they made clear that everyone is equal before the law.
+Some say Lincoln gave us union v4.0, and I see it this way too. The 13th, 14th, and 15th amendments made clear things that were previously ambugious in v3. In particular, they made clear that everyone is equal before the law.
 
 
 # What Is July 4th Then?
