@@ -13,19 +13,15 @@ I first picked up a guitar around 11, had my first band a couple years later, ma
 
 # Current Projects
 
-I am putting most of my musical energy into my first solo project.
+Most of my musical time goes towards a band I do by myself, _American Food_.
 
 ## [American Food]({{< ref "american-food" >}})
 
-
-# Thinking Out Loud
-
-I am starting a journal to share what I think & feel about music as I play it, create it, record it, and release it.
+My _Music Journal_ makes it easier to share what I think & feel about music as I practice my instruments, write music, or record & release it.
 
 ## [Music Journal]({{< ref "journal" >}})
 
 
-# Old Bands
+# Old Projects
 
-
-Each of these bands were once the most important thing in my life. They all have stories worth sharing and music we loved making.
+Each of these were once the most important thing in my life. They all have stories worth sharing and music we loved making.
