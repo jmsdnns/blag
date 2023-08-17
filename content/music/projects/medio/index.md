@@ -1,8 +1,8 @@
 ---
 title: "Medio"
-image: images/music/bands/medio.jpg
+image: images/music/projects/medio.jpg
 date: 2023-03-31
-series: "Old Bands"
+series: "Old Projects"
 weight: 4
 ---
 

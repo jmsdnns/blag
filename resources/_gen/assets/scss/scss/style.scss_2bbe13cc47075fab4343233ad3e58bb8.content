@@ -297,22 +297,22 @@ ul {
   .summary .summary-description {
     width: 80%; }
 
-.band {
+.project {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 24px; }
   @media (min-width: 767px) {
-    .band {
+    .project {
       margin-bottom: 10px;
       font-size: 18px;
       line-height: 24px; } }
-  .band .band-name {
+  .project .project-name {
     margin: 16px 0 16px 0;
     width: 80%;
     font-size: 24px;
     line-height: 30px; }
     @media (min-width: 767px) {
-      .band .band-name {
+      .project .project-name {
         width: 80%;
         font-size: 24px;
         line-height: 30px; } }

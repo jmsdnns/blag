@@ -1,6 +1,6 @@
 ---
 title: "American Food"
-image: images/music/bands/amfoo.png
+image: images/music/projects/amfoo.png
 date: 2023-03-31
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Adventure Capitalists"
-image: images/music/bands/adcap.jpg
+image: images/music/projects/adcap.jpg
 date: 2023-03-31
-series: "Old Bands"
+series: "Old Projects"
 weight: 6
 ---
 

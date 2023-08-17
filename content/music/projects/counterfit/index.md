@@ -1,8 +1,8 @@
 ---
 title: "Counterfit"
-image: images/music/bands/counterfit.jpg
+image: images/music/projects/counterfit.jpg
 date: 2023-03-31
-series: "Old Bands"
+series: "Old Projects"
 weight: 1
 ---
 Counterfit were an emo punk band from San Diego, CA. The band moved to California in 1999 and disbanded in 2005.

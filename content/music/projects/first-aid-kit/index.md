@@ -1,8 +1,8 @@
 ---
 title: "First Aid Kit"
-image: images/music/bands/first-aid-kit.jpg
+image: images/music/projects/first-aid-kit.jpg
 date: 2023-03-31
-series: "Old Bands"
+series: "Old Projects"
 weight: 2
 ---
 
