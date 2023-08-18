@@ -1,6 +1,7 @@
 ---
 title: How I Started Reading History
 date: 2023-03-31
+image: images/history/reading-history.jpg
 description: "A brief explanation for how I got into reading history before I was an old man."
 ---
 
