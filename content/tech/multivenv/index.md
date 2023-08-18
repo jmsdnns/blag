@@ -1,21 +1,20 @@
 ---
 title: MultiVenv
 date: 2023-08-04
+image: images/tech/multivenv.jpg
 description: "I replaced virtualenvwrapper with 100 lines of bash"
 tags:
    - python
 ---
 
-![multiverse](multivenv.jpg)
-
 I replaced virtualenvwrapper with 100 lines of bash, simplifying the core experience into something you can drop on any box without installing anything.
 
 
-# On VirtualEnvWrapper
+# A VirtualEnv Wrapper
 
-I was a fan of virtualenvwrapper (_VEW_) for years. I attribute having an unusually smooth experience with Python to always using VEW for development. VEW made it easy to have virtualenvs (_venvs_) that were unobtrusive.
+I was a fan of [virtualenvwrapper](https://github.com/python-virtualenvwrapper/virtualenvwrapper/) (_VEW_) for years. I attribute having an unusually smooth experience with Python to always using VEW for development. VEW made it easy to have virtualenvs (_venvs_) that were unobtrusive.
 
-My favorite aspect of the project is that it would store every venv together in a common directory, making it easy to manage or search them separately a project repo. That may seem like a small detail, but I loved the freedom I got to ensure text searches in the project wouldn't include whatever it found in the venvs. Keeping env directories outside my project directory meant that, by default, I didn't have to use any cli flags to ignore a directory, or configure VSCode to ignore some directory, etc.
+My favorite aspect of the project is that it would store every venv together in a common directory, making it easy to manage or search them separately from a project. That may seem like a small detail, but I loved the freedom I got to ensure text searches in the project wouldn't include whatever it found in the venvs. Keeping env directories outside my project directory meant that, by default, I didn't have to use any cli flags to ignore a directory, or configure VSCode to ignore some directory, etc.
 
 The project was started at a time when venvs themselves were also a new idea, and not yet included in a standard Python install. It feels unnecessarily heavy today, so I wanted to see if I could build something that gives me roughly the same experience, but using pure bash. I want to be able to drop this on any system, without installing anything, and get unobtrusive venv management.
 
@@ -48,9 +47,7 @@ _There's got to be a better way!_
 
 # Something Simple
 
-I was cleaning up venvs from some ML experiments when I finally decided it would be much easier to deal with if I had something like VEW to stash my venvs in a single place.
-
-I did that thing where a programmer asks themselves, "_how hard could it be?_"
+I finally decided it would be much easier to deal with if I had something like VEW to stash my venvs in a single place. I did that thing where a programmer asks themselves, "_how hard could it be?_"
 
 ## Design Considerations
 
@@ -129,9 +126,12 @@ mathhomework
 
 I've been using it for a week and it's been seamless so far. Even better, it seems to work properly with the other tools I use, like VSCode.
 
-# How To Install
+# Project
 
-I have posted the project to Github. Please check the README for instructions on using it.
+The code is on Github.
 
-## [Project Repo](https://github.com/jmsdnns/multivenv)
+## [Repo](https://github.com/jmsdnns/multivenv)
+
+And the README will tell you how to use it, repeating some of what you just read.
+
 ## [Readme](https://github.com/jmsdnns/multivenv/blob/main/README.md)
