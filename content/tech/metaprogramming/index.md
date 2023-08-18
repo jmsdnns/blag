@@ -1,13 +1,12 @@
 ---
 title: Getting meta with Python
 date: 2023-04-01
+image: images/tech/metaprogramming.jpg
 description: "We will take a walk through one of the more controversial sides of framework design in Python, metaprogramming."
 tags:
    - python
    - metaprogramming
 ---
-
-![jms](metawhaaat.jpg)
 
 Metaprogramming is powerful way to have a huge impact with a small amount of code.
 
