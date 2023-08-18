@@ -1,14 +1,17 @@
 ---
 title: July 4th is NOT the US's Birthday
 date: 2023-07-04
+image: images/history/july-4th-is-no-birthday.jpg
 description: "The US was created in 1774, upgraded in 1777, and upgraded once more in 1787. July 4th was simply a day when some of the colonists told England to get lost."
 ---
 
-The main thing to understand, before I go into detail, is that the Declaration of Independence is one of the founding documents, but it did not create a nation. Some of the colonists got together and wrote a historically eloquent letter to King George III that basically said, "_ayyyy fuck your king! BING BONG_"
+The main thing to understand, before I go into detail, is that the Declaration of Independence is one of the founding documents, but it did not create a nation. Some of the colonists got together and wrote a historically eloquent letter to King George III that basically said, "_ayyyy F your king!_"
 
-The country's _real_ birthday is December 1st, 1774, before [the shot heard around the world](https://en.wikipedia.org/wiki/Shot_heard_round_the_world), and before July 4th, 1776. Ben Franklin invented the idea of a United States, first proposing it back in 1754, and he signed The Constitution over 30 years later in 1787.
+The country's _real_ birthday is December 1st, 1774. Before [the shot heard around the world](https://en.wikipedia.org/wiki/Shot_heard_round_the_world). Before July 4th, 1776. 
 
-Perhaps the best part of Franklin's story is the way his love of bending the truth for social good somehow gave him the skills to eventually see his idea realized in the form of a country.
+Ben Franklin had the idea for a union of states decades before the United States existed. He first proposed it in 1754, and he plays an audacious role in ensuring it came into existence that only he could play.
+
+Franklin's story is one of bending the rules and stretching the truth to somehow improve society. He starts at a young age and it becomes a decisive trait that ensures an end to the Revolutionary War as much as George Washington, _though GW worked much harder_.
 
 
 # The Noble Rascal
@@ -95,7 +98,7 @@ The way he frames it is quite beautiful.
 ![Picture of Abraham Lincoln hanging out with George Washington while wearing shirts that call each other "Best Buds"](realWL.jpg)<br>
 _A picture of Abraham Lincoln hanging out with his best friend George Washington [in 2021](https://www.netflix.com/title/80189631)_
 
-Some say Lincoln gave us union v4.0, and I see it this way too. The 13th, 14th, and 15th amendments made clear things that were previously ambugious in v3. In particular, they made clear that everyone is equal before the law.
+Some say Lincoln gave us union v4.0, and I see it this way too. The 13th, 14th, and 15th amendments made clear things that were previously ambiguous. In particular, the 14th amendment makes it clear that everyone is equal before the law.
 
 
 # What Is July 4th Then?
@@ -104,9 +107,9 @@ July 4th is the day the colonists said, "_fuck this shit!_", and made it clear t
 
 The declaration itself is a fascinating thing to read, especially after the first two paragraphs. It reads like a conspiracy theory about how awful King George III is. Some truly excellent propaganda for riling people up, though be aware a modern perspective will find it quite offensive towards non-whites.
 
-> _King George turned me into a newt!_
+> _King George III turned me into a newt!_
 >
-> -- The Delcaration of Independence, _after [it got bettuh](https://www.youtube.com/watch?v=ZB5ig6vpQug)_
+> -- The Delcaration of Independence, _[after getting better](https://www.youtube.com/watch?v=ZB5ig6vpQug)_
 
 The thing to understand about the creation of the US is that it could not have happened without substantial public support. Ben Franklin was there, of course, with a lifetime of experience, ready to rile up the hearts and minds of the colonies in support of the cause. He was the editor of the Declaration of Independence, largely written by Thomas Jefferson, but overseen by Franklin.
 
