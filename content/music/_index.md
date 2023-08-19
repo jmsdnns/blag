@@ -1,7 +1,8 @@
 ---
 title: "Music"
 date: 2023-03-31
-image: images/music/index.png
+image: images/music/index.jpg
+description: "A brief walk through decades of writing, playing, and recording music."
 layout: landing
 menu:
   main:
@@ -15,11 +16,11 @@ I first picked up a guitar around 11, had my first band a couple years later, ma
 
 Most of my musical time goes towards a band I do by myself, _American Food_.
 
-## [American Food]({{< ref "american-food" >}})
+# [American Food]({{< ref "american-food" >}})
 
-My _Music Journal_ makes it easier to share what I think & feel about music as I practice my instruments, write music, or record & release it.
+My _Music Journal_ makes the things I think & feel observable to others as I play, write, or record music.
 
-## [Music Journal]({{< ref "journal" >}})
+# [Music Journal]({{< ref "journal" >}})
 
 
 # Old Projects
