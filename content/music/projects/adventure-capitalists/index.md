@@ -27,21 +27,21 @@ We wrote our final EP, **Unicore** together as a band and went into the studio i
 
 Our last release. 6 songs, released in 2018. Recorded with Greg Giorgio.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/886516540&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/adventurecapitalists" title="Adventure Capitalists" target="_blank" style="color: #cccccc; text-decoration: none;">Adventure Capitalists</a> · <a href="https://soundcloud.com/adventurecapitalists/sets/unicore" title="Unicore" target="_blank" style="color: #cccccc; text-decoration: none;">Unicore</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/886516540&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
 
 
 ## MVP
 
 Our first EP. 6 songs, released in 2015. Recorded with John Miller.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/133452560&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/adventurecapitalists" title="Adventure Capitalists" target="_blank" style="color: #cccccc; text-decoration: none;">Adventure Capitalists</a> · <a href="https://soundcloud.com/adventurecapitalists/sets/mvp" title="MVP" target="_blank" style="color: #cccccc; text-decoration: none;">MVP</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/133452560&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
 
 
 ## No Spoilers Allowed
 
 Our first single. Released in 2013. Recorded by me and Rob.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102343071&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/adventurecapitalists" title="Adventure Capitalists" target="_blank" style="color: #cccccc; text-decoration: none;">Adventure Capitalists</a> · <a href="https://soundcloud.com/adventurecapitalists/no-spoilers-allowed-demo" title="No Spoilers Allowed" target="_blank" style="color: #cccccc; text-decoration: none;">No Spoilers Allowed</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102343071&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
 
 
 # Videos

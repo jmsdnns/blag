@@ -21,7 +21,7 @@ This band moved very quickly. Jameson was planning to move to DC after finishing
 
 Our first recording. 3 songs released in 2013. Recorded with Greg Giorgio.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1592342020&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/seagravesbk" title="Sea Graves" target="_blank" style="color: #cccccc; text-decoration: none;">Sea Graves</a> · <a href="https://soundcloud.com/seagravesbk/sets/congratulations" title="Congratulations" target="_blank" style="color: #cccccc; text-decoration: none;">Congratulations</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1592342020&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
 
 
 # Video

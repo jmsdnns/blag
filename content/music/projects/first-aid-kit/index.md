@@ -23,21 +23,21 @@ In retrospect, we were a wildly productive band. We were too busy trying to get 
 
 Our third recording. 2 songs, recorded in 2005, but never actually released. Recorded with Greg Giorgio.
 
-<iframe width="100%" height="280" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546357&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/firstfirstaidkit" title="firstfirstaidkit" target="_blank" style="color: #cccccc; text-decoration: none;">firstfirstaidkit</a> · <a href="https://soundcloud.com/firstfirstaidkit/sets/one-offs" title="One Offs" target="_blank" style="color: #cccccc; text-decoration: none;">One Offs</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546357&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
 
 
 ## Forgot ID
 
 Our second recording. 3 songs released in 2003. Recorded with Greg Giorgio.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546351&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/firstfirstaidkit" title="firstfirstaidkit" target="_blank" style="color: #cccccc; text-decoration: none;">firstfirstaidkit</a> · <a href="https://soundcloud.com/firstfirstaidkit/sets/forgot-id" title="Forgot ID" target="_blank" style="color: #cccccc; text-decoration: none;">Forgot ID</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546351&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
 
 
 ## Frights And Shivers
 
 Our first recording. 11 songs released in 2002. This is the first record I did with Greg Giorgio.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546323&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/firstfirstaidkit" title="firstfirstaidkit" target="_blank" style="color: #cccccc; text-decoration: none;">firstfirstaidkit</a> · <a href="https://soundcloud.com/firstfirstaidkit/sets/frights-and-shivers" title="Frights And Shivers" target="_blank" style="color: #cccccc; text-decoration: none;">Frights And Shivers</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546323&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
 
 
 # Videos

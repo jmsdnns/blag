@@ -18,7 +18,7 @@ For me, this band feels like one that had so much potential, but never had a rea
 
 Our first EP. We recorded this with Greg Giorgio. The music here captures a love of Dave Brubeck, Radiohead, and good ol' fashioned blues rock.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2690767&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/shipyards" title="Shipyards" target="_blank" style="color: #cccccc; text-decoration: none;">Shipyards</a> · <a href="https://soundcloud.com/shipyards/sets/a-dream-is-a-town" title="A Dream Is A Town" target="_blank" style="color: #cccccc; text-decoration: none;">A Dream Is A Town</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2690767&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">}}
 
 
 # Videos

@@ -21,7 +21,7 @@ After a few years, our drummer wanted to leave the band to study for the CFA, a 
 
 This is the complete set, except for the first song, from my first show playing drums with Medio.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/125208502&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mediosound" title="Mediosound" target="_blank" style="color: #cccccc; text-decoration: none;">Mediosound</a> · <a href="https://soundcloud.com/mediosound/sets/live-pianos-07-11-15" title="Live @ Pianos 07.11.15" target="_blank" style="color: #cccccc; text-decoration: none;">Live @ Pianos 07.11.15</a></div>
+{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/125208502&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">}}
 
 
 # Videos
