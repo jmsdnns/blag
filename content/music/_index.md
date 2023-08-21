@@ -10,8 +10,6 @@ menu:
     weight: 3
 ---
 
-I first picked up a guitar around 11, had my first band a couple years later, made a few records before finishing high school, and soon enough, I was in a van touring the US & Canada. I've had several bands since then, written a lot of music, and I still play live whenever I can. I haven't toured in years, though.
-
 # Current Projects
 
 Most of my musical time goes towards a band I do by myself, _American Food_.
