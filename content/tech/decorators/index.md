@@ -1,7 +1,7 @@
 ---
 title: Decorators 101
 draft: true
-image: images/tech/decorators.jpg
+image: images/tech/decorators/decorators-101.jpg
 date: 2023-08-21
 description: "Python decorators are initially a mystery, but they're basically middleware with weird syntax."
 tags:
