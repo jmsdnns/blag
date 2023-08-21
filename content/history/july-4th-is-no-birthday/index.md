@@ -5,8 +5,6 @@ image: images/history/july-4th-is-no-birthday.jpg
 description: "The US was created in 1774, upgraded in 1777, and upgraded once more in 1787. July 4th was simply a day when some of the colonists told England to get lost."
 ---
 
-The main thing to understand, before I go into detail, is that the Declaration of Independence is one of the founding documents, but it did not create a nation. Some of the colonists got together and wrote a historically eloquent letter to the world that basically said, "_ayyyy England, F your king!_"
-
 The country's _real_ birthday is December 1st, 1774. Before [the shot heard around the world](https://en.wikipedia.org/wiki/Shot_heard_round_the_world). Before July 4th, 1776. 
 
 Ben Franklin had the idea for a union of states decades before the United States existed. He first proposed it in 1754, and he plays an audacious role in ensuring it came into existence that only he could play.
@@ -78,7 +76,7 @@ John Adams was also becoming radicalized by these events. He publishes his first
 ![A 1789 engraving of the Boston Tea Party](boston_tea_party.jpg)<br>
 _"Boston Tea Party.", The History of North America. London: E. Newberry, 1789_
 
-Samuel Adams, John's cousin, takes a wilder route. He was bootlegger that was good at avoiding British oversight, letting them avoid oversight and paying taxes, while they undercut legal markets for fun and profit. The Brits can't seem to stop him, so they decide to join him, and set their prices so low that Samuel becomes the one who can't compete. Samuel reacts by organizing the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party), where he and members of the Sons Of Liberty dress as natives, sneak onto English boats, and then toss 342 chests of tea into the water. Needless to say, the English didn't like that.
+Samuel Adams, John's cousin, takes a wilder route. He was a bootlegger that was good at avoiding the British, letting them avoid oversight and paying taxes, while they undercut legal markets for fun and profit. The Brits can't seem to stop him, so they decide to join him, and set their prices so low that Samuel becomes the one who can't compete. Samuel reacts by organizing the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party), where he and members of the Sons Of Liberty dress as natives, sneak onto English boats, and then toss 342 chests of tea into the water. Needless to say, the English didn't like that.
 
 ## E Pluribus Unum
 
@@ -89,7 +87,7 @@ Franklin had been living in England since 1757, and he was still there in 1774, 
 
 # The First Union
 
-The Continental Association is first time the colonies expressed a collective will to work together in the form of a legal document. It was published October 20, 1774 but went into effect December 1, 1774. The US does not observe December 1 as a national holiday, though it should. It is barely in the cultural memory at all.
+The Continental Association is the first time the colonies expressed a collective will to work together in the form of a legal document. It was published October 20, 1774 but went into effect December 1, 1774. The US does not observe December 1 as a national holiday, though it should. It is barely in the cultural memory at all.
 
 We are, however, lucky that Abraham Lincoln understood it this way and memorialized awareness of it in his first inaugural address in 1861. Lincoln credits the Association as the origin of the union, which is matured by the Delcaration, the Articles of Confederation, creating union v2, and then matured again by the Constitution, which creates union v3.
 
@@ -99,10 +97,10 @@ The way he frames it is quite beautiful.
 >
 > -- [First Inaugural Address of Abraham Lincoln](https://avalon.law.yale.edu/19th_century/lincoln1.asp)
 
+Some say Lincoln gave us union v4, and I see it this way too. The 13th, 14th, and 15th amendments made clear some crucial rights that were previously ambiguous. In particular, [the 14th amendment](https://www.law.cornell.edu/constitution/amendmentxiv) states clearly that everyone is equal before the law. It also says you can't hold office if you've previously tried to overthrow the government.
+
 ![Picture of Abraham Lincoln hanging out with George Washington while wearing shirts that call each other "Best Buds"](realWL.jpg)<br>
 _A picture of Abraham Lincoln hanging out with his best friend George Washington [in 2021](https://www.netflix.com/title/80189631)_
-
-Some say Lincoln gave us union v4, and I see it this way too. The 13th, 14th, and 15th amendments made clear some crucial rights that were previously ambiguous. In particular, [the 14th amendment](https://www.law.cornell.edu/constitution/amendmentxiv) states clearly that everyone is equal before the law. It also says you can't hold office if you've previously tried to overthrow the government.
 
 
 # What Is July 4th Then?
@@ -116,7 +114,7 @@ The declaration itself is a fascinating thing to read, especially after the firs
 
 > _King George III turned me into a newt!_
 >
-> -- The Delcaration of Independence (_[it got better](https://www.youtube.com/watch?v=ZB5ig6vpQug)_)
+> -- The Delcaration of Independence (_not really_)
 
 The thing to understand about the creation of the US is that it could not have happened without substantial public support. Ben Franklin was there, of course, with a lifetime of experience, ready to rile up the hearts and minds of the colonies in support of the cause. He was the editor of the Declaration of Independence, largely written by Thomas Jefferson, but overseen by Franklin.
 
