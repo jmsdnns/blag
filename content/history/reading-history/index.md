@@ -13,12 +13,10 @@ I went home and clicked around on wikipedia, trying to understand what I was rea
 
 I knew Lincoln fought a crazy war and freed the slaves, but the movie showed us what he was like as a person, away from the battlefields.
 
-{{< youtube qRBmwljrHWw >}}
-
-This scene shows Lincoln's hilarious side. The real Lincoln loved telling this story.
+{{< youtube qRBmwljrHWw >}}<br>_This scene shows Lincoln's hilarious side. The real Lincoln loved telling this story._
 
 
-# Should I?
+# The Historianization of Jms Dnns
 
 As I read about what Lincoln did outside the war, I started to wonder if I could properly understand the Civil War without knowing all the history that lead up to it.
 
@@ -32,21 +30,23 @@ Chernow's book makes Thomas Jefferson out to be such an asshole! Enough so that 
 
 This analogy might make historians wince, but I finished that book with the impression that Jefferson is like a Steve Jobs for Revolutionary period. I laughed the first time I pictured Jefferson in a black turtleneck doing a presentation to colonists about thinking differently about King George III, and _one last thing_: **iDeclaration**
 
-More seriously, I couldn't believe what I had read. I wondered if Hamilton vs Jefferson might be like Bill Gates vs Steve Jobs in the 90's. Jefferson was such a scoundrel yet, he's the one that wrote "all men are created equal". Hamilton was one of the most epic people I had ever heard of yet, his life ended too soon because he could also be an epic dummy. And Franklin... as far as I could tell, he was the father socialism, even putting some in the Constitution with the mailbox clause. He was a relentlessly curious, civic minded, and yet also a total bullshitter.
+More seriously, I couldn't believe what I had read. I wondered if Hamilton vs Jefferson might be like Bill Gates vs Steve Jobs in the 90's. Jefferson was such a scoundrel yet, he's the one that wrote "all men are created equal". Hamilton was one of the most epic people I had ever heard of yet, his life ended too soon because he could also be an epic dummy. And Franklin... as far as I could tell, he was the father socialism, even putting some in the Constitution with the mailbox clause. He was relentlessly curious and civic minded, and yet also a total bullshitter.
 
-History was going to be my next hobby. I just couldn't believe what I had read and I wanted to read everything else right away.
+I just couldn't believe what I was reading about US history and I wanted to read everything else right away. History was going to be my next hobby.
 
 
-# March Through Presidential Bios
+# A Long March
 
 It wasn't clear to me how I should learn history. There are an overwhelming amount of history books out there. It occurred to me that I could read at least one biography of every President. That would take me in the right direction through all the layers. I figured those biographies would teach me enough that I could find books for deeper explorations of anything interesting.
 
 I started with Ron Chernow's book on Washington. I wanted another page turner, like Hamilton, but Washington just wasn't that kind of person. He was flawed, as any of the founder, but he genuinely gave everything he could in service of his country. Never strayed from duty. And when the time came, he became the first US President to peacefully hand power over to their successor. We take that for granted now, but it must have been magnificent back then.
 
 
-# 11 Years Later
+# Many Years Later
 
-I have read a lot of history since 2012. Both the Revolution and the Civil War are black holes. I have only recently come out of the Civil War and I've been reading for 11 years!
+I have read a lot of history since 2012. I understand the US as a country that came existence at a time when the whole process could be documented right from the start. We can actually know what people felt, what they thought, and what they said as everything took place. The context is rich with fascinating people asking huge questions about how to live on this planet without killing each other all time.
 
-There are recurring themes in history. It rhymes, as they say. One of my favorite surprises from having history knowledge is that you can spot when modern life starts rhyming with history, and watch as patterns you've read about unfold with actual people. We'd like to think we're advanced relative to people 200 years ago, but we're the same in so many ways too. It is humbling to see it every day.
+One thing I have learned, is that both the Revolution and the Civil War have so much detail that I have spent many years of my years reading history focused on just them. I have only recently come out of the Civil War, putting me in the context for Reconstruction. I don't expect to leave this context for many years, and then I'll have the wild early 1900's before me, & then WW1, & on, & on.
+
+History indeed rhymes, as they say. One of my favorite surprises from having historical knowledge is that you can spot when modern life is following patterns we have seen before, and watch as they unfold with actual people. We'd like to think we've advanced, relative to people 200 years ago, but we're the same in so many ways too.
 
