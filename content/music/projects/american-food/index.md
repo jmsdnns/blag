@@ -8,11 +8,7 @@ American Food is a musical experiement.
 
 This project began as a way to use music as a vehicle for social commentary. What's being said in the lyrics guides how the music should sound & feel. I found it interesting how that changed the role of musical genre from _a band identity_ to _a stylistic choice_.
 
-# A Plan for EPs
-
-This _band_, which is just me and a laptop, writes music in any genre featuring guitars & drums.
-
-However, to keep things organized, music will be released in the form of three song EPs, each with a distinct personality that drives both what's being said and what genre of music is best for saying it. The band itself won't have a genre, but every EP will.
+This _band_, which is just me and a laptop, writes music in any genre featuring guitars & drums. However, to keep things organized, music will be released in the form of three song EPs, each with a distinct personality that drives both what's being said and what genre of music is best for saying it. The band itself won't have a genre, but every EP will.
 
 
 # A Demo
