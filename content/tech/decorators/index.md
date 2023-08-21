@@ -116,11 +116,16 @@ def time_it(func):
     return wrapper
 ```
 
-Now we can make `timed_fac` and `timed_meow` and simplify what it means to call them each time.
+Using this, we can wrap `fac` and `meow` to make `timed_fac` and `timed_meow`.
 
 ```python
 >>> timed_fac = time_it(fac)
 >>> timed_meow = time_it(meow)
+```
+
+And calling them is the same as if they weren't wrapped.
+
+```python
 >>> result = timed_fac(100)
 0:00:00.000075
 >>> result
@@ -131,12 +136,7 @@ Now we can make `timed_fac` and `timed_meow` and simplify what it means to call 
 'meowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeow'
 ```
 
-## Awkward
-
-We're almost at a clean system. The model we've described so far would require code changes, from `meow` to `timed_meow`, to enable/disable the wrapper.
-
-Pretend there's an infomercial.gif here.<br>
-_There's got to be a better way!_
+We're almost at a clean system. The model we've described so far would require code changes, from `meow` to `timed_meow` and versa vice to enable/disable the wrapper.
 
 We can keep things simple by overwriting the `meow` function _with_ the wrapped `meow` function. Callers wouldn't know the difference, because they call a function named `meow` if the wrapper is on or if it's off.
 
@@ -151,7 +151,7 @@ Here is the function before wrapping it.
 'meowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeow'
 ```
 
-Now we'll wrap it and call the exact same way.
+Next, we'll wrap it and see that it works the same way.
 
 ```python
 >>> meow = time_it(meow)
@@ -180,11 +180,9 @@ def meow(n):
     return "meow" * n
 ```
 
-To implement a decorator you write a callable that returns a callable, and then you use decorator syntax to apply it.
+To implement a decorator you write a callable that returns a callable, and you choose to use decorator syntax to apply it. That's it.
 
-That's it.
-
-You can stack them too. This approach to implementing software allows decorators to function nicely as syntax for middleware.
+You can stack them too. This approach uses decorators as syntax for middleware.
 
 ```python
 @time_it
@@ -194,4 +192,4 @@ def some_web_handler(request, context):
     ...
 ```
 
-I hope you feel that some of the mystery of decorators is removed and that you already have ideas for using them in your work.
+I hope you feel that some of the mystery of decorators is removed and that you already have ideas for using decorators in your work.
