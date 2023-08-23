@@ -132,7 +132,8 @@ Franklin wastes no time building international support for the US cause. He is c
 
 He got the French on-board with the US cause by repeatedly lying to French leaders about how well the war against the British was going! He told them the colonies were kicking ass left n right and he urged them to join in while English ass was still available. History books typically mention the shock of the French when they arrived in the colonies and find Washington's Army in poor health, with many barely clothed at all, but they don't usually say _why_ they were so shocked. The truth here is classic Franklin. The French Army would already be fighting by the time France learned of it, and Franklin could surely find a way to talk himself out of that.
 
-The colonists officially get their country when the British sign the [Treaty of Paris in 1783](https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)). The Union was born December 1, 1774, upgraded by v2 in 1777, and Franklin is there, at the Constitutional Convention, when v3 is created, improving on his original idea with innovations from the next generation of leaders.
+The colonists officially get their country when the British sign the [Treaty of Paris in 1783](https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)). This is significant because it meant their opponent accepted the end of the war and accepted the United States as an actual country. Ben Franklin's Union was born December 1, 1774, upgraded by v2 in 1777, and upgraded once more at the Constitutional Convention in 1787, where it becomes something much bigger than Franklin's original idea thanks to innovations from the next generation of leaders.
+
 
 > Fart proudly.
 >
