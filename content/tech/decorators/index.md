@@ -161,6 +161,7 @@ Next, we'll wrap it and see that it works the same way.
 'meowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeow'
 ```
 
+
 # Decorator Syntax
 
 Here is the `meow` funciton again, with the wrapper applied immediately after definition.
@@ -182,6 +183,9 @@ def meow(n):
 
 To implement a decorator you write a callable that returns a callable, and you choose to use decorator syntax to apply it. That's it.
 
+
+## Stacking Decorators
+
 You can stack them too. This approach uses decorators as syntax for middleware.
 
 ```python
@@ -192,4 +196,44 @@ def some_web_handler(request, context):
     ...
 ```
 
-I hope you feel that some of the mystery of decorators is removed and that you already have ideas for using decorators in your work.
+The order of the stack works bottom-up, so `return_500_on_error` would wrap the function, then `is_authenticated` wraps the wrapped function, etc.
+
+Here is a more tangible example.
+
+```python
+>>> def A(func):
+...     print("A is wrapping")
+...     def wrapper():
+...         print("A")
+...         func()
+...         print("A")
+...     return wrapper
+... 
+>>> 
+>>> def B(func):
+...     print("B is wrapping")
+...     def wrapper():
+...         print("B")
+...         func()
+...         print("B")
+...     return wrapper
+... 
+>>> 
+>>> # Note that B is abnove A here
+>>> @B
+... @A
+... def foo():
+...     print("foo")
+... 
+A is wrapping
+B is wrapping
+>>> 
+>>> foo()
+B
+A
+foo
+A
+B
+```
+
+I hope you feel that some of the mystery of decorators has gone away and I hope that you already have ideas for using decorators in your work.
