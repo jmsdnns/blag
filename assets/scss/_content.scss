@@ -137,6 +137,12 @@ ul {
       }
     }
   }
+  p code {
+    color: #000;
+    background-color: #f5f5f5;
+    font-size: 17px;
+    padding: 0 2px 0 2px;
+  }
   code,
   pre {
     font-family: var(--font-family-monospace);
