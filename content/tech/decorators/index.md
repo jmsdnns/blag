@@ -1,6 +1,6 @@
 ---
 title: Decorators 101
-draft: true
+draft: false
 image: images/tech/decorators/decorators-101.jpg
 date: 2023-08-21
 description: "Python decorators are initially a mystery, but they're basically middleware with weird syntax."
@@ -8,9 +8,17 @@ tags:
    - python
 ---
 
-It is underappreciated that Python decorators are syntactic sugar for function wrappers. People new to Python usually encounter them first by writing `@something` above a function and observing that the function does more than it used to, with little explanation for how that `@something` does what it does. We will demystify what's taking place in this post.
+It is underappreciated that Python decorators are syntactic sugar for function wrappers. People new to Python usually encounter them first by writing like `@foo` above a function `bar` and observing that `bar` behaves differently than it used to.
 
-This post will explain will explain what they are and how to make them.
+More tangibly, using the `@foo` decorator on `bar` looks like this.
+
+```python
+@foo
+def bar():
+    print("hello!")
+```
+
+To understand decorators is to understand function wrappers, but understanding those requires being comfortable with _first class objects_, so we'll start there. We will then explain function wrappers, using an example `time_it` that determines how long it takes for a function to complete. We then use decorator syntax to apply our wrapper in a clean, elegant way.
 
 
 # First Class Objects
