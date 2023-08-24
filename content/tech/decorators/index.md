@@ -172,7 +172,7 @@ Next, we'll wrap it and see that it works the same way.
 
 # Decorator Syntax
 
-Here is the `meow` funciton again, with the wrapper applied immediately after definition.
+Here is the `meow` function again, with the wrapper applied immediately after definition.
 
 ```python
 def meow(n):
@@ -227,7 +227,7 @@ Here is a more tangible example.
 ...     return wrapper
 ... 
 >>> 
->>> # Note that B is abnove A here
+>>> # Note that B is above A here
 >>> @B
 ... @A
 ... def foo():
