@@ -12,9 +12,9 @@ menu:
 
 # Current Projects
 
-Most of my musical time goes towards a band I do by myself, _American Food_.
+Most of my musical time goes towards a band I do by myself, _american f00d_.
 
-# [American Food]({{< ref "american-food" >}})
+# [american f00d]({{< ref "americanf00d" >}})
 
 My _Music Journal_ makes the things I think & feel observable to others as I play, write, or record music.
 
