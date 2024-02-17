@@ -9,25 +9,48 @@ tags:
    - netsec
 ---
 
-Rust appears to be taking over a mindshare that has long been considered unwaccessible to anything other than C++. The language makes some fascinating security guarantees at time when it seems like the C++ community is just so tired of struggling with the language to build secure systems. Stuff built with Rust can often be faster than C++ too, so there is a perception that just using it makes things both more secure and faster.
+Rust appears to be taking over a mindshare that has long been considered unaccessible to anything other than C++. The language makes some fascinating security guarantees at time when it seems like the C++ community is just so tired of struggling with the language to build secure systems. Stuff built with Rust can often be faster than C++ too, so there is a perception that just using it makes things both more secure and faster.
 
-Amusingly, there had been a lot of debate, before I started Eyes, about the experience of writing asynchronous code in Rust. This gives me flashbacks to the days of debating Twisted, Tornado, and gevent with the Python community. _I was in the gevent camp and created a (now defunct) web framework called "[Brubeck](https://github.com/j2labs/brubeck)" with gevent at its core._ I felt at home immediately inside the context of async & Rust.
+Amusingly, there had been a lot of debate, before I started Eyes, about the experience of writing asynchronous code in Rust. This gives me flashbacks to the days of debating Twisted, Tornado, and gevent with the Python community. Around 12 years ago I was in the gevent camp and created a (now defunct) web framework called "[Brubeck](https://github.com/j2labs/brubeck)" with gevent at its core. The whole debate taking place around async & Rust is a familiar context for me.
 
-A port scanner makes a nice first project when dabbling with network APIs because all you have to do is try opening a port and then reporting whether or not that worked. Nothing complicated about a for loop over some list of ports. And, I should be able to do all the network calls with async code. 
+As for choosing a first project, a port scanner is great for dabbling with network APIs. All you have to do is try opening the port and then report if it worked or not. Intuitively, the gist is to try opening each port from a list of ports requested by the user.
+
+But first, let me share the gist of how I learned the language.
+
 
 # Learning Rust
 
-<img src="Studying.gif">
+![Anime style animation of someone studying heroically.](Studying.gif)
 
 I began by reading / studying [The Rust Book](https://doc.rust-lang.org/stable/book/). This book was mostly great, but it felt casual with some ideas that I thought might deserve some more hand holding, for anyone not already intimately familiar with types and memory management.
 
 The section on [_References and Borrowing_](https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html) genuinely blew my mind. I've been writing code a long time and I don't come across to many new ideas anymore, but the way Rust manages memory is like nothing I've seen before. I'm super into it.
 
-After reaching a point where I had read most of the book, I watched a bunch of Rust videos by [Trevor Sullivan](https://www.youtube.com/@TrevorSullivan), and figured its time to see if I can put together a familiar idea using what I understood so far of Rust. I wanted to try async too and got the [impression from Trevor](https://www.youtube.com/watch?v=PabDPIrt9fk), which was supported by my buddy [Zeeshan](https://types.pl/@zeeshanlakhani), that the [Tokio](https://tokio.rs/) library is the best way right now. That may change in the future, because it seems there are lots of asynchronous models for Rust, which it calls _runtimes_. I didn't have any opinions yet, so I figured I'd go for it and learn what I can along the way.
+Understanding borrowing is necessary for writing Rust. It will produce compilation errors for code that does not use it properly, so there are no short-cuts here. I spent time writing little programs that tested the edge cases for memory handling, as I understood them, and built some confidence from seeing how Rust actually behaves. I eventually reached a point where I had read most of the book, so I thought I'd switch to finding the Rust community online and learning about whatever cool stuff Rust hackers have built.
 
-# App Structure
+[Trevor Sullivan](https://www.youtube.com/@TrevorSullivan) has made a bunch of excellent videos that quickly cover how to do things in Rust. I loved his videos on [using Tokio for async](https://www.youtube.com/watch?v=PabDPIrt9fk) and [using Clap for parsing CLI args](https://www.youtube.com/watch?v=Ot3qCA3Iv_8).
 
-The rough flow of the app would be to parse some command line args into a structure that configures a single scan operation. If the CLI args parse properly, the config would be passed to the scanning code which would then report results after a successful scan.
+I also found a vibrant community of people who post to the #rust tag on Mastodon. I have learned a lot simply by paying attention to what they say.
+
+
+# The Design
+
+The rough flow of the app starts with parsing command line args into a data structure that configures a scan request. If the CLI args parse properly, the config is used to run a scan, with results reported along the way.
+
+Using it should be easy. The only necessary input is who to scan. Eyes will scan the default ports, eg 1-1024.
+
+```shell
+$ eyes 127.0.0.1
+```
+
+Here is what I want the cli to look like when ports are specified.
+
+```shell
+$ eyes --ports 80,443,8080,8443 127.0.0.1
+```
+
+Now that we have a sense of what we want the experience to be like, we can start considering how to express it all in Rust.
+
 
 ## Scan Config
 
@@ -42,7 +65,8 @@ struct ScanConfig {
 }
 ```
 
-_Rust allows us to associate functions with structs, but that won't be necessary for this project._
+Rust allows us to associate functions with structs too, but that won't be necessary for this project.
+
 
 ## CLI Structure
 
@@ -72,19 +96,20 @@ let cli = Command::new("eyes")
 
 I had ideas for a few more parameters, but needed more of the scanner to be implemented before they were worth thinking about. All I need for a bare minimum port scanner is the target and a ports list.
 
+
 ## CLI Parsing
 
 This part was fun to implement. It allowed me to kick the tires on some of Rust's more exotic syntax.
 
-First, let's check the `target` param.
+First, let's verify we got a target from the user.
 
 ```rust
 let target = args.get_one::<String>("target").expect("required");
 ```
 
-Easy enough.
+The code above makes uses of the _Rust Turbofish Operator_, which looks like `::<Type>`. This is syntax for providing type information in contexts where the types can't be automatically inferred. In our context, we tell the arg parser that the target should be a `String`.
 
-Next, ports. In the snippet below, we check if there is a single value for the `ports` param. If so, parse it. If not, parse a default value, eg. a string that resembles what a user might type on the cli: `1-1024`.
+Up next, we either gets ports from the user or we go with a default value. In the snippet below, we check if there is a string for the `ports` param. If so, parse it. If not, user 1-1024 as a default.
 
 ```rust
 let ports = match args.get_one::<String>("ports") {
@@ -93,13 +118,16 @@ let ports = match args.get_one::<String>("ports") {
 };
 ```
 
-Notice the `match` syntax here. We also see `Some` as one of the patterns being matched. This syntax will look strange to folks who haven't used an [Option type](https://en.wikipedia.org/wiki/Option_type) before. It's an old concept that essentially uses type theory to force the callers of a function to handle multiple specific results from calling the function. More specifically, a function can require that its caller handles both the success and error case, which proponents of type systems tend to love. _Rust is both strongly typed & statically typed._ In this case, we match when _some value is present_ or when something else happens, eg. no value is present.
+Notice the `match` syntax here. The pattern we match first is a thing called `Some`. This syntax will look strange to folks who unfamiliar with [Option type](https://en.wikipedia.org/wiki/Option_type). It's a concept that uses type theory to force behavior on callers of a function. More specifically, a function can require that its caller handles both the success and error case. _Rust is both strongly typed & statically typed._ In this case, we match when the user has given us _some string_, or we fallback to default behavior.
+
+We will see syntax later that says `.unpack`. It is one of the ways we extract the actual value out of the Option type, eg. whatever the user typed for the ports flag.
+
 
 ## Parse Ports
 
-The venerable nmap has had syntax for decades that allows you to succinctly describe complex lists of ports. I figured I'd follow the same tradition.
+The venerable [nmap](https://nmap.org/) has had syntax for decades that allows you to succinctly describe complex lists of ports. I figured I'd follow in nmap's footsteps and do the same thing.
 
-Ports can be expressed as a list of numbers:
+Ports expressed as a list of numbers:
 
 ```
 eyes <target> -p 22,80,1336
@@ -117,7 +145,7 @@ A mix of both:
 eyes <target> -p 22,80,8000-8099,443,8443,3000-3443
 ```
 
-Let's start with the easiest case: _no port args!_ We'll set the list of ports to the default ports and return that.
+Let's start with the easiest case: no ports specified by user. We can use Rust syntax for a range to build a list of numbers between 1 and 1024: `1..=1024`.
 
 ```rust
 fn parse_ports(ports_arg: String) -> Vec<u16> {
@@ -247,6 +275,7 @@ To start, we'll use a 3 second timeout and convert the target IP to a proper Rus
 
 This match statement is pretty neat. It shows that you can match the internal structures of things by matching `Ok(Ok(...))`. This allows the code to say TcpStream::connect return an `Ok`, which was wrapped in the timeout also returning an `Ok`. If the TCP connect is _ok_ the function will reports the port as open, if anything else happens the port is reported as closed.
 
+
 ## Scan N Ports
 
 The system is asynchronous, so we convert the list of ports in the scan config to a stream that can be iterated asynchronously, and we spawn a single coroutine for each port in the list.
@@ -273,8 +302,10 @@ Code like this can seem unwieldy when you first encounter it, but knowing your c
 
 The actual code for Eyes is more robust than what's explained here. I also used this project to experiment with Rust's commenting conventions, so there are plenty of comments in it too.
 
+
 ## [Repo](https://github.com/jmsdnns/eyes)
 
 And the README will tell you how to use it, repeating some of what you just read.
+
 
 ## [Readme](https://github.com/jmsdnns/eyes/blob/main/README.md)
