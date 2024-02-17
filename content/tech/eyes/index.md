@@ -2,7 +2,7 @@
 title: Eyes
 date: 2024-02-16
 image: images/tech/the_eyes.gif
-draft: true
+draft: false
 description: "I have been dabbling with writing Rust code. I tell the story of using Rust to build a small project; a non-blocking, asynchronous port scanner called Eyes."
 tags:
    - rust
@@ -28,12 +28,12 @@ The section on [_References and Borrowing_](https://doc.rust-lang.org/stable/boo
 
 Understanding borrowing is necessary for writing Rust. It will produce compilation errors for code that does not use it properly, so there are no short-cuts here. I spent time writing little programs that tested the edge cases for memory handling, as I understood them, and built some confidence from seeing how Rust actually behaves. I eventually reached a point where I had read most of the book, so I thought I'd switch to finding the Rust community online and learning about whatever cool stuff Rust hackers have built.
 
-[Trevor Sullivan](https://www.youtube.com/@TrevorSullivan) has made a bunch of excellent videos that quickly cover how to do things in Rust. I loved his videos on [using Tokio for async](https://www.youtube.com/watch?v=PabDPIrt9fk) and [using Clap for parsing CLI args](https://www.youtube.com/watch?v=Ot3qCA3Iv_8).
+[Trevor Sullivan](https://www.youtube.com/@TrevorSullivan) has made a bunch of excellent videos that quickly cover how to do things in Rust. I treated his archive as a cookbook and learned a lot quickly. I loved the videos on [using Tokio for async](https://www.youtube.com/watch?v=PabDPIrt9fk) and [using Clap for parsing CLI args](https://www.youtube.com/watch?v=Ot3qCA3Iv_8).
 
-I also found a vibrant community of people who post to the #rust tag on Mastodon. I have learned a lot simply by paying attention to what they say.
+After perusing youtube I found a vibrant community of people who post to the #rust tag on Mastodon. I learned a lot quickly by paying attention to #rust and #rustlang.
 
 
-# The Design
+# Our Design
 
 The rough flow of the app starts with parsing command line args into a data structure that configures a scan request. If the CLI args parse properly, the config is used to run a scan, with results reported along the way.
 
@@ -49,7 +49,7 @@ Here is what I want the cli to look like when ports are specified.
 $ eyes --ports 80,443,8080,8443 127.0.0.1
 ```
 
-Now that we have a sense of what we want the experience to be like, we can start considering how to express it all in Rust.
+Now that we have a sense of what we want the experience to be like, we can consider the structure of the program. We probably want to store the input parameters in a single structure, we'll want flexibility in how to express which ports to scan, and then a way to actually scan each port in the list.
 
 
 ## Scan Config
@@ -94,22 +94,22 @@ let cli = Command::new("eyes")
     ...
 ```
 
-I had ideas for a few more parameters, but needed more of the scanner to be implemented before they were worth thinking about. All I need for a bare minimum port scanner is the target and a ports list.
+Notice the `--ports` flag can be shortened to `-p`.
 
 
 ## CLI Parsing
 
-This part was fun to implement. It allowed me to kick the tires on some of Rust's more exotic syntax.
+This part was fun to implement. It allowed me to kick the tires on some of Rust's more interesting syntax.
 
-First, let's verify we got a target from the user.
+This snippet checks for the target parameter and throws an error if it is not present.
 
 ```rust
 let target = args.get_one::<String>("target").expect("required");
 ```
 
-The code above makes uses of the _Rust Turbofish Operator_, which looks like `::<Type>`. This is syntax for providing type information in contexts where the types can't be automatically inferred. In our context, we tell the arg parser that the target should be a `String`.
+The code above makes uses of Rust's _Turbofish Operator_, which looks like `::<Type>`. This is syntax for providing type information in contexts where the types can't be automatically inferred. In our context, we tell the arg parser that the target should be a `String`.
 
-Up next, we either gets ports from the user or we go with a default value. In the snippet below, we check if there is a string for the `ports` param. If so, parse it. If not, user 1-1024 as a default.
+Up next, we either gets ports from the user or we go with a default value. Pass whichever we get into `parse_ports` and store whatever we get back in a variable called `ports`.
 
 ```rust
 let ports = match args.get_one::<String>("ports") {
@@ -118,9 +118,9 @@ let ports = match args.get_one::<String>("ports") {
 };
 ```
 
-Notice the `match` syntax here. The pattern we match first is a thing called `Some`. This syntax will look strange to folks who unfamiliar with [Option type](https://en.wikipedia.org/wiki/Option_type). It's a concept that uses type theory to force behavior on callers of a function. More specifically, a function can require that its caller handles both the success and error case. _Rust is both strongly typed & statically typed._ In this case, we match when the user has given us _some string_, or we fallback to default behavior.
+Notice the `match` syntax here. The pattern we match first is a thing called `Some`. This syntax will look strange to folks who unfamiliar with [Option types](https://en.wikipedia.org/wiki/Option_type). The idea is to return a type of value that can force behavior on the recipient. In our context, this code uses an Option to represent that either data was present, or it wasn't. We call `parse_ports` either with user input or with default arguments.
 
-We will see syntax later that says `.unpack`. It is one of the ways we extract the actual value out of the Option type, eg. whatever the user typed for the ports flag.
+Later we will see syntax that has `.unpack` in it. This is one of the ways we extract the actual data out of the Option type.
 
 
 ## Parse Ports
@@ -145,7 +145,12 @@ A mix of both:
 eyes <target> -p 22,80,8000-8099,443,8443,3000-3443
 ```
 
-Let's start with the easiest case: no ports specified by user. We can use Rust syntax for a range to build a list of numbers between 1 and 1024: `1..=1024`.
+Let's start with the easiest case: no ports specified by user.
+
+
+### No Input
+
+We can use Rust syntax for a range to build a list of numbers between 1 and 1024: `1..=1024`.
 
 ```rust
 fn parse_ports(ports_arg: String) -> Vec<u16> {
@@ -158,7 +163,24 @@ fn parse_ports(ports_arg: String) -> Vec<u16> {
 }
 ```
 
-We'll add support for a single port.
+
+### Single Port
+
+Next step is to check if the ports arg contains a string that can be converted to a 16-bit number. This is done using [if let syntax](https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html).
+
+```rust
+if let Ok(p) = some_function() {
+    // p has a value here
+    println!(p);
+}
+else {
+    // p is undefined here
+    println!("function didn't work");
+}
+```
+
+If `some_function` returns `Ok`, we can do something with `p` in the block below. This syntax makes it very succinct to work with type based control flow. For our context, we'll use the syntax to check if we got a single number for the ports flag. If so, our ports list will have a single item in it.
+
 
 ```rust
 fn parse_ports(ports_arg: String) -> Vec<u16> {
@@ -174,6 +196,9 @@ fn parse_ports(ports_arg: String) -> Vec<u16> {
     ports
 }
 ```
+
+
+### Port Range
 
 A port range is next. To do this, we will check for a hyphen and if we find one, generate a list of numbers from the left side to the right side. When expresse this idea in Rust, we finally start to see some of the weirder syntax that is common in Rust.
 
@@ -206,6 +231,8 @@ fn parse_ports(ports_arg: String) -> Vec<u16> {
     ports
 }
 ```
+
+### List of Ports (and Port Ranges)
 
 The craziest part comes next because it handles strings that might be lists of things, which includes individual ports or port ranges. To do that, we'll split on commas and iterate across whatever we find there: either individual ports or port ranges.
 
