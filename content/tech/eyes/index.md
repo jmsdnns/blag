@@ -2,7 +2,7 @@
 title: Eyes
 date: 2024-03-08
 image: images/tech/the_eyes.gif
-draft: false
+draft: true
 description: "I have been dabbling with writing Rust code. I tell the story of using Rust to build a small project; a non-blocking, asynchronous port scanner called Eyes."
 tags:
    - rust
