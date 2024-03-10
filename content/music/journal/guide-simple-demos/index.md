@@ -90,7 +90,7 @@ There are many opinions about what amp sim is best. I use GuitarRig 6 because it
 
 For punk rock demos, I like to use an Orange for the rhythm guitars and a JCM 800 for the leads. Orange amps focus on the mid range frequency and the 800 does a fantastic job of filling in everything else, so they sit nicely together in a recording.
 
-Let's consider an empty Logic file again.
+In Logic, highlight the _Left Guitar_ track and find the _Audio FX_ button, shown below. Click that to open the plugins menu. At the bottom of that is _Audio Units_, where you'll find _Native Instruments_ and then _Guitar Rig 6_. Rockin, your left guitar is playing out of an Orange.
 
 ![Location of the button to add plugins to a track](audio-fx.png)
 
