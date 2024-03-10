@@ -8,7 +8,7 @@ tags:
     - american f00d
 ---
 
-I am very pleased to say I have completed tracking for the first releases by American Food! It has taken a long of time and effort to get through everything, especially if you consider the time I spent learning how to do things I hadn't done before.
+I am very pleased to say I have completed tracking for the first releases by American Food! It has taken a lot of time and effort to get through everything, especially if you consider the time I spent learning how to do things I hadn't done before.
 
 I feel very lucky to have friends who are both excellent at music in some way and willing to give me helpful feedback. I need to thank my old friend, [Marc Allen](https://www.marcallen.design/), for helping me improve as a drummer, for giving me a good foundation of knowledge about how to record music, and for being the second drummer in one of the songs. I need to thank [Michael Schorr](https://en.wikipedia.org/wiki/Michael_Schorr) for helping me pick which drums to buy and for helping me learn how to tune them well. I need to thank [Dave Palaitis](https://www.youtube.com/watch?v=0axYTf7yyt4) for all the feedback and tips he gave me as he heard each mix, explaining how to fix issues I didn't know I had. And, I need to thank everyone on the Snowsuit Discord for the endless discussion about everything music.
 
