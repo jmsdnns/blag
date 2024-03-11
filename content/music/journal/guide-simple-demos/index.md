@@ -190,3 +190,61 @@ Below is what happens when you _compress_ a sound wave. The loud parts get quiet
 I have drawn a compressed soundwave, and another green border, to show how much more chill a compressed wave is.
 
 ![Drawing of a compressed soundwave, with a green border around it that shows the wave has been squished](wave-compressed.jpg)
+
+Add the compressor plugin to the Left Guitar track and arrange the plugins such that the compressor happens before the EQ, like you see below. Choose the _Guitar Heavy_ preset. Do the same with the Right Guitar track too.
+
+![](plugins-with-compressor.png)
+
+The personalities of the guitars come from the guitar and amp setup and they still have those personalities after compression is applied. So, we can use the same preset for both guitars. Don't worry too much yet about what all the knobs do, but you will also notice the guitars got significantly louder too. Turn the volume for both tracks down until you can easily hear both guitars next to the bass and Siri's drums.
+
+![](compression-guitar-heavy.png)
+
+Bass uses a similar preset, called _Bass Heavy_. The bass will also get a lot louder after compression is turned on, so turn the bass track volume down until you can hear the bass, both guitars, and drums clearly.
+
+![](compression-bass-heavy.png)
+
+
+## Drum Sounds
+
+Time to tweak the drums. We'll first set some volumes for the different parts of the drum set, then we'll add EQ and compression. If we were recording an actual drummer, we would need several tracks and many microphones. Working with Siri is significantly easier exactly because we don't do any of that complicated work.
+
+### Volumes
+
+Highlight the drum track and press "B" to bring up the _Smart Controls_. On the left there is a section labeled _Mix_ with knobs for the kick, snare, etc. If you are using the SoCal drummer, which is my favorite, the following volumes will sound like punk drummers do on records:
+
+* Kick at 2dB
+* Snare at 3.5dB
+* Toms at 0dB
+* Hi-Hat at -2dB
+* Cymbals at -2dB
+* Percussion at 0dB
+
+This puts the kick and snare out in front, for the driving feel of punk drumming, and puts the swishy stuff, the hi hats and cymbals, more in the background. By moving the swishy stuff to the background, we create space that the guitars fill, giving the record a feeling that it is huge.
+
+
+### Compression & EQ
+
+The software drummer track already has Channel EQ and Compression on by default, so we just need to choose presets. For Channel EQ use _HiFi Drums_ and for compression use _Drum Room_, and these drums should sound crisp and punchy.
+
+
+# The Master Track
+
+We've now reached the part where we move above the individual tracks and work on the complete song. We'll use compression & EQ again, but we'll also introduce a thing called _Linear EQ_.
+
+Up to now, we have been adding plugins to individual tracks, which are in the left most of the two columns on the left. This time, we'll be adding plugins to the other column.
+
+![](plugins-on-master.png)
+
+The compressor's preset _Platinum Analog Tape_.
+
+![](compression-platinum-analog.png)
+
+The Channel EQ uses the _Final Mix - Rock_ preset, under the mastering menu. 
+
+![](eq-channel-rock.png)
+
+The Linear EQ also uses a preset called _Final Mix_ under the mastering menu.
+
+![](eq-linear-rock.png)
+
+From here, just tweak the volumes of the guitars and bass until everything sounds pretty good, and you're done!
