@@ -77,7 +77,7 @@ Or, in a line: **v2 v4 c2 v4 c4 b5 v2 c4 c2**
 This kind of simple language is exactly how I talk in a room with musicians when we're writing a song. No one has to read sheet music or get into the weeds about some intellectual approach to music. We play riffs to each other and talk about repeating them some number of times in an arrangement.
 
 
-# Record A Guitar
+# Track Errything
 
 We'll first record guitars for what we have so far. Then we'll pan that track to the left and start playing out of the other guitar track to jam on the song and write the second guitar parts.
 
@@ -109,7 +109,7 @@ Add the GuitarRig plugin to the bass track too. Choose the _Bass Pro_ amp and th
 ![DI box for bass in GuitarRig](demo-bass.png)
 
 
-## Guitars As Musical Legos
+## Making Musical Legos
 
 Before recording, we need to work out a suitable BPM. This process depends on everything being played along to a metronome. Siri also needs the metronome. For punk, 180 can be fun. The tempo is in the blue rectangle in the middle of the top of Logic.
 
@@ -119,7 +119,7 @@ Earlier, I mentioned that we can think of demos as musical legos. That starts he
 
 The best part about this approach is that it can be done really quickly. I don't try to play the whole song, just each part enough times to copy / paste. Remember that the point of the demo is to capture an idea in a form where a whole band is represented, so dont lose trying to play everything perfectly. Playing it all _good enough_ is all you need right now.
 
-Assuming that's done, pan the left guitar to the right by turning the panning dial all the way to the left.
+Assuming that's done, pan the left guitar all the way to the left.
 
 ![Location of the panning dial on a track](panning.png)
 
@@ -132,3 +132,61 @@ You now have two guitars playing in stereo, so write and record bass parts using
 
 ## Drum Parts
 
+Logic's software drummer, Siri, can do a lot by herself, but we can also give her a lot of hints about the structure of the song, which she then translates into having several patterns that flow with nicely with what the guitars are doing.
+
+The main way is to use blocks that are the same size as the guitar repititions. So, a single block that is the length of the entire verse, then another for the chorus, etc. Using this approach allows us to do things like use the high hats in the verse, but the ride in the chorus, and have drums in between parts to signal the transitions. Or another way, the kind of stuff actual drummers do in music.
+
+In our song structure so far, there are 9 parts. Use the yellow "+" button no the drumming track to add 9 parts. Then shrink the length of each part down so that they length of each part when played on guitar. First drum part is the length of two verses, second is four verses, then 2 for the chorus, etc.
+
+If you double click on any of the drumming blocks, you will open the controls for telling Siri what kind of beat you want. Below is a picture of what they look like.
+
+![The UI for telling Logic's software drummer what kind of beat we want](drummer-controls.png)
+
+To keep things simple, switch the drums for every chorus to the ride cymbal. Then hit play and enjoy the first milestone!
+
+
+# Sonic Landscaping
+
+Now that we whipped up the gist of a song, we can start exploring how mixing and mastering works. The main ideas are based on making every instrument become clear and present alongside everything else.
+
+EQ plays a vital role at the instrument layer. Compression is helpful there too, but not necessary for everything. There is also a concept of a _Master Track_, which we haven't discussed yet. Applying plugins to the master track means the plugins are applied to a single stereo track that represents the entire song. Compression & EQ are also vital at the song layer.
+
+
+## Instrument EQ
+
+Similar to how we added the GuitarRig plugin to our tracks, we're going to add a _Channel EQ_. Click the space below the GuitarRig plugin and follow the menus from EQ to Channel EQ to Mono. It should look like this when you're done.
+
+![Screenshot of a track that has both Guitar Rig and Channel EQ enabled](plugins-with-eq.png)
+
+And here is what the EQ plugin UI looks like. It's flat when you first open it, but we'll give it some personality in a moment.
+
+![Screenshot of a Channel EQ with no configuration in it yet](eq-default-preset.png)
+
+For the left guitar, we'll use a basic preset called _Guitar Sweetener_. This preset is subtle, mostly tweaking a few places that improve the clarity of a mid-range focused amp, like the Orange we are using for this track. It also cuts all the frequencies below 70hz, removing any data from the signal that might emphasize the bassier frequencies in a way that muddies up the signal.
+
+![Screenshot of the Guitar Sweetener EQ preset](eq-guitar-sweetener.png)
+
+On the right guitar, we'll use a preset called _Picked Electric Guitar_. This preset minimizes the bassier frequencies and emphasizes the higher frequencies. This has the effect of ensuring the rhythm guitars and the leads occupy a different frequency space, giving them significant clarity relative to each other.
+
+![Screenshot of the Picked Electric Guitar EQ preset](eq-picked-electric-guitar.png)
+
+And finally, for bass we'll use a preset called _Jazz Bass_. This preset emphasizes a range between 50hz and 175hz, which neither of the guitar EQs emphasize, to give us the low punch of a bass. It also emphasizes 1320hz, with a hill from 300hz to 4k hz, giving the bass some clarity. With both, we feel the low end and can easily understand which notes the bass is actually playing.
+
+![Screenshot of the Jazz Bass EQ preset](eq-jazz-bass.png)
+
+With all three EQs configured, you should be able to hear a significant different in the quality of your demo. We're not finished, but my hope is that you now have a meaningful impression of how important EQ is.
+
+
+## Compression
+
+Most people have a sense of what EQ does, either from turning knobs on their guitars and amps or from using EQ with their music players. Compression, however, is something quite different and there is little reason to think anyone would know how it works without having tried music production before.
+
+I have drawn an uncompressed soundwave, with a green border to capture how loud the loud parts get relative to the how quiet the quiet parts are.
+
+![Drawing of a soundwave, with a green border around it to visulize what range of volumes in it](wave-uncompressed.jpg)
+
+Below is what happens when you _compress_ a sound wave. The loud parts get quieter and the quiet parts get louder. This has the effect of ensuring quiet parts are always present and loud parts don't shock the listener with a drastic increase in volume.
+
+I have drawn a compressed soundwave, and another green border, to show how much more chill a compressed wave is.
+
+![Drawing of a compressed soundwave, with a green border around it that shows the wave has been squished](wave-compressed.jpg)
