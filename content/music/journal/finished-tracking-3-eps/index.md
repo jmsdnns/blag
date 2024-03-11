@@ -35,7 +35,7 @@ I shared some of the songs with Marc and he started teaching me about compressio
 
 Compression is the magic that stabilizes the volume of things, which is crucial for getting vocals to sound right. It's also the magic on my kick drum and snare. It's vital for bass to sit nicely in a mix. It's wild how useful it is and how much variation there is in how to do it. Further, when compression is used well, getting the volumes of everything to sit nicely in aggregate also becomes much easier.
 
-To understand EQ, we should consider that recordings mix many instruments together in such a way that it sounds coming out of just two speakers. There is some interesting math that explains why this is even possible, but the core thing to consider is that there is a range of frequencies coming out of each speaker and you want to keep all of them from stepping on each other's toes.
+To understand EQ, we should consider that recordings mix many instruments together in such a way that each sounds clear when played out of just two speakers, like our headphones. There is some interesting math that explains why this is even possible, but the core thing to consider is that there is a range of frequencies coming out of each speaker and you want to keep all of them from stepping on each other's toes.
 
 Here is a great visualization, borrowed from [Mastering The Mix](https://www.masteringthemix.com/blogs/learn/decoding-the-mix-3-superstar-dj), that shows how panning and frequencies work together to make instruments stand out.
 
