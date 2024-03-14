@@ -10,15 +10,16 @@ menu:
     weight: 3
 ---
 
+I keep a music journal to make my musical life observable to others. I use it to share what I play, when I write, and when I record, sharing the creative process as it takes place over time.
+
+# [Music Journal]({{< ref "journal" >}})
+
+
 # Current Projects
 
 Most of my musical time goes towards a band I do by myself, _american f00d_.
 
 # [american f00d]({{< ref "americanf00d" >}})
-
-My _Music Journal_ makes the things I think & feel observable to others as I play, write, or record music.
-
-# [Music Journal]({{< ref "journal" >}})
 
 
 # Old Projects
