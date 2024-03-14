@@ -23,13 +23,13 @@ If you haven't seen logic before, it is Apple's _digital audio workstation_ (DAW
 
 This is what it looks like when you first open Logic. Just a single track with no expectations, waiting for someone to dump their soul into it.
 
-![A new logic file that has not been modified yet](new-file.png)
+![A new logic file that has not been modified yet](new-file.jpg)
 
 My first steps are to rename this track to _Left Guitar_ and then click the blue soundwave icon on the far left to pick a different icon, like a Les Paul. I then add tracks for a second guitar and bass, choosing good icons for them too.
 
 Here is a screenshot after I've prepared Logic for a demo. There's no music here yet, but you can see each instrument represented with tracks for two guitars, bass, and drums. The guitars are labeled _left guitar_ and _right guitar_, but they are not actually panned left and right yet. We'll do that later, after we record some riffs.
 
-![A Logic session setup to record two guitars, bass, and drums for a simple demo](demo-empty.png)
+![A Logic session setup to record two guitars, bass, and drums for a simple demo](demo-empty.jpg)
 
 Notice that the drummer is a single track. That's because we're using the software drummer instead of recording actual drums. Most guitar players do not also play drums, so the software drummer is an incredible way to make demos that sound good anyway.
 
@@ -37,13 +37,13 @@ Using the software drummer is surprisingly easy. Most of the work is done moving
 
 On the left, you'll see that channel EQ and compression are enabled. Logic does that by default, but we'll tweak all of that later too.
 
-![Screenshot of the configuration screen for Logic's software drummer](demo-software-drummer.png)
+![Screenshot of the configuration screen for Logic's software drummer](demo-software-drummer.jpg)
 
 For funsies, I like to call the software drummer _Siri_ and pretend we play in a band together. _She's down to jam literally anytime and she never misses a beat._
 
 Here are the tracks for the very first American Food song, called _False Starts_. It's an east coast style punk song that has a main singer and some backup vocals. Notice that the music is kind of like discrete chunks of music, like a riff played a few times. This lets me easily rearrange a song's structure, expanding or adding parts as I have ideas, eg. musical legos.
 
-![False Starts](false-starts.png)
+![False Starts](false-starts.jpg)
 
 Singing is the top track, with backup vocals directly underneath. Then the instruments start, and they arranged using the demo pattern I described above.
 
@@ -92,28 +92,28 @@ For punk rock demos, I like to use an Orange for the rhythm guitars and a JCM 80
 
 In Logic, highlight the _Left Guitar_ track and find the _Audio FX_ button, shown below. Click that to open the plugins menu. At the bottom of that is _Audio Units_, where you'll find _Native Instruments_ and then _Guitar Rig 6_. Rockin, your left guitar is playing out of an Orange.
 
-![Location of the button to add plugins to a track](audio-fx.png)
+![Location of the button to add plugins to a track](audio-fx.jpg)
 
 In Guitar Rig, look on the left for the amp navigation buttons and click _Amplifiers_ and then _Citrus_. A list of choices will now be focused on Orange Amp setups. Choose "Basic Citrus". This track now plays out of an Orange. In the section that looks like amplifiers, look for the words _INIT_. That's the menu for amp config presets. Click on that and choose _Fat Crunch_. We now have the same amp setup.
 
 This is what an Orange amp, eg. Basic Citrus, looks like in Guitar Rig. The amp is dialed with the Fat Crunch preset. That's it, and it sounds huge.
 
-![Orange Amp setup in GuitarRig](demo-left-guitar.png)
+![Orange Amp setup in GuitarRig](demo-left-guitar.jpg)
 
 We'll do something similar for the right guitar track, so add the Guitar Rig plugin to the right guitar track. The JCM800 stacks are arranged under the _Lead 800_ amplifier in GuitarRig. We'll use the stack called "800 Rocks". It's a basic 800 with a tube screamer in front.
 
-![Marshall JCM800 setup in GuitarRig](demo-right-guitar.png)
+![Marshall JCM800 setup in GuitarRig](demo-right-guitar.jpg)
 
 Add the GuitarRig plugin to the bass track too. Choose the _Bass Pro_ amp and the _DI-Bass_ stack preset.
 
-![DI box for bass in GuitarRig](demo-bass.png)
+![DI box for bass in GuitarRig](demo-bass.jpg)
 
 
 ## Making Musical Legos
 
 Before recording, we need to work out a suitable BPM. This process depends on everything being played along to a metronome. Siri also needs the metronome. For punk, 180 can be fun. The tempo is in the blue rectangle in the middle of the top of Logic.
 
-![Screenshot of what the BPM settings look like in Logic](bpm.png)
+![Screenshot of what the BPM settings look like in Logic](bpm.jpg)
 
 Earlier, I mentioned that we can think of demos as musical legos. That starts here with the 3 riffs we have. We can track ourselves playing a single iteration of the verse, a single iteration of the chorus, and a single iteration of the bridge, and then copy / paste _that_ across the left guitar track until it matches our song structure.
 
@@ -121,7 +121,7 @@ The best part about this approach is that it can be done really quickly. I don't
 
 Assuming that's done, pan the left guitar all the way to the left.
 
-![Location of the panning dial on a track](panning.png)
+![Location of the panning dial on a track](panning.jpg)
 
 Now, highlight the right guitar track and you'll hear the JCM800 amp sound while you play along with the left guitars coming out of the Orange.
 
@@ -140,7 +140,7 @@ In our song structure so far, there are 9 parts. Use the yellow "+" button no th
 
 If you double click on any of the drumming blocks, you will open the controls for telling Siri what kind of beat you want. Below is a picture of what they look like.
 
-![The UI for telling Logic's software drummer what kind of beat we want](drummer-controls.png)
+![The UI for telling Logic's software drummer what kind of beat we want](drummer-controls.jpg)
 
 To keep things simple, switch the drums for every chorus to the ride cymbal. Then hit play and enjoy the first milestone!
 
@@ -156,23 +156,23 @@ EQ plays a vital role at the instrument layer. Compression is helpful there too,
 
 Similar to how we added the GuitarRig plugin to our tracks, we're going to add a _Channel EQ_. Click the space below the GuitarRig plugin and follow the menus from EQ to Channel EQ to Mono. It should look like this when you're done.
 
-![Screenshot of a track that has both Guitar Rig and Channel EQ enabled](plugins-with-eq.png)
+![Screenshot of a track that has both Guitar Rig and Channel EQ enabled](plugins-with-eq.jpg)
 
 And here is what the EQ plugin UI looks like. It's flat when you first open it, but we'll give it some personality in a moment.
 
-![Screenshot of a Channel EQ with no configuration in it yet](eq-default-preset.png)
+![Screenshot of a Channel EQ with no configuration in it yet](eq-default-preset.jpg)
 
 For the left guitar, we'll use a basic preset called _Guitar Sweetener_. This preset is subtle, mostly tweaking a few places that improve the clarity of a mid-range focused amp, like the Orange we are using for this track. It also cuts all the frequencies below 70hz, removing any data from the signal that might emphasize the bassier frequencies in a way that muddies up the signal.
 
-![Screenshot of the Guitar Sweetener EQ preset](eq-guitar-sweetener.png)
+![Screenshot of the Guitar Sweetener EQ preset](eq-guitar-sweetener.jpg)
 
 On the right guitar, we'll use a preset called _Picked Electric Guitar_. This preset minimizes the bassier frequencies and emphasizes the higher frequencies. This has the effect of ensuring the rhythm guitars and the leads occupy a different frequency space, giving them significant clarity relative to each other.
 
-![Screenshot of the Picked Electric Guitar EQ preset](eq-picked-electric-guitar.png)
+![Screenshot of the Picked Electric Guitar EQ preset](eq-picked-electric-guitar.jpg)
 
 And finally, for bass we'll use a preset called _Jazz Bass_. This preset emphasizes a range between 50hz and 175hz, which neither of the guitar EQs emphasize, to give us the low punch of a bass. It also emphasizes 1320hz, with a hill from 300hz to 4k hz, giving the bass some clarity. With both, we feel the low end and can easily understand which notes the bass is actually playing.
 
-![Screenshot of the Jazz Bass EQ preset](eq-jazz-bass.png)
+![Screenshot of the Jazz Bass EQ preset](eq-jazz-bass.jpg)
 
 With all three EQs configured, you should be able to hear a significant different in the quality of your demo. We're not finished, but my hope is that you now have a meaningful impression of how important EQ is.
 
@@ -193,15 +193,15 @@ I have drawn a compressed soundwave, and another green border, to show how much 
 
 Add the compressor plugin to the Left Guitar track and arrange the plugins such that the compressor happens before the EQ, like you see below. Choose the _Guitar Heavy_ preset. Do the same with the Right Guitar track too.
 
-![](plugins-with-compressor.png)
+![](plugins-with-compressor.jpg)
 
 The personalities of the guitars come from the guitar and amp setup and they still have those personalities after compression is applied. So, we can use the same preset for both guitars. Don't worry too much yet about what all the knobs do, but you will also notice the guitars got significantly louder too. Turn the volume for both tracks down until you can easily hear both guitars next to the bass and Siri's drums.
 
-![](compression-guitar-heavy.png)
+![](compression-guitar-heavy.jpg)
 
 Bass uses a similar preset, called _Bass Heavy_. The bass will also get a lot louder after compression is turned on, so turn the bass track volume down until you can hear the bass, both guitars, and drums clearly.
 
-![](compression-bass-heavy.png)
+![](compression-bass-heavy.jpg)
 
 
 ## Drum Sounds
@@ -233,18 +233,18 @@ We've now reached the part where we move above the individual tracks and work on
 
 Up to now, we have been adding plugins to individual tracks, which are in the left most of the two columns on the left. This time, we'll be adding plugins to the other column.
 
-![](plugins-on-master.png)
+![](plugins-on-master.jpg)
 
 The compressor's preset _Platinum Analog Tape_.
 
-![](compression-platinum-analog.png)
+![](compression-platinum-analog.jpg)
 
 The Channel EQ uses the _Final Mix - Rock_ preset, under the mastering menu. 
 
-![](eq-channel-rock.png)
+![](eq-channel-rock.jpg)
 
 The Linear EQ also uses a preset called _Final Mix_ under the mastering menu.
 
-![](eq-linear-rock.png)
+![](eq-linear-rock.jpg)
 
 From here, just tweak the volumes of the guitars and bass until everything sounds pretty good, and you're done!
