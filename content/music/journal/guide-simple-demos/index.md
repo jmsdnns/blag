@@ -41,11 +41,11 @@ On the left, you'll see that channel EQ and compression are enabled. Logic does 
 
 For funsies, I like to call the software drummer _Siri_ and pretend we play in a band together. _She's down to jam literally anytime and she never misses a beat._
 
-Here are the tracks for the very first American Food song, called _False Starts_. It's an east coast style punk song that has a main singer and some backup vocals. Notice that the music is kind of like discrete chunks of music, like a riff played a few times. This lets me easily rearrange a song's structure, expanding or adding parts as I have ideas, eg. musical legos.
+Here are the tracks for the very first American Food song, called _False Starts_. It's an east coast style punk song that has a main singer and some backup vocals. Notice that the music is kind of like discrete chunks of music, like a riff played a few times. This lets me easily rearrange a song's structure, expanding or adding parts as I have ideas, kinda like musical legos.
 
 ![False Starts](false-starts.jpg)
 
-Singing is the top track, with backup vocals directly underneath. Then the instruments start, and they arranged using the demo pattern I described above.
+Singing is the top track, with backup vocals directly underneath. Then the instruments start, and they are arranged using the demo pattern I described above.
 
 This song was written during a time when I was trying to make as much material as I could, to create data that I would then use to learn Logic. The lyrics are silly, the guitars are _very_ 90's pop punk, and Siri totally rips on the drums.
 
@@ -58,9 +58,9 @@ There is always a phase before I hook up the computer where I'm wandering around
 
 Writing a song involves making a bunch of decisions about how things feel, and writing songs quickly benefits from having a framework for thinking about how to structure them. How to do this is always a matter of taste, but it can seem overwhelmingly random and hard to remember for anyone new at it.
 
-So, start with 3 riffs. Think of them as playing the role of a verse, a chorus, and a brige. Trying playing the verse 4 times, then the chorus 4 times, and then the verse 4 times again. If that felt pretty good, then try the chrous 4 times, the bridge 4 times, and the verse 4 times. If it didn't, try writing other riffs until it feels right.
+So, start with 3 riffs. Think of them as playing the role of a verse, a chorus, and a brige. Trying playing the verse 4 times, then the chorus 4 times, and then the verse 4 times again. If that felt pretty good, then try the chrous 4 times, the bridge 4 times, and the verse 4 times. Try changing any riffs that throw off the flow or even just writing new ones until you think they're all pretty cool.
 
-From here, the song _could_ be something simple like this:
+At this point, we can write a song. It _could_ be something simple like this:
 
 1. **verse 2x**: without singing to open the song
 2. **verse 4x**: where singing would go
@@ -77,11 +77,11 @@ Or, in a line: **v2 v4 c2 v4 c4 b5 v2 c4 c2**
 This kind of simple language is exactly how I talk in a room with musicians when we're writing a song. No one has to read sheet music or get into the weeds about some intellectual approach to music. We play riffs to each other and talk about repeating them some number of times in an arrangement.
 
 
-# Track Errything
+# Track Everything
 
-We'll first record guitars for what we have so far. Then we'll pan that track to the left and start playing out of the other guitar track to jam on the song and write the second guitar parts.
+We'll record guitars for what we have so far. Then we'll pan that track to the left and start playing out of the other guitar track to jam with the idea, writing the second guitar parts as we go.
 
-But first, amps.
+But before that, amps.
 
 
 ## Simulated Amplification
@@ -100,7 +100,7 @@ This is what an Orange amp, eg. Basic Citrus, looks like in Guitar Rig. The amp 
 
 ![Orange Amp setup in GuitarRig](demo-left-guitar.jpg)
 
-We'll do something similar for the right guitar track, so add the Guitar Rig plugin to the right guitar track. The JCM800 stacks are arranged under the _Lead 800_ amplifier in GuitarRig. We'll use the stack called "800 Rocks". It's a basic 800 with a tube screamer in front.
+We'll do something similar for the right guitar track, so add the Guitar Rig plugin to the right guitar track. The JCM800 stacks are arranged under the _Lead 800_ amplifier in GuitarRig. We'll use the stack called "800 Rocks". It's a basic 800 with a tube screamer in front. _I love tube screamers._
 
 ![Marshall JCM800 setup in GuitarRig](demo-right-guitar.jpg)
 
@@ -115,7 +115,7 @@ Before recording, we need to work out a suitable BPM. This process depends on ev
 
 ![Screenshot of what the BPM settings look like in Logic](bpm.jpg)
 
-Earlier, I mentioned that we can think of demos as musical legos. That starts here with the 3 riffs we have. We can track ourselves playing a single iteration of the verse, a single iteration of the chorus, and a single iteration of the bridge, and then copy / paste _that_ across the left guitar track until it matches our song structure.
+Earlier, I mentioned that we can think of demos as musical legos. That starts here with the 3 riffs we have. We can track ourselves playing a single iteration of the verse, a single iteration of the chorus, and a single iteration of the bridge, and then copy / paste _that_ across the left guitar track until it matches our song structure. The key thing here is to ensure only one type of part is played in each lego piece of music.
 
 The best part about this approach is that it can be done really quickly. I don't try to play the whole song, just each part enough times to copy / paste. Remember that the point of the demo is to capture an idea in a form where a whole band is represented, so dont lose trying to play everything perfectly. Playing it all _good enough_ is all you need right now.
 
