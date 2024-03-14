@@ -1,8 +1,8 @@
 ---
 title: Eyes
-date: 2024-03-08
+date: 2024-03-14
 image: images/tech/the_eyes.gif
-draft: true
+draft: false
 description: "I have been dabbling with writing Rust code. I tell the story of using Rust to build a small project; a non-blocking, asynchronous port scanner called Eyes."
 tags:
    - rust
@@ -55,7 +55,7 @@ Here is what I want the cli to look like when ports are specified. If no ports a
 $ eyes --ports 80,443,8080,8443 127.0.0.1
 ```
 
-A simple help menu would tell the user a target is required and that they can, but don't have to, choose which ports to scan. And of course, that there is a help menu.
+A simple help menu would tell the user a target is required and that they can, but don't have to, choose which ports to scan. The help menu should follow POSIX tradition and look like what we see below.
 
 ```shell
 $ eyes 
@@ -121,7 +121,7 @@ let cli = Command::new("eyes")
     ...
 ```
 
-Notice the `--ports` flag can be shortened to `-p`.
+Notice that the `--ports` flag can be shortened to `-p`.
 
 
 ## CLI Parsing
@@ -354,12 +354,12 @@ Code like this can seem unwieldy when you first encounter it, but knowing your c
 
 # Project
 
-The actual code for Eyes is more robust than what's explained here. I also used this project to experiment with Rust's commenting conventions, so there are plenty of comments in it too.
+The actual code for Eyes is more robust than what's explained here. I also used this project to experiment with Rust's commenting conventions, so there are plenty of comments to guide you if you read the code.
 
 
 ## [Repo](https://github.com/jmsdnns/eyes)
 
-And the README will tell you how to use it, repeating some of what you just read.
+And the README will tell you how to use it, repeating some of what you just read above.
 
 
 ## [Readme](https://github.com/jmsdnns/eyes/blob/main/README.md)
