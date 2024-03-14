@@ -241,18 +241,18 @@ We've now reached the part where we move above the individual tracks and work on
 
 Up to now, we have been adding plugins to individual tracks, which are in the left most of the two columns on the left. This time, we'll be adding plugins to the other column.
 
-![](plugins-on-master.jpg)
+![Screenshot of the FX stack after the 3 plugins mentioned above are added](plugins-on-master.jpg)
 
 The compressor's preset _Platinum Analog Tape_.
 
-![](compression-platinum-analog.jpg)
+![Screenshot of "platinum analog tape" compression preset](compression-platinum-analog.jpg)
 
 The Channel EQ uses the _Final Mix - Rock_ preset, under the mastering menu. 
 
-![](eq-channel-rock.jpg)
+![Screenshot of "final mix - rock" channel EQ preset](eq-channel-rock.jpg)
 
 The Linear EQ also uses a preset called _Final Mix_ under the mastering menu.
 
-![](eq-linear-rock.jpg)
+![Screenshot of "final mix - rock" linear EQ preset](eq-linear-rock.jpg)
 
 From here, just tweak the volumes of the guitars and bass until everything sounds pretty good, and you're done!
