@@ -354,12 +354,10 @@ Code like this can seem unwieldy when you first encounter it, but knowing your c
 
 # Project
 
-The actual code for Eyes is more robust than what's explained here. I also used this project to experiment with Rust's commenting conventions, so there are plenty of comments to guide you if you read the code.
+The actual code for Eyes is more robust than what's explained here. I also used this project to experiment with Rust's commenting conventions, so there are plenty of comments to guide you if you [read the code](https://github.com/jmsdnns/eyes/blob/main/src/main.rs).
 
-
-## [Repo](https://github.com/jmsdnns/eyes)
+## [Project Repo](https://github.com/jmsdnns/eyes)
 
 And the README will tell you how to use it, repeating some of what you just read above.
-
 
 ## [Readme](https://github.com/jmsdnns/eyes/blob/main/README.md)
