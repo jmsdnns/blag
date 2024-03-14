@@ -256,3 +256,23 @@ The Linear EQ also uses a preset called _Final Mix_ under the mastering menu.
 ![Screenshot of "final mix - rock" linear EQ preset](eq-linear-rock.jpg)
 
 From here, just tweak the volumes of the guitars and bass until everything sounds pretty good, and you're done!
+
+
+# Mixing
+
+There is so much taste that goes into mixing. However, mixing should be easier for you now than it has been before, so I would recommend thinking about it like this:
+
+* mute everything
+* turn the drums volume down to -10db
+* add one guitar, with panning centered
+* adjust its volume so you can hear guitar and drums clearly, then mute it
+* add the other guitar, with panning centered
+* adjust its volume so you can hear guitar and drums clearly, then pan it hard to the right
+* unmute the other guitar and it hard left
+* guitars probably feel quieter than drums after panning
+* turn them up so the snare and kick are at a similar volume (_with rest of the drums more in the background_)
+* mute both guitars and add bass
+* adjust its volume so it feels just a little quiet next to the drums
+* add guitars back
+
+And now, you have a pretty great sounding demo
