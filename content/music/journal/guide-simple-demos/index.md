@@ -1,7 +1,7 @@
 ---
 title: A Guide To Making Good Demos
 date: 2024-03-10
-#image: images/music/journal/finished-tracking-3-eps.jpg
+image: images/music/journal/guide-simple-demos.jpg
 description: >
     Here are the steps I use when I'm prototyping a song in Logic. It is based almost entirely on plugins that come builtin with Logic, except for the amp sim. You only need to bring your eyes, your ears, and your guitars.
 tags:
