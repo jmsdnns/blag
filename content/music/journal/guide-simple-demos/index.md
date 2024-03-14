@@ -181,6 +181,8 @@ With all three EQs configured, you should be able to hear a significant differen
 
 Most people have a sense of what EQ does, either from turning knobs on their guitars and amps or from using EQ with their music players. Compression, however, is something quite different and there is little reason to think anyone would know how it works without having tried music production before.
 
+### How Compression Works
+
 I have drawn an uncompressed soundwave, with a green border to capture how loud the loud parts get relative to the how quiet the quiet parts are.
 
 ![Drawing of a soundwave, with a green border around it to visulize what range of volumes in it](wave-uncompressed.jpg)
@@ -191,17 +193,23 @@ I have drawn a compressed soundwave, and another green border, to show how much 
 
 ![Drawing of a compressed soundwave, with a green border around it that shows the wave has been squished](wave-compressed.jpg)
 
+For more information, I recommend going to youtube and spending some time with every [Rick Beato](https://www.youtube.com/@RickBeato) video on compression. He does a phenomenal job explaining all the different types, how and when to use them, etc. Here is the first video I watched when I started studying the topic myself.
+
+{{< youtube tH7T96MyxB4 >}}
+
+### Adding Compression To Our Demo
+
 Add the compressor plugin to the Left Guitar track and arrange the plugins such that the compressor happens before the EQ, like you see below. Choose the _Guitar Heavy_ preset. Do the same with the Right Guitar track too.
 
-![](plugins-with-compressor.jpg)
+![Picture of compression added to the FX stack for a track](plugins-with-compressor.jpg)
 
 The personalities of the guitars come from the guitar and amp setup and they still have those personalities after compression is applied. So, we can use the same preset for both guitars. Don't worry too much yet about what all the knobs do, but you will also notice the guitars got significantly louder too. Turn the volume for both tracks down until you can easily hear both guitars next to the bass and Siri's drums.
 
-![](compression-guitar-heavy.jpg)
+![Screenshot of the "guitar heavy" compression preset](compression-guitar-heavy.jpg)
 
 Bass uses a similar preset, called _Bass Heavy_. The bass will also get a lot louder after compression is turned on, so turn the bass track volume down until you can hear the bass, both guitars, and drums clearly.
 
-![](compression-bass-heavy.jpg)
+![Screenshot of the "bass heavy" compression preset](compression-bass-heavy.jpg)
 
 
 ## Drum Sounds
