@@ -85,20 +85,14 @@ ul {
   }
   ul,
   ol {
-    margin-left: 0;
+    margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
     li {
       font-size: 18px;
       line-height: 20px;
       margin-bottom: 10px;
-      margin-left: 0;
-      @include breakpoint('small') {
-        margin-left: 20px;
-      }
-    }
-    @include breakpoint('small') {
-      margin-left: 20px;
+      margin-left: 10px;
     }
   }
   a {
