@@ -179,6 +179,8 @@ LLMs are very good at NLP. Even better, using them for NLP tasks minimizes the o
 
 One point in particular felt profoundly important about the nature of AI. In the contexts where AI can make people more productive, AI has a more powerful effect for lower performers than higher performers. AI improves the work and closes the skills gap with a strong positive effect. This may also explain some of the different perspectives about the value of AI. It would make sense if lower performers with larger improvements liked AI more than higher performers with smaller improvements.
 
+Another side to how AI closes the skill gap comes from people learning new things. They start as a low performer without much experience and are able to become a higher performer more quickly. As someone who devotes much of my free time to learning new things, this potential is very exciting.
+
 ### Afterthoughts
 
 Whenever I learn about a competitive context where the participants all operate at a similar level, I think about a theory from Michael Mauboussin, the Paradox of Skill. I'll paraphrase the way [Mauboussin defined it in this interview](https://knowledge.wharton.upenn.edu/article/michael-mauboussin-on-the-success-equation/):
