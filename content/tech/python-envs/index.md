@@ -2,7 +2,7 @@
 title: How To Venv Without Losing Your Mind
 date: 2024-03-14
 # image: images/tech/
-draft: false
+draft: true
 description: >
     i want chicken i want liver i was meow mix meow meow meow meow
 tags:
