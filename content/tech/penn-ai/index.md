@@ -133,8 +133,6 @@ Similar to generating lyrics, getting creative with explaining the structure of 
 
 It was mind blowing to learn Udio gives away 1200 free songs a month. Each with unique album art too. Most humans don't write that many songs in their entire life. This is important to understand, because it is exactly the thing the music industry is worried about.
 
-After some time to think about it, I am not convinced these tools are a threat to the music industry. 
-
 ### Video
 
 We used [Pika](https://pika.art/) to generate video. I was impressed by Pika. The other video generation stuff I've seen never quite impressed me enough that I'd want to use it, but Pika seems like it might be there.
@@ -163,9 +161,9 @@ _She has been studying relentlessly for years now_
 
 The music I have touched on so far is generally stuff that sits in the background while I focus on something else. The other side of music is the side where I listen by giving it my full focus. I memorize the drums of a song, connect the lyrics of a song to life, and embrace the artform for everything it might offer. _Attention is all you need_, or something like that.
 
-As for the story telling side of music, eg. not intended to sit in the background, if AI has a place it will come from acting as a tool used to support humans making art. This is the domain where every detail matters and where it gets critiqued for how well it fits in with everything else. We wouldn't say _lift is stranger than fiction_ if we didn't also feel that _fiction has to make sense_, even though we know fiction is made up.
+As for the story telling side of music, eg. not intended to sit in the background, if AI has a place it will come from acting as a tool used to support humans making art. This is the domain where every detail matters and where it gets critiqued for how well it fits in with everything else. We wouldn't say _life is stranger than fiction_ if we didn't also feel that _fiction has to make sense_, even though we know fiction is made up.
 
-I already use software that simulates guitar amps, even though I have a guitar amp. I have recorded several songs where I sing & play guitar and used software to generate the drum tracks, even though I know how to play drums. I had never tried singing in a band it was possible to get all the other things done so quickly. I'm now looking at the potential to make AI generated music videos for music written and performed entirely by humans. Perhaps the videos won't feel quite right for this or that reason, but I'll probably feel like they got close enough when the point is to support my music.
+I already use software that simulates guitar amps, even though I have a guitar amp. I have recorded several songs where I sing & play guitar and used software to generate the drum tracks, even though I know how to play drums. I had never tried singing in a band until it was possible to get all the other things done so quickly. I'm now looking at the potential to make AI generated music videos for music written and performed entirely by humans. Perhaps the videos won't feel quite right for this or that reason, but I'll probably feel like they got close enough when the point is to support my music.
 
 I have had some pretty cool ideas about how to use prompts to augment my song writing progress. I am not going to share them yet, because I am going to look into what it'd take to get a proof-of-concept together instead.
 
@@ -236,7 +234,11 @@ Prior to AI I had a fond appreciation for the history of humanity's pessimism to
 
 There are countless examples of people rejecting progress for all kinds of reasons that, in retrospect, look silly. Recorded music will apparently kill the live music industry. Coffee is a satanic drink that corrupts minds. Photographs are made to lie. People liked their horses too much to give them up for cars. Every time progress is made, there are legions of folks telling us why this particular progress is going to ruin everything.
 
-Two weeks before the conference, I started challenging myself to justify my cynicism. Some part of me was convinced that my cynical opinions about AI were _obviously_ an exception humanity's long history of rejecting progress, but I also knew that simply could not be true. I had my own history of being amused by anyone who thinks their POV if an exception to the rule, so it started to feel important I laugh at myself and find ways to embrace where ever we're going.
+Two weeks before the conference, I started challenging myself to justify my cynicism. Some part of me was convinced that my cynical opinions about AI were _obviously_ an exception humanity's long history of rejecting progress, but I also knew that simply could not be true. I had my own history of being amused by anyone who thinks their POV is an exception to the rule, so it started to feel important I laugh at myself and find ways to understand what lies ahead.
+
+I must be clear about something else too: I am not all in on AI. AI still has the potential to slowly and then rapidly displace a lot of people. This worries me enough that it has been, and still is, a major component of my thinking. In general, tech progress creates more jobs than it removes, but US history consistently features rich people treating everyone else like garbage when it is profitable. I am on the side of empowering everyone, not just the few.
+
+While no one misses city streets full of horse poop, we replaced horses with gas guzzling horseless carriages (_cars_) that take up so much space by sitting still 95% of the time. Are cars better than horses? Can we say yes without considering how many wars have been fought over oil? One thing's for sure, the people creating cars around the end of the 1800's had no way of knowing the impact they would have, even if they tried to claim cars would change everything. Humans seem to love their cars, so I don't think they're going away anytime soon, but I am optimistic they will all run on electricity in my lifetime. We usually want a balance of usefulness and avoiding harm, so I expect that will be the case with AI after we get over the initial shock.
 
 Changing our opinions is hard, especially when they're personal, but it seems mine are changing. I'm not a cynic about AI anymore. I still don't want to hear VCs or doomers talk about it, but I am also starting to see AI's potential for making my life easier. And to be clear, CCB deserves a lot of credit for helping me break out of my cynicism.
 
