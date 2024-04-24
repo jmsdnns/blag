@@ -14,7 +14,7 @@ I attended University of Pennylvania's first AI conference last Friday, where I 
 
 I first met [Chris Callison-Burch](https://www.cis.upenn.edu/~ccb/) back around 2010, when he was at Johns Hopkins. An old friend of mine was also at Johns Hopkins and introduced me to CCB to see if we might work together on a weird data collecting problem. CCB believed it should be possible to use a fairly new service from AWS, called Mechanical Turk, to cheaply create big datasets that are useful for training machine translation systems. I had no idea what any of those words even meant, but working with him meant solving a whole bunch of problems I had never seen before, so I went for it.
 
-After some time I switched focus to working with groups to prototype ideas, or whole startups, in NYC. CCB kept doing what he was doing and eventually became well known for proving that his theory about generating good datasets cheaply. Shortly after that, he switched from Hopkins to the University of Pennsylvania, where he still teaches and does research on ML & AI.
+After some time I switched focus to working with groups to prototype ideas, or whole startups, in NYC. CCB kept doing what he was doing and eventually became well known for proving his theory about generating good datasets cheaply. Shortly after that, he switched from Hopkins to the University of Pennsylvania, where he still teaches and does research on ML & AI.
 
 <!-- ## Von Ahn Kampff Test
 
