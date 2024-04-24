@@ -51,4 +51,4 @@ One thing I have learned, is that both the Revolution and the Civil War have so 
 
 History indeed rhymes, as they say. I have come to understand this in profound ways. It gives me a sense of calm when I view the world today. I know that the chaos of the early 2020's isn't the craziest thing the world has faced. It gets very bad, to be clear. But, is it as bad as when the country descended into Civil War? I don't believe it is.
 
-Over the years I have found I enjoy trying to use my historical knowledge to predict how events in modern life. We'd like to think we've advanced, relative to people 200 years ago, but we're the same in so many ways too. I find that both humbling and fascinating.
+Over the years I have found I enjoy trying to use my historical knowledge to predict how events unfold in modern life. We'd like to think we've advanced, relative to people 200 years ago, but we're the same in so many ways too. I find that both humbling and fascinating.
