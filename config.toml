@@ -3,10 +3,11 @@ languageCode = "en-us"
 title = "JmsDnns"
 
 disableKinds = ["taxonomy", "term"]
-paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
+[pagination]
+  pagerSize = 3
 
 [module]
   [module.hugoVersion]
