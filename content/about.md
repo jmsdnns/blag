@@ -1,6 +1,6 @@
 ---
 title: 'About'
-image: images/about.png
+image: images/james-and-benjamin.png
 url: "about"
 menu:
   main:
