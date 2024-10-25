@@ -44,3 +44,5 @@ I have been reading history since 2012. I explain how that happened [in this pos
 History is fascinating for many reasons, but my favorite stuff is when people make a point of historical significance in some absurd way.
 
 I recently began [writing about history]({{< ref "history" >}}). There will be times I celebrate the absurd and there will be times I tell more serious stories. My goal is to write about history in a way that makes new fans of reading history.
+
+![](unfacktheworld.jpg)
