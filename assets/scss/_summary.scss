@@ -13,16 +13,13 @@
   }
   .summary-title {
     margin: 16px 0 16px 0;
-    width: 80%;
     font-size: 34px;
     line-height: 38px;
     @include breakpoint('small') {
-      width: 80%;
       font-size: 52px;
       line-height: 58px;
     }
   }
   .summary-description {
-    width: 80%;
   }
 }
