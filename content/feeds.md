@@ -1,12 +1,14 @@
-
 ---
 title: 'Feeds'
 url: "feeds"
+image: images/feeds.jpg
 menu:
   main:
     name: "Feeds"
     weight: 5
 ---
+
+
 
 # [TECH](/tech/index.xml)
 
