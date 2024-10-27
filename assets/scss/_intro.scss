@@ -40,4 +40,14 @@
   img {
     max-width: 100%;
   }
+  .social-icon {
+    float: right;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    @include breakpoint('medium') {
+      height: 48px;
+      width: 48px;
+    }
+  }
 }

@@ -2,10 +2,14 @@ baseURL = "/"
 languageCode = "en-us"
 title = "JmsDnns"
 
-disableKinds = ["taxonomy", "term"]
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
+
+disableKinds = ["taxonomy", "term", "sitemap"]
+[outputs]
+  section=['html', 'rss']
+
 [pagination]
   pagerSize = 3
 
