@@ -34,7 +34,7 @@ Creativty starts with seeing the world as a thing that can be modified or improv
 
 Being creative alone can be satisfying, but being creative with others is extraordinary. The things we create can become something bigger than any individual when several perspectives work together.
 
-Finding other people comfortable with a constant flow of ideas is frustrating. All creative thinkers eventually find out the hard way that most people are not creative thinkers. The creative process itself doesn't really make sense to most people. Worse, a typical person experiences a creative person thinking out loud as though the creative has no clue what they are talking about. ypical people don't catch the subtle cues that discard bad ideas while collecting the good ones, so it reaches them as a jumbled mess that is easy to criticize. That interpretation isn't totally wrong, because the creative person was sharing both the good and bad ideas as they came to mind.
+Finding other people comfortable with a constant flow of ideas is frustrating. All creative thinkers eventually find out the hard way that most people are not creative thinkers. The creative process itself doesn't really make sense to most people. Worse, a typical person experiences a creative person thinking out loud as though the creative has no clue what they are talking about. Typical people don't catch the subtle cues that discard bad ideas while collecting the good ones, so it reaches them as a jumbled mess that is easy to criticize. That interpretation isn't totally wrong, because the creative person was sharing both the good and bad ideas as they came to mind.
 
 Artistic communities can be built around groups of creative folks that are sick of that experience. They want to spend time with folks who are also sick of that experience. They pride themselves on the way they diverge from the norm. It expresses who they are, relative to the norm. The differences are part of their identity. After all, what even is an artist if not someone who wants to convey a unique perspective?
 
@@ -69,15 +69,15 @@ Also recently, we live in a world where our artistic identities are being expres
 _I do not believe it is legal, fwiw. I expect the courts to get very active soon in resolving the rights issues for AI. Alas, that hasn't happened yet._
 
 
-## Trained to become The Masses
+## Hiding In Plain Data
 
-LLMs seem to have a bias around how represented some data is relative to others. Intuitively, models _should_ focus on the patterns well represented in the data. But it also doesn't make sense (_wait, what_) because it causes important ideas that are not well represented to disappear into the sea of noise.
+In a way, to train a modern AI is to build a machine based on mainstream patterns in data. The patterns outside the mainstream are there too, just not enough to stand out in a meaningful way.
 
-In a way, to train a modern AI is to build a machine focused on the mainstream of its data. We see this in the way it incorrectly summarizes research papers, where it summarizes the popular ideas in and it discards any new information created because of the research.
+This bias towards the mainstream manifests itself in interesting ways. Summarization of well known ideas works quite well, but summarization of research produces summaries that skip over the most important parts of the research, the novel discoveries. We can apply that pattern to art and expect modern AI to generate art that is always trying to fit inside the mainstream.
 
+I feel some relief when I think about it like this. It makes me wonder if there is a way for creatives outside the mainstream to leverage obscurity by hiding in the data's periphery. I find that exciting because if it were true it would mean there are ways we can push back against the total disregard of our rights as creators.
 
+What I'm most interested in are approaches for creating art that becomes increasingly obscure as more is made. I want to understand how we art can survive in a world where all of our work could be used in training AIs, yet those AIs cannot produce new work based on ours. I feel as though what I want is to build underground art scenes where the definition of _underground_ is based on whether or not an AI can reliably copy it.
 
-
-## Hiding In The Data
-
+_Maybe we want to hide in the sea of noise? Maybe we don’t care about the mainstream?! Maybe that isn’t where we want to be at all! Maybe we are different because our ideas are better?!_
 
