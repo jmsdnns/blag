@@ -34,9 +34,11 @@ Creativty starts with seeing the world as a thing that can be modified or improv
 
 Being creative alone can be satisfying, but being creative with others is extraordinary. The things we create can become something bigger than any individual when several perspectives work together.
 
-Finding other people comfortable with constantly analyzing our experiences as we generate ideas is frustrating. All creative thinkers eventually find out the hard way that most people are not creative thinkers. A typical person experiences a creative personal thinking out loud as though the creative has no clue what they are talking about. That isn't totally wrong, because sharing both the good and bad ideas as they had them, not yet aware of which ones are good or bad. Typical people don't catch the subtle cues that discard bad ideas while collecting the good ones, so it reaches them as a jumbled mess.
+Finding other people comfortable with a constant flow of ideas is frustrating. All creative thinkers eventually find out the hard way that most people are not creative thinkers. The creative process itself doesn't really make sense to most people. Worse, a typical person experiences a creative person thinking out loud as though the creative has no clue what they are talking about. ypical people don't catch the subtle cues that discard bad ideas while collecting the good ones, so it reaches them as a jumbled mess that is easy to criticize. That interpretation isn't totally wrong, because the creative person was sharing both the good and bad ideas as they came to mind.
 
 Artistic communities can be built around groups of creative folks that are sick of that experience. They want to spend time with folks who are also sick of that experience. They pride themselves on the way they diverge from the norm. It expresses who they are, relative to the norm. The differences are part of their identity. After all, what even is an artist if not someone who wants to convey a unique perspective?
+
+These communities go by different names. Sometimes they're called _scenes_, like _the NYC art scene during the 70's_ or _Connecticut hardcore_. Sometimes they're called collectives and they consist of a small group of people who all know each other. Similar to art, the way creative people organize comes in many forms and their creative output flows in similar directions.
 
 
 ## Art and Art Forms
@@ -58,14 +60,22 @@ From a purely practical perspective, skilled humans may not be necessary the sam
 
 I don't worry about art dying, as I said earlier, but I do worry about all the people who have spent years honing their skills and creating amazing things. If their work can be digitized, it can also be used as training data for AIs. The Internet has driven us through doing a lot of that digitization work already, too.
 
-It is legally ambiguous, as of now, whether or not AI companies have to pay for the right to use all that work as training data. We can probably assume companies will be companies, though. They will probably attempt whatever gives them the most advantages and they will probably assume it's all legal. Services already exist for using AI to generate high quality music on demand, like [Udio](https://www.udio.com/) or [Suno](https://suno.com/).
+It is legally ambiguous, as of now, whether or not AI companies have to pay for the right to use all that work as training data. We can probably assume companies will be companies, though. They will probably attempt whichever path gives them the most advantages. They will probably also behave as though it's all legal.
 
-![What do you do when your foundation falls apart? I don't know. They don't teach you that at school.](nofoundation.gif)
+Also recently, we live in a world where our artistic identities are being expressed in one form or another inside generative AI models whether we like it or not.
 
-_I do not believe it is legal, fwiw. I expect the courts to get very active in resolving the rights issues in AI. Alas, that hasn't happened yet._
+![What do you do when your foundation falls apart? I don't know. They don't teach you that at school.](nofoundation.png)
+
+_I do not believe it is legal, fwiw. I expect the courts to get very active soon in resolving the rights issues for AI. Alas, that hasn't happened yet._
 
 
-## Trained on The Masses
+## Trained to become The Masses
+
+LLMs seem to have a bias around how represented some data is relative to others. Intuitively, models _should_ focus on the patterns well represented in the data. But it also doesn't make sense (_wait, what_) because it causes important ideas that are not well represented to disappear into the sea of noise.
+
+In a way, to train a modern AI is to build a machine focused on the mainstream of its data. We see this in the way it incorrectly summarizes research papers, where it summarizes the popular ideas in and it discards any new information created because of the research.
+
+
 
 
 ## Hiding In The Data
