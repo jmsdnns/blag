@@ -2,14 +2,14 @@
 title: "Algorithmic Underground"
 date: 2024-10-25
 image: images/tech/algo_underground.gif
-draft: false
+draft: true
 description: >
-    Meowlgorithm are way cool
+    I have been thinking about something Jean Baudrillard said a lot recently. It comes to mind because of the current moment and what is happening around generative AI. He said, "Art does not die because there is no more art. It dies because there is too much." 
 tags:
     - AI
 ---
 
-I have been thinking about something Jean Baudrillard said a lot recently. It comes to mind because of things happening around generative AI.
+I have been thinking about something Jean Baudrillard said a lot recently. It comes to mind because of the current moment and what is happening around generative AI.
 
 Prior to the current moment, I believed he was more cynical than necessary. The current moment changed that for me because it I now wonder if we might actually bring about some of the futures Baudrillard talked about. In particular, a future where art dies.
 
@@ -71,13 +71,23 @@ _I do not believe it is legal, fwiw. I expect the courts to get very active soon
 
 ## Trained to become The Masses
 
-LLMs seem to have a bias around how represented some data is relative to others. Intuitively, models _should_ focus on the patterns well represented in the data. But it also doesn't make sense (_wait, what_) because it causes important ideas that are not well represented to disappear into the sea of noise.
+LLMs seem to have a bias around the patterns most present in their training data. Intuitively, models _should_ focus on the patterns most present in the data. They are the clearest signal in the data and that translates into excellent performance from the models when doing things with those patterns. Or another way, models find the clearest signals in data around the patterns that represent a kind of _mainstream_. If we built a model around all the music in Spotify, it's very likely Taylor Swift would provide clear signal.
 
-In a way, to train a modern AI is to build a machine focused on the mainstream of its data. We see this in the way it incorrectly summarizes research papers, where it summarizes the popular ideas in and it discards any new information created because of the research.
+As any creative knows, the popularity of some idea is quite different from how important it is. Copernicus knew this, Rosa Parks knew this, Ben Franklin knew this. It isn't just people who change history either. I'd like to also claim that most of the bands I listen to also know this, but it becomes trickier to claim because it forces us to consider how subjective claims of importance truly are.
 
+The algorithmic bias towards mainstream emerges in interesting ways. Summarization is commonly considered an example of a task LLMs are very good at. This matches the gist of my experience too. When I would query them for summaries of historical figures, it usually got the most important things. Something different happened when I generated summaries for more obscure figures. It became apparent the summaries were skipping over the things I liked best about them. Popular figures benefit from a steady flow of subjective analyses made by individuals over time. For less popular figures, somewhere between obscure and somewhat popular, the most interesting things about them fades into the background and isn't emerged in the summaries.
 
+Something similar happens when research papers are summarized. In that context, the findings in the paper that are already well known has a lot of presence in the summary. The novel findings, the most important ideas, are skipped over in favor of findings already known to the world.
+
+What's happening here seems like the right behavior for contexts that are improved by optimizing for _consensus_.
 
 
 ## Hiding In The Data
+
+Whenever it's true that important ideas that are not well known can live underground alongside important ideas that are popular, it is also true that communities can exist without attracting much attention from the mainstream.
+
+![A scene from the movie Beetlejuice where Winona Ryder's character says, "I myself am strange and unusual."](strange-unusual.gif)
+
+
 
 
