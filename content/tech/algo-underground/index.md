@@ -2,7 +2,7 @@
 title: "Algorithmic Underground"
 date: 2024-10-25
 image: images/tech/algo_underground.gif
-draft: true
+draft: false
 description: >
     I have been thinking about something Jean Baudrillard said a lot recently. It comes to mind because of the current moment and what is happening around generative AI. He said, "Art does not die because there is no more art. It dies because there is too much." 
 tags:
@@ -34,7 +34,7 @@ Creativty starts with seeing the world as a thing that can be modified or improv
 
 Being creative alone can be satisfying, but being creative with others is extraordinary. The things we create can become something bigger than any individual when several perspectives work together.
 
-Finding other people comfortable with a constant flow of ideas is frustrating. All creative thinkers eventually find out the hard way that most people are not creative thinkers. The creative process itself doesn't really make sense to most people. Worse, a typical person experiences a creative person thinking out loud as though the creative has no clue what they are talking about. ypical people don't catch the subtle cues that discard bad ideas while collecting the good ones, so it reaches them as a jumbled mess that is easy to criticize. That interpretation isn't totally wrong, because the creative person was sharing both the good and bad ideas as they came to mind.
+Finding other people comfortable with a constant flow of ideas is frustrating. All creative thinkers eventually find out the hard way that most people are not creative thinkers. The creative process itself doesn't really make sense to most people. Worse, a typical person experiences a creative person thinking out loud as though the creative has no clue what they are talking about. Typical people don't catch the subtle cues that discard bad ideas while collecting the good ones, so it reaches them as a jumbled mess that is easy to criticize. That interpretation isn't totally wrong, because the creative person was sharing both the good and bad ideas as they came to mind.
 
 Artistic communities can be built around groups of creative folks that are sick of that experience. They want to spend time with folks who are also sick of that experience. They pride themselves on the way they diverge from the norm. It expresses who they are, relative to the norm. The differences are part of their identity. After all, what even is an artist if not someone who wants to convey a unique perspective?
 
@@ -68,9 +68,6 @@ Also recently, we live in a world where our artistic identities are being expres
 
 _I do not believe it is legal, fwiw. I expect the courts to get very active soon in resolving the rights issues for AI. Alas, that hasn't happened yet._
 
-
-## Trained to become The Masses
-
 LLMs seem to have a bias around the patterns most present in their training data. Intuitively, models _should_ focus on the patterns most present in the data. They are the clearest signal in the data and that translates into excellent performance from the models when doing things with those patterns. Or another way, models find the clearest signals in data around the patterns that represent a kind of _mainstream_. If we built a model around all the music in Spotify, it's very likely Taylor Swift would provide clear signal.
 
 As any creative knows, the popularity of some idea is quite different from how important it is. Copernicus knew this, Rosa Parks knew this, Ben Franklin knew this. It isn't just people who change history either. I'd like to also claim that most of the bands I listen to also know this, but it becomes trickier to claim because it forces us to consider how subjective claims of importance truly are.
@@ -88,6 +85,11 @@ Whenever it's true that important ideas that are not well known can live undergr
 
 ![A scene from the movie Beetlejuice where Winona Ryder's character says, "I myself am strange and unusual."](strange-unusual.gif)
 
+I feel some relief when I think about it like this. It makes me wonder if there is a way for creatives outside the mainstream to leverage obscurity by hiding in the data's periphery. I find that exciting because if it were true it would mean there are ways we can push back against the total disregard of our rights as creators.
 
+What I'm most interested in are approaches for creating art that becomes increasingly obscure as more is made. I want to understand how we art can survive in a world where all of our work could be used in training AIs, yet those AIs cannot produce new work based on ours. I feel as though what I want is to build underground art scenes where the definition of _underground_ is based on whether or not an AI can reliably copy it.
 
+_Maybe we want to hide in the sea of noise? Maybe we don’t care about the mainstream?! Maybe that isn’t where we want to be at all! Maybe we are different because our ideas are better?!_
+
+For now, I am thinking about what it means to be build underground scenes inside the oceans of data. I want to understand what it means to not fit in, intentionally or not, as society attempts to put AI in literally everything going forward.
 
