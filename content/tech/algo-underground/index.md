@@ -68,28 +68,26 @@ Also recently, we live in a world where our artistic identities are being expres
 
 _I do not believe it is legal, fwiw. I expect the courts to get very active soon in resolving the rights issues for AI. Alas, that hasn't happened yet._
 
+
+## Hiding In The Data
+
 LLMs seem to have a bias around the patterns most present in their training data. Intuitively, models _should_ focus on the patterns most present in the data. They are the clearest signal in the data and that translates into excellent performance from the models when doing things with those patterns. Or another way, models find the clearest signals in data around the patterns that represent a kind of _mainstream_. If we built a model around all the music in Spotify, it's very likely Taylor Swift would provide clear signal.
 
 As any creative knows, the popularity of some idea is quite different from how important it is. Copernicus knew this, Rosa Parks knew this, Ben Franklin knew this. It isn't just people who change history either. I'd like to also claim that most of the bands I listen to also know this, but it becomes trickier to claim because it forces us to consider how subjective claims of importance truly are.
 
 The algorithmic bias towards mainstream emerges in interesting ways. Summarization is commonly considered an example of a task LLMs are very good at. This matches the gist of my experience too. When I would query them for summaries of historical figures, it usually got the most important things. Something different happened when I generated summaries for more obscure figures. It became apparent the summaries were skipping over the things I liked best about them. Popular figures benefit from a steady flow of subjective analyses made by individuals over time. For less popular figures, somewhere between obscure and somewhat popular, the most interesting things about them fades into the background and isn't emerged in the summaries.
 
-Something similar happens when research papers are summarized. In that context, the findings in the paper that are already well known has a lot of presence in the summary. The novel findings, the most important ideas, are skipped over in favor of findings already known to the world.
+What's happening here seems like the right behavior for contexts that are improved by optimizing for _consensus_. We can see how this goes wrong when we consider what happens when research papers are summarized. In that context, the findings of the paper that are already well known get a lot of presence in the summary. The novel findings, eg. the most important ideas, are skipped over precisely because they are less well known.
 
-What's happening here seems like the right behavior for contexts that are improved by optimizing for _consensus_.
-
-
-## Hiding In The Data
-
-Whenever it's true that important ideas that are not well known can live underground alongside important ideas that are popular, it is also true that communities can exist without attracting much attention from the mainstream.
+Whenever it's true that important ideas that are not well known can live alongside important ideas that are consensus, it is also true that unique communities can exist alongside much bigger mainstream communities without drawing much attention to themselves.
 
 ![A scene from the movie Beetlejuice where Winona Ryder's character says, "I myself am strange and unusual."](strange-unusual.gif)
 
-I feel some relief when I think about it like this. It makes me wonder if there is a way for creatives outside the mainstream to leverage obscurity by hiding in the data's periphery. I find that exciting because if it were true it would mean there are ways we can push back against the total disregard of our rights as creators.
+I feel some relief when I think about it like this. It makes me wonder if there is a way for creatives outside the mainstream to leverage obscurity in ways I haven't thought about yet by hiding in the data's periphery more intentionally. I find that exciting because if it were true it would mean there are ways we can push back against the total disregard for our rights as creators that many leaders in tech have advocated for.
 
-What I'm most interested in are approaches for creating art that becomes increasingly obscure as more is made. I want to understand how we art can survive in a world where all of our work could be used in training AIs, yet those AIs cannot produce new work based on ours. I feel as though what I want is to build underground art scenes where the definition of _underground_ is based on whether or not an AI can reliably copy it.
+What I'm most interested in are approaches for creating art that becomes increasingly obscure as more is made. I want to understand how art can survive in a world where all of our work might be downloaded for use as training data, yet the AIs created cannot produce new work based on ours. I feel as though what I want is to build underground art scenes where the definition of _underground_ is based on whether or not an AI can reliably copy it. If it can, maybe the art isn't original _enough_, or something like that.
 
 _Maybe we want to hide in the sea of noise? Maybe we don’t care about the mainstream?! Maybe that isn’t where we want to be at all! Maybe we are different because our ideas are better?!_
 
-For now, I am thinking about what it means to be build underground scenes inside the oceans of data. I want to understand what it means to not fit in, intentionally or not, as society attempts to put AI in literally everything going forward.
+I keep thinking about this. About what it means to be build underground scenes inside oceans of data. I want to understand what it means to not fit in, whether intentionally or not, as society goes wild attempting to put AI in literally everything going forward.
 
