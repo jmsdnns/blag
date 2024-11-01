@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Underground"
-date: 2024-10-25
+date: 2024-11-01
 image: images/tech/algo_underground.gif
 draft: false
 description: >

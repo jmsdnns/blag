@@ -1,6 +1,6 @@
 ---
 title: The Founders On Virtue
-date: 2024-10-31
+date: 2024-11-01
 image: images/history/on-virtue.png
 description: >
     There's a good chance that anyone living in the US has heard the term "virtue signaling". It is usually used to mock someone attempting to hold others to a high standard of conduct. If the founders of the US were alive today, they would be horrified to consider the US has descended into a country that mocks virtue. All of them cared deeply about it, especially George Washington. We all should. Knowing what they said about it will help.
