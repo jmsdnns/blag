@@ -47,7 +47,7 @@ It's not always easy to know what someone means when they say _corruption_. One 
 I mentioned at the beginning that people who think virtue signaling is bad are at odds with the founding principles. This is because virtue is one of our safeguards against corruption. Virtue should be celebrated and we should all strive to live virtuously. To claim otherwise is to increase the odds a tyrant eventually rises to power with enough elected support to wield power without any checks or balances in place to stop them. It is, after all, a problem that cannot be solved with law. We must choose to do it ourselves.
 
 
-# Quotes
+# Some Quotes
 
 ![Samuel Adams](slamadams.png)
 
