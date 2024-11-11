@@ -2,6 +2,7 @@
 title: The Wild Man of the Revolution, Samuel Adams
 date: 2024-11-08
 image: images/history/wild-man-adams.jpg
+draft: true
 description: >
     He was nuts and it ruled
 ---
