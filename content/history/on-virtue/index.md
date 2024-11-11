@@ -6,20 +6,20 @@ description: >
     There's a good chance that anyone living in the US has heard the term "virtue signaling". It is usually used to mock someone attempting to hold others to a high standard of conduct. If the founders of the US were alive today, they would be horrified to consider the US has descended into a country that mocks virtue. All of them cared deeply about it, especially George Washington. We all should. Knowing what they said about it will help.
 ---
 
-People paying attention to politics in the US has probably come across the term _virtue signaling_. It tends to be used to mock those who attempting to live that serves a higher purpose than simply pursuing ones own self-interest. Folks have claimed it is virtue signaling to resist racism, homophobia, sexism, or anything that allows one to claim someone is behaving badly. They probably see themselves as patriotic too, without realizing the term is fundamentally at odds with the nation's founding principles.
+People paying attention to politics in the US have probably come across the term _virtue signaling_. It is usually used to mock those that expect others to live for a purpose higher than simply pursuing one's own self-interest. Folks have claimed it is virtue signaling, instead of virtuous, to resist racism, homophobia, sexism. Instead of adjusting to be more virtuous, these folks want to resist letting anyone call them out for bad behavior. They probably see themselves as patriotic too, without realizing they are at odds with the nation’s founding principles.
 
-The founders would be horrified by resistance to virtue. All of them strived to claim themselves as virtuous, though their definitions of _virtue_ varied. George Washington makes a great example. He gave up power when he gave up his army after beating Britain and King George III, the king of Britain at the time, was so shocked that he said, "_well if he did that, he'd be the greatest man in the world!_"
+The founders would be horrified by resistance to virtue. They might even call it _corruption signaling_. All of them strived to claim themselves as virtuous, though their definitions of virtue varied. George Washington makes a great example. He gave up power when he gave up his army after beating Britain and King George III, the king of Britain at the time, was so shocked that he said, “well if he did that, he’d be the greatest man in the world!”
 
 Striving to be virtuous represents an attempt to counter one of the few problems governments face that cannot be solved with law. It represents something that must be learned and maintained by a people that governs itself. It represents an attempt to build a government and a society that chooses to resist corruption.
 
 
 # Sudden Radical Change
 
-Prior to the 2016 election, my experience of government in the US was that it seemed like it rarely got anything done and that this was fine because the people of the US were going to do whatever they want all the time anyway. We're free to be amazing and we're free to be awful! We're also supposed to reconcile with each other either by sorting out our differences or by going to court.
+Prior to the 2016 election, my experience of government in the US was that it seemed like it rarely got anything done and that this was fine because the people of the US were going to do whatever they want all the time anyway. We’re free to be amazing and we’re free to be awful! We’re also supposed to reconcile with each other either by sorting out our differences or by going to court.
 
 I believe that is still roughly the core of the US, but it has been buried under people who are much more radical. It is not my goal to point the finger in this essay, but you probably know what I mean too. It has been eye opening to see how wild the radicals are willing to get.
 
-I wondered how likely it might be that the radicals succeed in replacing the older, moderate elements of their party with more radicals. I worried about the progress they made over time in filling out their party with people who genuinely don't want the US government anymore. I thought about how worried the founders were about corruption because it felt as though we were about to witness an extreme test of how much corruption the US system can actually resist.
+I wondered how likely it might be that the radicals succeed in replacing the older, moderate elements of their party with more radicals. I worried about the progress they made over time in filling out their party with people who genuinely don’t want the US government anymore. I thought about how worried the founders were about corruption because it felt as though we were about to witness an extreme test of how much corruption the US system can actually resist.
 
 # What Were They Thinking
 
