@@ -3,7 +3,7 @@ title: Learning With Covers
 date: 2024-11-11
 image: images/music/journal/learning-with-covers.jpg
 description: >
-    Meow
+    I have been teaching myself how to record music for several years. To get started, I figured I should do a bunch of cover songs and I would switch to recording my own music once I got the hang of it. I never shared the covers... until now!
 tags:
     - covers
 ---
