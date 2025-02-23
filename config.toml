@@ -8,34 +8,41 @@ pygmentsUseClasses = true
 
 disableKinds = ["taxonomy", "term", "sitemap"]
 [outputs]
-  section=['html', 'rss']
+section = ['html', 'rss']
 
 [pagination]
-  pagerSize = 3
+pagerSize = 3
 
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.55.0"
+[module.hugoVersion]
+extended = true
+min = "0.55.0"
 
 [params]
-  google_analytics_id = ""
-  showAuthorOnHomepage = false
-  showAuthorOnPosts = false
-  showPostsOnHomepage = false
-  addDot = true
-  addFrame = false
-  highlightColor = '#5294e2'
-  baseColor = "#ffffff"
-  baseOffsetColor = "#eaeaea"
-  headingColor = "#1c1b1d"
-  textColor = "#4e5157"
-  dotColor = "#5294e2"
+google_analytics_id = ""
+showAuthorOnHomepage = false
+showAuthorOnPosts = false
+showPostsOnHomepage = false
+addDot = true
+addFrame = false
+highlightColor = '#5294e2'
+baseColor = "#ffffff"
+baseOffsetColor = "#eaeaea"
+headingColor = "#1c1b1d"
+textColor = "#4e5157"
+dotColor = "#5294e2"
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = true
-      xhtml = false
+[markup.goldmark]
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xhtml = false
+
+[deployment]
+
+[[deployment.targets]]
+name = "live"
+URL = "s3://jmsdnns.com?region=us-east-1"
+cloudFrontDistributionID = "E28NFOMHCWR2CR"
