@@ -1,7 +1,7 @@
 ---
 title: DNB From Scratch
 date: 2025-02-22
-draft: true
+draft: false
 image: images/music/journal/dnb-from-scratch.jpg
 description: >
     I tried an experiment recently where I wrote drum n bass with drums, bass, and guitars. I first wrote a song, then slowed it down to track the drums, and then sped it back up, because that's roughly how the genre was created to begin with.
@@ -38,9 +38,11 @@ I'm calling the project: **Amphase**.
 
 This is the first experiment. I tried as many variations of how to play the drums as I could come up with while doing a couple takes. This was the last attempt.
 
-All of the guitars are done using ebow. Ebows are weird magnetic devices that allow you to get bow sounds, as we see on woodwind instruments, but with a distorted electric guitar. For this song it give them a feedbacky, haunting feel that is always present, even when the drumming gets wild. I then wrote the bass to just pound on certain parts of the drum beat, similar to what Dieselboy would do.
+All of the guitars are done using an [ebow](https://en.wikipedia.org/wiki/EBow). Ebows are weird magnetic devices that allow you to get sounds from a distorted electric guitar that resemble woodwind instruments when played with a bow. I used it to give the guitars a feedbacky, haunting feel that is always present, even when the drumming gets wild. I then wrote a bass melody that would pound on different parts of the drum beat, similar to what Dieselboy would do.
 
-Once I got samples, guitars, and bass, I slowed the song down to track drums, sped it up, and this is the result.
+Once I had samples, guitars, and bass arranged as a whole song, I could then slow the song down to track drums. I hit record and tried the entire thing a few times. The drums in this track are the last take of the evening. With the drums tracked, all I had to do now was speed it up and see how it felt.
+
+Here is where the experiment ended up. The song is called _Reinitializing_. It's cymbalic.
 
 {{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2025929680&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
 
