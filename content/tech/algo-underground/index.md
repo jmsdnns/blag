@@ -11,7 +11,7 @@ tags:
 
 I have been thinking about something Jean Baudrillard said a lot recently. It comes to mind because of the current moment and what is happening around generative AI.
 
-Prior to the current moment, I believed he was more cynical than necessary. The current moment changed that for me because it I now wonder if we might actually bring about some of the futures Baudrillard talked about. In particular, a future where art dies.
+Prior to the current moment, I believed he was more cynical than necessary. The current moment changed that for me because I found myself wondering if we might actually bring about some of the futures Baudrillard talked about. In particular, a future where art dies.
 
 > Art does not die because there is no more art. It dies because there is too much.
 >
