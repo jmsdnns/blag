@@ -93,7 +93,7 @@ To _wrap_ a function is to call the function you want by calling some intermedia
 
 ```python
 def outer(func):
-    def wrapper(func, arg):
+    def wrapper(arg):
         # ...
         # some code that runs before func
         # ...
