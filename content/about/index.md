@@ -12,7 +12,7 @@ menu:
 
 I'm James Dennis. I'm also Jms Dnns.
 
-I've had the privilege of working on a lot of cool projects over the years, from touring the country with bands to building companies from the ground up. I've also experienced what happens when efforts don't work out and what that feels like.
+I've had the privilege of working on a lot of cool projects over the years, from touring the country with bands to building companies from the ground up. I've also experienced what happens when efforts don't work out and can be a good ear for anyone dealing with that.
 
 I've spent years working with creative groups to make a lot of software and a lot of music. In some ways, my creative work has been like a dog chasing a ball. I commit and go hard when it's important, of course. I'm happiest when I'm transforming ideas into tangible things. I'm not too picky about the medium anymore, and yet I want to use each medium to the best of my creativity.
 
