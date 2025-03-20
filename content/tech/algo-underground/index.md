@@ -17,7 +17,7 @@ Prior to the current moment, I believed he was more cynical than necessary. The 
 >
 > — Jean Baudrillard
 
-That quote has been in my mind because it causes me to consider difficult questions that don't have clear answers. What happens to art in a world where AI can generate more art at overwhelming speed? Could he have been right after all, and art dies because new tools let us make too much of it? What does mean for artists too?
+That quote has been in my mind because it causes me to consider difficult questions that don't have clear answers. What happens to art in a world where AI can generate art at overwhelming speed? Could he have been right after all, and art dies because new tools let us make too much of it? What would that mean for everyone who is an artist right now?
 
 
 ## Artists Gonna Art
