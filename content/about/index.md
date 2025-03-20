@@ -14,7 +14,7 @@ I'm James Dennis. I'm also Jms Dnns.
 
 I've had the privilege of working on a lot of cool projects over the years, from touring the country with bands to building companies from the ground up. I've also experienced what happens when efforts don't work out and what that feels like.
 
-I've spent years working with creative groups to make a lot of software and a lot of music. In some ways, my creative work has been like like a dog chasing a ball. I commit and go hard when it's important, of course. I'm happiest when I'm transforming ideas into tangible things. I'm not too picky about the medium anymore, and yet I want to use each medium to the best of my creativity.
+I've spent years working with creative groups to make a lot of software and a lot of music. In some ways, my creative work has been like a dog chasing a ball. I commit and go hard when it's important, of course. I'm happiest when I'm transforming ideas into tangible things. I'm not too picky about the medium anymore, and yet I want to use each medium to the best of my creativity.
 
 I've changed a lot over the years. What once felt narrow has expanded, and my approach has shifted towards environments that don't have to be narrow to bring out the best of everyone. I once agreed with Churchill that having enemies meant we stood for something, and I knew I had grown when it occurred to me that defining ourselves by our enemies is absurd. I prefer the way Stekel described it, "_the immature man wants to die nobly for a cause, while the mature man wants to live humbly for one_".
 
@@ -30,7 +30,7 @@ Over the years, I have been lucky to work with some great organizations. You pro
 
 I ran a consultancy, J2 Labs, for a while. Over time my tastes changed from wanting the rough n tumble startup life to wanting something more stable, where I can go deeper in fewer contexts.
 
-I have spent many years building apps, web systems, and pipelines. But, I took a huge turn in 2023 when I started studying the math of machine learning and how to build ML systems. By 2024 I published over a dozen models, built some AI tools, and published my first research paper with Chris Callison-Burch at UPenn. It's taken significant work over a long period of time and I'm still having a blast with it.
+I have spent many years building apps, web systems, and pipelines. But, I took a huge turn in 2023 when I started studying the math of machine learning and how to build ML systems. By 2024 I published over a dozen models, built some AI tools, and published my [first research paper with Chris Callison-Burch](https://www.cis.upenn.edu/~ccb/publications/dagger.pdf) at UPenn. It's taken significant work over a long period of time and I'm still having a blast with it.
 
 
 ## Tech
