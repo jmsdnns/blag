@@ -19,7 +19,7 @@ On both the first read, but especially the second, I kept coming back to a sense
 
 My favorite way to consider him is to imagine his crew singing Fugazi lyrics as they toss tea into Boston Harbor. _We owe you nothing! You have no control!_  Many of Fugazi's lyrics could be things Samuel said. That's probably why I found it so easy to see myself in his story. I also sang those lyrics, back in 2023, in a  basement in Brooklyn when I recorded a cover of that Fugazi song (_Merchandise_). 
 
-If Samuel Adams were alive today, I believe he'd wear a black hoodie and he'd listen to [Fugazi](https://www.youtube.com/watch?v=c_5OZOwAhas&t=187s) or [Propagandhi](https://www.youtube.com/watch?v=CDhTf3eaeoM). There is an undeniable punk rock vibe throughout his story. By the time I was done with the book the second time, I felt I had to share Sam's story with all my musical friends and my hacker friends. I wondered if perhaps they'd see themselves in his story. Maybe my creative friends, who are used to feeling the difficulty of living creative lives, would feel encouraged by how much they have in common with the people who created the US. They were the outliers, the artists, and the misfits. The ones who try to live humbly for their ideals with the certainty that comes from believing the ideas themselves are unfuckwithable. Maybe his story will inspire us to resist when necessary too, in case that comes up for any reason.
+If Samuel Adams were alive today, I believe he'd wear a black hoodie and he'd listen to [Fugazi](https://www.youtube.com/watch?v=c_5OZOwAhas&t=1207s) or [Propagandhi](https://www.youtube.com/watch?v=CDhTf3eaeoM). There is an undeniable punk rock vibe throughout his story. By the time I was done with the book the second time, I felt I had to share Sam's story with all my musical friends and my hacker friends. I wondered if perhaps they'd see themselves in his story. Maybe my creative friends, who are used to feeling the difficulty of living creative lives, would feel encouraged by how much they have in common with the people who created the US. They were the outliers, the artists, and the misfits. The ones who try to live humbly for their ideals with the certainty that comes from believing the ideas themselves are unfuckwithable. Maybe his story will inspire us to resist when necessary too, in case that comes up for any reason.
 
 {{< youtube id=-jidupajVTM start=45 >}}
 <br>
@@ -97,7 +97,7 @@ Fugazi's Waiting Room is also about being oppressed by a system designed to keep
 
 By 1772, Adams had become a big nuisance. He had caused Britain to take action in the wrong direction time and time again and no matter what they tried they were not able to stop him. 
 
-He created an information sharing network called the [Committees of Correspondence](https://en.wikipedia.org/wiki/Committees_of_correspondence). They shared uncensored accounts of what Britain was up do. They connected isolated colonial resistance groups. They turned individual complaints into organized resistance movements. All of which essentially acted to bypass all attempts at control by the crown.
+He created an information sharing network called the [Committees of Correspondence](https://en.wikipedia.org/wiki/Committees_of_correspondence). They shared uncensored accounts of what Britain was up to. They connected isolated colonial resistance groups. They turned individual complaints into organized resistance movements. All of which essentially acted to bypass all attempts at control by the crown.
 
 Adams was part of a remarkably large number of church choirs, because he'd share information with them. Revere was member of a remarkably large number of lodges (clubs), because he'd share information with them.
 
@@ -114,9 +114,9 @@ England had no idea what it was getting into with him. It's hard to know the ful
 
 One of my favorite examples of Samuel's influence is the way he started a trend of choosing coffee over tea specifically because tea was only available from Britain. Cancelling tea, and anything else British, was so successful that it brought an already strained East India Company's colonial business to its knees. He would say anything to get people to stop drinking tea. He claimed several times that Britain got the tea from remote parts of China so it had weird bugs in it. He loved telling people a cup of tea is paid for with a gallon of colonial blood, which he could say that because everyone knew about The Boston Massacre, after all.
 
-In 1773, Adams coordinated a refusal of tea across Boston, New York City, Philadelphia, and Charleston. The main event was, of course, the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party). All of the cities were able to force the tea back to England, but Boston was different. Samuel was from Boston and Governor Hutchinson was sick of his crap. Hutchinson would make sure the tea came into Boston and was sold. Soon after the ships were docked, Samuel & 100 Sons of Liberty sneaked aboard the three ships and made a ruckus as they threw 340+ chests of tea into the harbor. The East India Company was completely broke at the time, too! 
+In 1773, Samuel coordinated a refusal of tea across Boston, New York City, Philadelphia, and Charleston. The main event was, of course, the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party). All of the cities were able to force the tea back to England, but Boston was different. Samuel was from Boston and Governor Hutchinson was sick of his crap. Hutchinson would make sure the tea came into Boston and was sold. Soon after the ships were docked, Samuel & 100 Sons of Liberty sneaked aboard the three ships and made a ruckus as they threw 340+ chests of tea into the harbor. The East India Company was completely broke at the time, too! 
 
-Hutchinson was a principled man. He gave Adams and the colonists a lot more leeway than anyone else would have. He was English, but he felt like he was part of the colonial community, not some external force. Adams created a situation where Hutchinson could've killed him while he was on those ships, but Hutchinson didn't do it. He lost his job soon after that, and was replaced by General Thomas Gage.
+Hutchinson was a principled man. He gave Samuel and the colonists a lot more leeway than anyone else would have. He was English, but he felt like he was part of the colonial community, not some external force. Adams created a situation where Hutchinson could've killed him while he was on those ships, but Hutchinson didn't do it. He lost his job soon after that.
 
 ![Boston Tea Party, engraving in W. D. Cooper's The History of North America from 1789](BostonTeaParty.jpg)
 
@@ -132,21 +132,23 @@ I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics whi
 
 ## A Union Is Born
 
-England was furious and responded by sending more troops. That lead directly to the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress), which is when the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association) is created and the Union is born.
+Britain was furious about the Tea Party and responded by sending even more troops. General Thomas Gage replaced Hutchinson in Boston and he was there to govern as an occupying force. He would attempt to force the colonists to _submit to their king_. Unbeknownst to Gage, the colonists already had networks of militias in place to guard against attacks from natives, which was now planning to resist Britain.
 
-I think of it as though the colonies came together and said, "_hmm maybe we could, i dunno... maybe sorta look out for each other, like if Britain tries to kill us?_" They still struggled to trust each other, so it didn't go very far, but it was _something_, and that mattered.
+Those militias became the forces in the first official battles of the Revolution, [The Battles of Lexington and Concord](https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord). That lead directly to the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress), which is when the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association) is created and the Union is born.
 
-The colonies were clear that they did this because they worried about Britain's reaction to the successful and growing boycott against British merchants. Samuel started that boycott. He knew what he was doing. He cancelled Britain so hard it created the USA. Think about that next time someone complains about cancel culture.
+I think of the Continental Association as though the colonies came together and said, "_hmm maybe we could, i dunno... sorta look out for each other, like if Britain tries to kill some of us?_" They still struggled to trust each other, so it didn't go very far, but it was _something_, and that mattered.
+
+The colonies were very clear that formed that first union because they worried about Britain's reaction to the successful and growing boycott against British merchants. Samuel started that boycott. He knew what he was doing. He cancelled Britain so hard it created the USA. Think about that next time someone complains about cancel culture.
 
 ![A mural by Allyn Cox from the first floor of the US Congress building that depicts Samuel Adams speaking at the First Continental Congress ](FirstContinentalCongress.jpg)
 
-Above, we see a mural from the first floor of the US Congress building, depicted as the main speaker at the First Continental Congress. Adams was also at the Second Continental Congress, which created the Articles Of Confederation, and he was at the signing of the Declaration Of Independence. We can see him in the famous painting below.
+Above, we see a mural from the first floor of the US Congress building, with Samuel depicted as the main speaker at the First Continental Congress. Adams was also at the Second Continental Congress, which created the Articles Of Confederation, and he was at the signing of the Declaration Of Independence. We can see him in the famous painting below.
 
 ![The classic painting of the signing of the Declaration of Independence, with a circle around Sam's face to show where he sat](AdamsAtDOI.jpg)
 
-His only real flaw in the way events unfolded, imo, was that he was against the Constitution. He was concerned that a powerful federal government would threaten the hard-earned rights and freedoms obtained by the revolution. He wasn't alone in this. Massachusetts itself boycotted the Constitutional Convention and became a power voice for the Anti-Federalist movement.
+His only real flaw in the way events unfolded, imo, was that he was against the Constitution. He was concerned that a powerful federal government would threaten the hard-earned rights and freedoms obtained by the revolution. Even though I claimed this stance is a flaw, it is an understandable stance. They _just_ had a revolution against centralized control. He wasn't alone in this either. Massachusetts itself boycotted the Constitutional Convention and became a power voice for the Anti-Federalist movement. They eventually signed it.
 
-This rejection of the Constitution pushed James Madison into a compromise that created the first ten amendments to the Constitution, aka The Bill Of Rights. Right up to the end, Samuel was a stubborn sob that never gave up pushing everyone to do the right thing at all cost. What an amazing human being.
+That rejection of the Constitution pushed James Madison into a compromise that created the first ten amendments to the Constitution, aka The Bill Of Rights. Right up to the end, Samuel was a stubborn mf that never gave up pushing everyone to do the right thing, no matter the cost and we're all better off for it.
 
 
 ## Back To The Motor League
