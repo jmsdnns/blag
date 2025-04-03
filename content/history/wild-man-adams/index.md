@@ -87,7 +87,7 @@ Samuel was very good at turning people against the king. His cousin, John, wante
 
 To everyone's amazement, the colonial courts found almost all of the soldiers not guilty. Adams had made his point and Britain was astonished. They respond in 1774 by passing the [Administration of Justice Act](https://en.wikipedia.org/wiki/Administration_of_Justice_Act_1774), which said the colonies are not allowed to conduct their own trials.
 
-Fugazi's Waiting Room is also about being oppressed by a system designed to keep them people that way.
+Fugazi's Waiting Room is also about being oppressed by a system designed to keep them that way.
 
 {{< youtube FGoqtWmwheE >}}
 <br>
@@ -112,7 +112,7 @@ England had no idea what it was getting into with him. It's hard to know the ful
 > "Tea must be universally renounced."<br>
 > – **John Adams**
 
-One of my favorite examples of Samuel's cancelling prowess is the way he started a trend of choosing coffee over tea. Cancelling tea, and anything else British, was so successful that it brought an already strained East India Company's colonial business to its knees. He would say anything to get people to stop drinking tea. He claimed several times that Britain got the tea from remote parts of China so it had weird bugs in it. He loved telling people _a cup of tea is paid for with a gallon of colonial blood_. He could say that because everyone knew about The Boston Massacre, after all. The amusing thing about this is that the US actually has favored coffee ever since.
+One of my favorite examples of Samuel's influence is the way he started a trend of choosing coffee over tea specifically because tea was only available from Britain. Cancelling tea, and anything else British, was so successful that it brought an already strained East India Company's colonial business to its knees. He would say anything to get people to stop drinking tea. He claimed several times that Britain got the tea from remote parts of China so it had weird bugs in it. He loved telling people a cup of tea is paid for with a gallon of colonial blood, which he could say that because everyone knew about The Boston Massacre, after all.
 
 In 1773, Adams coordinated a refusal of tea across Boston, New York City, Philadelphia, and Charleston. The main event was, of course, the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party). All of the cities were able to force the tea back to England, but Boston was different. Samuel was from Boston and Governor Hutchinson was sick of his crap. Hutchinson would make sure the tea came into Boston and was sold. Soon after the ships were docked, Samuel & 100 Sons of Liberty sneaked aboard the three ships and made a ruckus as they threw 340+ chests of tea into the harbor. The East India Company was completely broke at the time, too! 
 
@@ -122,9 +122,9 @@ Hutchinson was a principled man. He gave Adams and the colonists a lot more leew
 
 In 1774, [John Adams writes a letter to his wife](https://founders.archives.gov/documents/Adams/04-01-02-0087) and tells her about seeing some travellers who refused to drink tea unless it had been properly smuggled, to which the person running the establishment said "_we have renounced Tea in this place. I can't make tea, but He make you Coffee._" John concludes the letter saying he loves coffee and hopes to see Tea universally renounced.
 
-I love this part of his story so much. I think about it every morning when I have a cup of coffee. If you can change people's behavior, you can change the world. You can't force them. You have to convince them. That's what Samuel did.
+I love this part of his story so much. I love it because the US has been a coffee drinking nation ever since. I think about it every morning when I have a cup of coffee. If you can change people's behavior, you can change the world. You can't force them, you have to convince them. That's what Samuel did.
 
-I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics while tossing tea in Boston Harbor. I sing the same in this cover recording I did of Fugazi's Merchandise while teaching myself how to record music. I play drums, guitar, and sing _We owe you nothing! You have no control!_ from a basement in Brooklyn.
+I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics while tossing tea in Boston Harbor. I sang those lyrics when I recorded a cover of Fugazi's Merchandise while teaching myself how to record music. I'm on drums, guitar, and you'll hear me sing _We owe you nothing! You have no control!_
 
 {{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1953628591&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
 <br>
@@ -132,19 +132,19 @@ I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics whi
 
 ## A Union Is Born
 
-Samuel was right in the middle of everything that lead to the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress). This is the first time the colonies came together to form an official alliance. Abraham Lincoln referred to it as the when the Union first came into being. The document recognizing the agreement is the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association).
+England was furious and responded by sending more troops. That lead directly to the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress), which is when the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association) is created and the Union is born.
 
-I think of it as though the colonies came together and said, "_hmm maybe we could kinda, sorta look out for each other, like if Britain tries to kill us... maybe?_" It didn't go very far, but it was _something_, and that mattered. The colonies were worried about Britain's reaction to the successful and growing boycott against British merchants. Samuel started that boycott. He knew what he was doing. He cancelled Britain so hard it created the USA.
+I think of it as though the colonies came together and said, "_hmm maybe we could, i dunno... maybe sorta look out for each other, like if Britain tries to kill us?_" They still struggled to trust each other, so it didn't go very far, but it was _something_, and that mattered.
 
-The first floor of the US Congress building has a mural with Samuel speaking at the First Continental Congress, where it all began.
+The colonies were clear that they did this because they worried about Britain's reaction to the successful and growing boycott against British merchants. Samuel started that boycott. He knew what he was doing. He cancelled Britain so hard it created the USA. Think about that next time someone complains about cancel culture.
 
 ![A mural by Allyn Cox from the first floor of the US Congress building that depicts Samuel Adams speaking at the First Continental Congress ](FirstContinentalCongress.jpg)
 
-Adams was also at the Second Continental Congress, which created the Articles Of Confederation, and he was at the signing of the Declaration Of Independence. We can see him in the famous painting below.
+Above, we see a mural from the first floor of the US Congress building, depicted as the main speaker at the First Continental Congress. Adams was also at the Second Continental Congress, which created the Articles Of Confederation, and he was at the signing of the Declaration Of Independence. We can see him in the famous painting below.
 
-![](AdamsAtDOI.jpg)
+![The classic painting of the signing of the Declaration of Independence, with a circle around Sam's face to show where he sat](AdamsAtDOI.jpg)
 
-His only real flaw in the way events unfolded was that he was against the Constitution. He was concerned that a powerful federal government would threaten the hard-earned rights and freedoms obtained by the revolution. He wasn't alone in this. Massachusetts itself boycotted the Constitutional Convention and became a power voice for the Anti-Federalist movement.
+His only real flaw in the way events unfolded, imo, was that he was against the Constitution. He was concerned that a powerful federal government would threaten the hard-earned rights and freedoms obtained by the revolution. He wasn't alone in this. Massachusetts itself boycotted the Constitutional Convention and became a power voice for the Anti-Federalist movement.
 
 This rejection of the Constitution pushed James Madison into a compromise that created the first ten amendments to the Constitution, aka The Bill Of Rights. Right up to the end, Samuel was a stubborn sob that never gave up pushing everyone to do the right thing at all cost. What an amazing human being.
 
@@ -158,6 +158,6 @@ Of all the songs written by Fugazi or Propagandhi, I think this one best capture
 
 ## The Revolutionary, by Stacy Schiff
 
-Here's the link again for [Schiff's book](https://stacyschiff.com/the-revolutionary-samuel-adams.html). I hope you read it!
+Here's the link again for [Schiff's book](https://stacyschiff.com/the-revolutionary-samuel-adams.html). I loved enough to read twice and it only came out in 2022. I hope you love it too!
 
 ![The cover of Stacy Schiff's biography of Samuel Adams. It is a close up of Sam's face which portrays him in a calm reflective way](BookTheRevolutionary.jpg)
