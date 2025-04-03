@@ -156,4 +156,4 @@ That rejection of the Constitution pushed James Madison into a compromise that c
 
 Here's the link again for [Schiff's book](https://stacyschiff.com/the-revolutionary-samuel-adams.html). I loved it enough to read it twice (_and write this essay_) and it only came out in 2022.
 
-![The cover of Stacy Schiff's biography of Samuel Adams. It is a close up of Sam's face which portrays him in a calm reflective way](BookTheRevolutionary.jpg)
+[![The cover of Stacy Schiff's biography of Samuel Adams. It is a close up of Sam's face which portrays him in a calm reflective way](BookTheRevolutionary.jpg)](https://stacyschiff.com/the-revolutionary-samuel-adams.html)
