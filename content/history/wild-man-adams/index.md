@@ -4,7 +4,7 @@ date: 2025-03-31
 image: images/history/wild-man-adams.jpg
 draft: true
 description: >
-    He was nuts and it ruled
+    His friends and family loved him. His enemies called him the Machiavelli of Chaos. Thomas  Jefferson credited him with making the revolution possible. It was an unexpected surprise to learn that Samuel Adams was such a DIY punk, like Fugazi or Propagandhi. Now whenever I think about the Boston Tea Party, I imagine the Sons of Liberty singing Fugazi lyrics while tossing crates of tea into the harbor.
 ---
 
 I had been curious about Samuel Adams' story for a while, but his story is so rarely told in any detail that I also didn't know why I should care about him. What little I knew, I knew from the history of John Adams, the second US President, and Samuel's cousin. Each bio I read of John Adams mentioned a detail about his trip to France, during the Revolution, that suggests something huge about Samuel before moving on without explanation. The story usually goes, _while John was in France, he kept getting annoyed by people he met who always asked about his much more famous cousin, Samuel_. In the context of a book about John, I found it's surprisingly easy to read that, wonder why Samuel was more famous, and then go back to reading about John as my curiosity fades from memory.
