@@ -17,11 +17,11 @@ Thomas Jefferson puts him at a particular moment in US history by describing him
 
 On both the first read, but especially the second, I kept coming back to a sense that I know people like Samuel. He is someone that went hard on their principles. A lot of people I knew in the east coast music scene and open source tech scene were / are like that. We all felt it was a duty to live in alignment with our principles and put in the effort to support each other in doing the same. That's exactly what Samuel does. 
 
-My favorite way to consider him is to imagine his crew singing these Fugazi lyrics as they toss tea into Boston Harbor. _We owe you nothing! You have no control!_  Many of Fugazi's lyrics could be things Samuel said. That's probably why I found it so easy to see myself in his story. I also sang those lyrics, back in 2023, in a  basement in Brooklyn when I recorded a cover of that Fugazi song (_Merchandise_). 
+My favorite way to consider him is to imagine his crew singing Fugazi lyrics as they toss tea into Boston Harbor. _We owe you nothing! You have no control!_  Many of Fugazi's lyrics could be things Samuel said. That's probably why I found it so easy to see myself in his story. I also sang those lyrics, back in 2023, in a  basement in Brooklyn when I recorded a cover of that Fugazi song (_Merchandise_). 
 
-If Samuel Adams were alive today, I believe he'd wear a black hoodie and he'd listen to [Fugazi](https://www.youtube.com/watch?v=c_5OZOwAhas&t=187s) or [Propagandhi](https://www.youtube.com/watch?v=CDhTf3eaeoM). There is an undeniable punk rock vibe throughout his story. By the time I was done with the book the second time, I felt I had to share Sam's story with all my musical friends and my hacker friends. I wondered if perhaps they'd see themselves in his story. Maybe my creative friends, who are used to feeling the difficulty of living creative lives, would feel encouraged by how much they have in common with the people who created the US. They were the outliers, the artists, and the misfits. The ones who try to live humbly for their ideals with the certainty that comes from believing their ideals are unfuckwithable. Maybe his story will inspire us to resist when necessary too, in case that ever comes up for any reason.
+If Samuel Adams were alive today, I believe he'd wear a black hoodie and he'd listen to [Fugazi](https://www.youtube.com/watch?v=c_5OZOwAhas&t=187s) or [Propagandhi](https://www.youtube.com/watch?v=CDhTf3eaeoM). There is an undeniable punk rock vibe throughout his story. By the time I was done with the book the second time, I felt I had to share Sam's story with all my musical friends and my hacker friends. I wondered if perhaps they'd see themselves in his story. Maybe my creative friends, who are used to feeling the difficulty of living creative lives, would feel encouraged by how much they have in common with the people who created the US. They were the outliers, the artists, and the misfits. The ones who try to live humbly for their ideals with the certainty that comes from believing the ideas themselves are unfuckwithable. Maybe his story will inspire us to resist when necessary too, in case that comes up for any reason.
 
-{{< youtube 1J94qkE85uo >}}
+{{< youtube id=-jidupajVTM start=45 >}}
 <br>
 
 
@@ -36,9 +36,9 @@ He went to Harvard at age 14. His peers at Harvard pulled all kinds of stunts, b
 
 ![A scene from the TV series The Office where Jim is caught by surprise after a commend. He says, "wait. what?!" as the camera zooms in to emphasize his surprised facial expression.](waitwhat.gif)
 
-Every now and then you see a glimpse of his potential. It's hard to notice because it's surrounded by his hilarious stories of failure. For example, he inherits his father's malted barley business and then he ran it into the ground. He'd say he had no mind for all the bookkeeping,but the truth is that he just didn't care. He loved politics too much to do anything else, yet he hadn't figured that out yet. Instead, he would express himself politically by rebelling for causes he believed in with almost no regard for the effect it would have on his life. He inevitably accumulates more debt than he could repay and was sentenced to become a tax collector for the King. He hated the whole idea of kings, let alone taxes, so he did a terrible job on purpose.
+Every now and then you see a glimpse of his potential. It's hard to notice because it's surrounded by his hilarious stories of failure. For example, he inherits his father's malted barley business and then he ran it into the ground. He'd say he had no mind for all the bookkeeping, but the truth is that he just didn't care. He loved politics too much to do anything else, yet he hadn't figured that out yet. Instead, he would express himself politically by rebelling for causes he believed in with almost no regard for the effect it would have on his life. He inevitably accumulates more debt than he could repay and was sentenced to become a tax collector for the King.
 
-He wasn't trying to start a movement back then. He'd never sway from doing what's right, rebelling against injustice where it was found, and encouraging others to do the same.
+He hated the whole idea of kings, let alone taxes, so he did that job badly on purpose. He wasn't trying to start a movement, but he was definitely testing what he could get away with. He went out of his way to ensure he had the moral high ground whenever he rebelled. At this point in his life, it's quite difficult to resist a king, but he's figuring it out. He just needs to convince everyone else to do it too.
 
 
 ## A Wild Man Appears
@@ -80,6 +80,7 @@ On March 5, 1770, a crowd of ~400 got rowdy and cornered 9 British soldiers. The
 
 England called this the _Incident on King Street_, but Samuel and Paul Revere call it [_The Boston Massacre_](https://en.wikipedia.org/wiki/Boston_Massacre). They were going to milk this for all the propaganda value it had. Britain could not believe the way it was being spun in the colonies. From the British perspective, it was an act of self-defense by 9 cornered troops against a mob of 400 angry colonists. From Samuel's perspective, it was an opportunity to agitate the resistance.
 
+Paul Revere created this engraving to capture the moment. He joined the Sons of Liberty right away and contributed engravings like this one starting in 1765. It's a phenomenal example of art's power to influence politics.
 ![An engraving created by Paul Revere of the Boston Massacre from March 1770](TheBostonMassacre.jpg)
 
 Samuel was very good at turning people against the king. His cousin, John, wanted to make a different point about kings. He would demonstrate that the colonies were a civilized place, ruled by law, to show that king's were not necessary for justice to take place. The people could do it themselves.
@@ -98,9 +99,9 @@ By 1772, Adams had become a big nuisance. He had caused Britain to take action i
 
 He created an information sharing network called the [Committees of Correspondence](https://en.wikipedia.org/wiki/Committees_of_correspondence). They shared uncensored accounts of what Britain was up do. They connected isolated colonial resistance groups. They turned individual complaints into organized resistance movements. All of which essentially acted to bypass all attempts at control by the crown.
 
-Adams was part of a remarkably large number of church choirs, because he'd share information with them. Reverse was member of a remarkably large number of lodges (clubs), because he'd share information with them.
+Adams was part of a remarkably large number of church choirs, because he'd share information with them. Revere was member of a remarkably large number of lodges (clubs), because he'd share information with them.
 
-The decentralized nature of this network is what made it impossible to shut down. The Internet is designed in roughly the same way because it was also meant to be impossible to shut down. In doing so, he created solidarity amongst the rebels in the colonies, uniting them against the crown, making him one of the driving forces behind the revolution itself.
+The decentralized nature of this network is what made it impossible to shut down. _The Internet is designed in roughly the same way because it was also meant to be impossible to shut down._ In doing so, he created solidarity amongst the rebels in the colonies, uniting them against the crown, making him one of the driving forces behind the revolution itself.
 
 England had no idea what it was getting into with him. It's hard to know the full extent of what he did because he was so good at hiding his tracks and yet it couldn't have been easy to keep his 130+ pseudonyms organized. Ben Franklin usually gets credit for being the father of US Intelligence, but Samuel Adams would be more deserving of a statue at CIA headquarters.
 
@@ -111,15 +112,17 @@ England had no idea what it was getting into with him. It's hard to know the ful
 > "Tea must be universally renounced."<br>
 > – **John Adams**
 
-One of my favorite examples of Samuel's cancelling prowess is the way he started a trend of choosing coffee over tea. Cancelling tea, and anything else British, was so successful that it brought an already strained East India Company's colonial business to its knees. He would say anything to get people to stop drinking tea. He claimed several times that Britain got the tea from remote parts of China so it had weird bugs in it. He also liked to say _a cup of tea is paid for with a gallon of colonial blood_. He could say that because everyone knew about The Boston Massacre, after all. The amusing thing about this is that the US actually has favored coffee ever since.
+One of my favorite examples of Samuel's cancelling prowess is the way he started a trend of choosing coffee over tea. Cancelling tea, and anything else British, was so successful that it brought an already strained East India Company's colonial business to its knees. He would say anything to get people to stop drinking tea. He claimed several times that Britain got the tea from remote parts of China so it had weird bugs in it. He loved telling people _a cup of tea is paid for with a gallon of colonial blood_. He could say that because everyone knew about The Boston Massacre, after all. The amusing thing about this is that the US actually has favored coffee ever since.
 
-In 1773, Adams coordinated a refusal of tea across Boston, New York City, Philadelphia, and Charleston. The main event was, of course, the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party). All of the cities were able to force the tea back to England, but Boston was different. Samuel was from Boston and Governor Hutchinson was sick of his crap. Hutchinson would make sure the tea came into Boston and was sold. Samuel & 100 Sons of Liberty sneak aboard the three ships in Boston Harbor and throw 340+ chests of tea into the harbor. The East India Company was completely broke at the time, too! Hutchinson lost his job soon after that, replaced by General Thomas Gage.
+In 1773, Adams coordinated a refusal of tea across Boston, New York City, Philadelphia, and Charleston. The main event was, of course, the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party). All of the cities were able to force the tea back to England, but Boston was different. Samuel was from Boston and Governor Hutchinson was sick of his crap. Hutchinson would make sure the tea came into Boston and was sold. Soon after the ships were docked, Samuel & 100 Sons of Liberty sneaked aboard the three ships and made a ruckus as they threw 340+ chests of tea into the harbor. The East India Company was completely broke at the time, too! 
+
+Hutchinson was a principled man. He gave Adams and the colonists a lot more leeway than anyone else would have. He was English, but he felt like he was part of the colonial community, not some external force. Adams created a situation where Hutchinson could've killed him while he was on those ships, but Hutchinson didn't do it. He lost his job soon after that, and was replaced by General Thomas Gage.
 
 ![Boston Tea Party, engraving in W. D. Cooper's The History of North America from 1789](BostonTeaParty.jpg)
 
-I love this part of his story so much. It shows how relentless he was and shows his extraordinary ability to shape history. I think about it every morning when I have a cup of coffee.
-
 In 1774, [John Adams writes a letter to his wife](https://founders.archives.gov/documents/Adams/04-01-02-0087) and tells her about seeing some travellers who refused to drink tea unless it had been properly smuggled, to which the person running the establishment said "_we have renounced Tea in this place. I can't make tea, but He make you Coffee._" John concludes the letter saying he loves coffee and hopes to see Tea universally renounced.
+
+I love this part of his story so much. I think about it every morning when I have a cup of coffee. If you can change people's behavior, you can change the world. You can't force them. You have to convince them. That's what Samuel did.
 
 I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics while tossing tea in Boston Harbor. I sing the same in this cover recording I did of Fugazi's Merchandise while teaching myself how to record music. I play drums, guitar, and sing _We owe you nothing! You have no control!_ from a basement in Brooklyn.
 
@@ -145,6 +148,16 @@ His only real flaw in the way events unfolded was that he was against the Consti
 
 This rejection of the Constitution pushed James Madison into a compromise that created the first ten amendments to the Constitution, aka The Bill Of Rights. Right up to the end, Samuel was a stubborn sob that never gave up pushing everyone to do the right thing at all cost. What an amazing human being.
 
+
+## Back To The Motor League
+
+Of all the songs written by Fugazi or Propagandhi, I think this one best captures Samuel's vibe. The song questions what it means to get ahead in life, choosing not to participate, and living a life aligned with your ideals.
+
+{{< youtube id=zYCeLpqWI5c start=8 >}}
+
+
+## The Revolutionary, by Stacy Schiff
+
 Here's the link again for [Schiff's book](https://stacyschiff.com/the-revolutionary-samuel-adams.html). I hope you read it!
 
-{{< youtube zYCeLpqWI5c >}}
+![The cover of Stacy Schiff's biography of Samuel Adams. It is a close up of Sam's face which portrays him in a calm reflective way](BookTheRevolutionary.jpg)
