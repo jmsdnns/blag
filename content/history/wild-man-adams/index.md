@@ -160,6 +160,6 @@ Of all the songs written by Fugazi or Propagandhi, I think this one best capture
 
 ## The Revolutionary, by Stacy Schiff
 
-Here's the link again for [Schiff's book](https://stacyschiff.com/the-revolutionary-samuel-adams.html). I loved enough to read twice and it only came out in 2022. I hope you love it too!
+Here's the link again for [Schiff's book](https://stacyschiff.com/the-revolutionary-samuel-adams.html). I loved enough to have already read it twice and it only came out in 2022. I hope you love it too!
 
 ![The cover of Stacy Schiff's biography of Samuel Adams. It is a close up of Sam's face which portrays him in a calm reflective way](BookTheRevolutionary.jpg)
