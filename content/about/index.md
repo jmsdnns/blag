@@ -70,7 +70,7 @@ I recently began [writing about history]({{< ref "history" >}}). There will be t
 
 I intend to keep this URL for the rest of my life. It's my name, without the vowels, dot com.
 
-It's kinda weird to think about what it means to have some website be an actual permanent home. If I ever stop paying for it, maybe it just disappears. Or should I setup some kind of trust, just in case someone stumbles upon my dot com years after I pass? I don't have answers to these questions, but perhaps you'll find it easy to remember you can always find my at my name, without the vowels, dot com.
+It's kinda weird to think about what it means to have some website be an actual permanent home. If I ever stop paying for it, maybe it just disappears. Or should I setup some kind of trust, just in case someone stumbles upon my dot com years after I pass? I don't have answers to these questions, but perhaps you'll find it easy to remember you can always find me at my name, without the vowels, dot com.
 
 _It's my name without the vowels_.<br>
 _It's my name without the vowels_.<br>
