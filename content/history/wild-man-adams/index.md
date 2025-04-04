@@ -2,7 +2,6 @@
 title: The Wild Man of the Revolution, Samuel Adams
 date: 2025-03-31
 image: images/history/wild-man-adams.jpg
-draft: true
 description: >
     His friends and family loved him. His enemies called him the Machiavelli of Chaos. Thomas  Jefferson credited him with making the revolution possible. It was an unexpected surprise to learn that Samuel Adams was such a DIY punk, like Fugazi or Propagandhi. Now whenever I think about the Boston Tea Party, I imagine the Sons of Liberty singing Fugazi lyrics while tossing crates of tea into the harbor.
 ---
