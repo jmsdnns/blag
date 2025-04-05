@@ -69,7 +69,7 @@ Samuel was a masterful propagandist. Some of his best work was on display when h
 
 State governments up and down the coast loved it, especially New Jersey, Connecticut, and Virginia. Thomas Jefferson even used it as a template for the Declaration of Independence. Britain was livid. They responded with a military occupation of Boston. Believe it or not, that did not have the calming effect Britain was hoping for.
 
-Paraphrasing Propagandhi, the sons weren't swayed by brass rings or by penalties. The made a promise to each other to never sell out to the crown, who they saw as murderers and thieves.
+Paraphrasing Propagandhi, the sons weren't swayed by brass rings or by penalties. They made a promise to each other to never sell out to the crown, who they saw as murderers and thieves.
 
 {{< youtube BYK0I7mmS4Q >}}
 
@@ -87,7 +87,7 @@ Samuel was very good at turning people against the king. His cousin, John, wante
 
 To everyone's amazement, the colonial courts found almost all of the soldiers not guilty. John had made his point and Britain was astonished. They respond in 1774 by passing the [Administration of Justice Act](https://en.wikipedia.org/wiki/Administration_of_Justice_Act_1774), which said the colonies are not allowed to conduct their own trials. John recognized it as an admission that his point landed and scared them, exactly the win he wanted, as it made the king's corruption plain for everyone to see. The king was oppressing them with a system designed to keep them oppressed.
 
-Fugazi's Waiting Room  is also about being oppressed by a system designed to keep people oppressed.
+Fugazi's Waiting Room is also about being oppressed by a system designed to keep people oppressed, though it is expressed through the context of the US during the 1980s.
 
 {{< youtube FGoqtWmwheE >}}
 <br>
@@ -95,11 +95,11 @@ Fugazi's Waiting Room  is also about being oppressed by a system designed to kee
 
 ## Keep It Secret, Keep It Safe
 
-By 1772, Adams had become a big nuisance. He had caused Britain to take action in the wrong direction time and time again and no matter what they tried they were not able to stop him. They were becoming increasingly paranoid as they seemed completely unable to find Samuel, yet he was coordinating resistance at increasing scale. He created an information sharing network called the [Committees of Correspondence](https://en.wikipedia.org/wiki/Committees_of_correspondence). They shared uncensored accounts of what Britain was up to.
+Adams had become a big nuisance. He had caused Britain to take action in the wrong direction time and time again and no matter what they tried they were not able to stop him. They were becoming increasingly paranoid as they seemed completely unable to find Samuel, yet he was coordinating resistance at increasing scale.
 
-They also connected isolated colonial resistance groups. They turned individual complaints into organized resistance movements. All of which essentially acted to bypass all attempts at control by the crown. Adams was part of a remarkably large number of church choirs, because he'd share information with them. Revere was member of a remarkably large number of lodges (clubs), because he'd share information with them. In doing so, he created solidarity amongst the rebels in the colonies, uniting them against the crown, making him one of the driving forces behind the revolution itself.
+By 1772, he had created an information sharing network called the [Committees of Correspondence](https://en.wikipedia.org/wiki/Committees_of_correspondence). They shared uncensored accounts of what Britain was up to. They also connected isolated colonial resistance groups. They turned individual complaints into organized resistance movements. All of which essentially acted to bypass all attempts at control by the crown. Adams was part of a remarkably large number of church choirs, because he'd share information with them. Revere was member of a remarkably large number of lodges (clubs), because he'd share information with them. In doing so, Samuel and The Sons created solidarity amongst the rebels in the colonies, uniting them against the crown, making him one of the driving forces behind the revolution itself.
 
-The decentralized nature of this network is what made it impossible to shut down. _The Internet is designed in roughly the same way because it was also meant to be impossible to shut down._ 
+He had organized the resistance into a fast moving, energetic machine of resistance. The decentralized nature of the network he built is what made it impossible to shut down. _The Internet is designed in roughly the same way because it was also meant to be impossible to shut down._ 
 
 England had no idea what it was getting into with him. It's hard to know the full extent of what he did because he was so good at hiding his tracks and yet it couldn't have been easy to keep his 130+ pseudonyms organized. Ben Franklin usually gets credit for being the father of US Intelligence, but Samuel Adams would be more deserving of a statue at CIA headquarters.
 
@@ -112,7 +112,7 @@ England had no idea what it was getting into with him. It's hard to know the ful
 
 One of my favorite examples of Samuel's influence is the way he started a trend of choosing coffee over tea specifically because tea was only available from Britain. Cancelling tea, and anything else British, was so successful that it brought an already strained East India Company's colonial business to its knees. He would say anything to get people to stop drinking tea. He claimed several times that Britain got the tea from remote parts of China so it had weird bugs in it. He loved telling people a cup of tea is paid for with a gallon of colonial blood, which he could say that because everyone knew about The Boston Massacre, after all.
 
-In 1773, Samuel coordinated a refusal of tea across Boston, New York City, Philadelphia, and Charleston. The main event was, of course, the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party). All of the cities were able to force the tea back to England, but Boston was different. Samuel was from Boston and [Governor Hutchinson](https://en.wikipedia.org/wiki/Thomas_Hutchinson_(governor)) was sooooo sick of his crap. Hutchinson was going to make sure that tea came into Boston and was sold. Soon after the three ships were docked, Samuel & 100 Sons of Liberty sneaked aboard and made a ruckus as they threw 340+ chests of tea into the harbor. The East India Company was completely broke at the time, too! 
+In 1773, Samuel coordinated a refusal of tea across Boston, New York City, Philadelphia, and Charleston. The main event was, of course, the [Boston Tea Party](https://en.wikipedia.org/wiki/Boston_Tea_Party). All of the cities were able to force the tea back to England, but Boston was different. Samuel was from Boston and [Governor Hutchinson](https://en.wikipedia.org/wiki/Thomas_Hutchinson_(governor)) was sooooo sick of his crap. Hutchinson was going to make sure that tea came into Boston and was sold. Soon after the three ships intended for Boston were docked, Samuel & 100 Sons of Liberty sneaked aboard and made a ruckus throwing 340+ chests of tea into the harbor. The East India Company was completely broke at the time, too! 
 
 Hutchinson was a principled man. He gave Samuel and the colonists a lot more leeway than anyone else would have. He was English, but he felt like he was part of the colonial community, not some external force. Samuel created a situation where Hutchinson could've killed him while he was on those ships, but Hutchinson didn't do it. Hutchinson lost his job soon after that and went home to Britain.
 
@@ -122,7 +122,7 @@ In 1774, [John Adams writes a letter to his wife](https://founders.archives.gov/
 
 I love this part of his story so much. I love it because the US has been a coffee drinking nation ever since. I think about it every morning when I have a cup of coffee. 
 
-I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics while tossing tea in Boston Harbor. I sang those lyrics when I recorded a cover of Fugazi's Merchandise while teaching myself how to record music. I'm on drums, guitar, and you'll hear me sing _We owe you nothing! You have no control!_
+I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics while tossing tea in Boston Harbor. I sang those lyrics a couple years ago, when I recorded a cover of Fugazi's Merchandise while teaching myself how to record music. I'm on drums, guitar, and you'll hear me sing _We owe you nothing! You have no control!_
 
 {{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1953628591&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
 <br>
@@ -130,11 +130,11 @@ I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics whi
 
 ## A Union Is Born
 
-Britain was furious about the Tea Party and responded by sending even more troops. [General Thomas Gage](https://en.wikipedia.org/wiki/Thomas_Gage) replaced Hutchinson in Boston and he was there to govern as an occupying force. He would attempt to force the colonists to _submit to their king_. Unbeknownst to Gage, the colonists already had networks of militias in place to guard against attacks from natives, which was now planning to resist Britain.
+Britain was furious about the Tea Party and responded by sending even more troops. [General Thomas Gage](https://en.wikipedia.org/wiki/Thomas_Gage) replaced Hutchinson in Boston and he was there to govern as an occupying force. He would attempt to force the colonists to _submit to their king_. 
 
-Those militias became the forces in the first official battles of the Revolution, [The Battles of Lexington and Concord](https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord). That lead directly to the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress), which is when the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association) is created and the Union is born.
+Unbeknownst to Gage, the colonists already had networks of militias in place to guard against attacks from natives, and they were already planning to resist Britain. Some of those militia networks became the forces in the first official battles of the Revolution, [The Battles of Lexington and Concord](https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord).
 
-I think of the Continental Association as though the colonies came together and said, "_hmm maybe we could, i dunno... sorta look out for each other, like if Britain tries to kill some of us?_" They still struggled to trust each other, so it didn't go very far, but it was _something_, and that mattered.
+Those two battles lead directly to the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress), which is when the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association) is created and the Union is born. I like to think of the Continental Association as though the colonies came together and said, "_hmm maybe we could, i dunno... sorta look out for each other, like if Britain tries to kill some of us?_" They still struggled to trust each other, so it didn't go very far, but it was _something_, and that mattered.
 
 The delegates were clear that the first union was formed because they worried about Britain's response to the successful and growing boycott against British merchants. Samuel started that boycott and he cancelled Britain so hard it created the USA. Think about that next time someone complains about cancel culture.
 
