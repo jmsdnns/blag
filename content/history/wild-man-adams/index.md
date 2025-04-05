@@ -130,9 +130,7 @@ I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics whi
 
 ## A Union Is Born
 
-Britain was furious about the Tea Party and responded by sending even more troops. [General Thomas Gage](https://en.wikipedia.org/wiki/Thomas_Gage) replaced Hutchinson in Boston and he was there to govern as an occupying force. He would attempt to force the colonists to _submit to their king_. 
-
-Unbeknownst to Gage, the colonists already had networks of militias in place to guard against attacks from natives, and they were already planning to resist Britain. Some of those militia networks became the forces in the first official battles of the Revolution, [The Battles of Lexington and Concord](https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord).
+Britain was furious about the Tea Party and responded by sending even more troops. [General Thomas Gage](https://en.wikipedia.org/wiki/Thomas_Gage) replaced Hutchinson in Boston and he was there to govern as an occupying force. He would attempt to force the colonists to _submit to their king_. Unbeknownst to Gage, the colonists already had networks of militias in place to guard against attacks from natives, and they were already planning to resist Britain. Some of those militia networks became the forces in the first official battles of the Revolution, [The Battles of Lexington and Concord](https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord).
 
 Those two battles lead directly to the [First Continental Congress](https://en.wikipedia.org/wiki/First_Continental_Congress), which is when the [Continental Association](https://en.wikipedia.org/wiki/Continental_Association) is created and the Union is born. I like to think of the Continental Association as though the colonies came together and said, "_hmm maybe we could, i dunno... sorta look out for each other, like if Britain tries to kill some of us?_" They still struggled to trust each other, so it didn't go very far, but it was _something_, and that mattered.
 
@@ -140,7 +138,6 @@ The delegates were clear that the first union was formed because they worried ab
 
 ![A mural by Allyn Cox from the first floor of the US Congress building that depicts Samuel Adams speaking at the First Continental Congress ](FirstContinentalCongress.jpg)
 
-If you can change people's behavior, you can change the world. You can't force them, you have to convince them. That's what Samuel did.
 
 Above, we see a mural from the first floor of the US Congress building, with Samuel depicted as the main speaker at the First Continental Congress. Adams was also at the Second Continental Congress, which created the Articles Of Confederation, and he was at the signing of the Declaration Of Independence. We can see him in the [famous painting](https://en.wikipedia.org/wiki/Declaration_of_Independence_(painting)) below.
 
@@ -148,7 +145,9 @@ Above, we see a mural from the first floor of the US Congress building, with Sam
 
 His only real flaw in the way events unfolded, in my opinion, is that he was against the Constitution. He was concerned that a powerful federal government would threaten the hard-earned rights and freedoms obtained by the revolution. Even though I see this stance as a flaw, it is an understandable one. They _just_ had a revolution against centralized control. He wasn't alone in this either. Massachusetts itself boycotted the Constitutional Convention and became a powerful voice for the [Anti-Federalist](https://en.wikipedia.org/wiki/Anti-Federalism) movement.
 
-That rejection of the Constitution pushed James Madison into a compromise that created the first ten amendments to the Constitution, aka The Bill Of Rights. North Carolina and Rhode Island both held out long enough that Madison, Hamilton, & Jay wrote the Federalist Papers, widely regarded as some of the best legal theory ever written. The opposition greatly improved the end result. Right up to the end, Samuel was doing his best to convince everyone to do the right thing.
+That rejection of the Constitution pushed James Madison into a compromise that created the first ten amendments to the Constitution, aka The Bill Of Rights. North Carolina and Rhode Island both held out long enough that Madison, Hamilton, & Jay wrote the Federalist Papers, widely regarded as some of the best legal theory ever written. The opposition greatly improved the end result.
+
+Right up to the end, Samuel was doing his best to convince everyone to do the right thing. If you can change people's behavior, you can change the world. You can't force them. The whole point, according to Samuel, is to convince them.
 
 
 ## The Revolutionary, by Stacy Schiff
