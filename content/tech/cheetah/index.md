@@ -68,7 +68,9 @@ At this point, I stopped to consider what was happening. The LLM had no problem 
 
 ![Stick figure drawing of a person in thought while rubbing their chin. The word "HMM" is written next to them](thonking.gif)
 
-It _seemed_ as though the LLM could solve problems where the solution always looks the same. It also _seemed_ as though it could not solve problems where something in the solution required careful configuration based on the context of the problem, such as the parameters for MDP. I would need to somehow go bigger to get more information about which problems can be solved by an LLM and which cannot.
+It _seemed_ as though the LLM could solve problems where the solution always looks the same. It also _seemed_ as though it could not solve problems where part of the solution is always the same, but some other part of the solution required careful configuration based on the context of the problem, such as the parameters for MDP.
+
+I would need to somehow go bigger to get more information about which problems can be solved by an LLM and which cannot.
 
 # Cheetah
 
@@ -84,10 +86,20 @@ The morning I was going to show my prototype, I learned of a professor who would
 
 The anxious vibes were flowing the moment this professor started talking. They were scared. They told us they couldn't sleep last night. I was sooo curious to understand how they did what they did, because my experiments simply did not support their claim. Turns out they tried the N Queens problem, got output, tried other problems, got output, and they started freaking out.
 
-![](smashputer.gif)
+![Someone in a panda suit is in angry in an office while coworkers look on, confused and concerned. The panda swipes stuff off a desk and then grabs a keyboard which they smash. This loops over and over.](smashputer.gif)
 
-Here's the thing, they never actually tried grading any of the work. This type of response is all too common. People see the LLMs generate stuff that looks like intelligence and they have a big reaction before actually checking the content. This sucks because LLMs are great bullshitters that sometimes deliver, which breaks everyone's brains. You can't write it off entirely and you definitely can't trust it.
+Here's the thing, they hadn't actually tried grading the work. I then told the team about Cheetah and that I _had_ tried the LLM output with the same graders that would check student homework. I told them how badly the LLMs actually performed. They weren't even close to getting passing grades for most of the problem sets. I cannot understate how much of a relief this was for everyone.
 
-I then told the team about Cheetah and that I _had_ actually tried grading all of the LLM output with the same graders that would check student homework and I told them how badly the LLMs actually performed. They weren't even close to getting passing grades for most of the problem sets. I cannot understate how much of a relief this was for everyone.
+# Considering It All
 
-# Meow
+This was a fascinating experience for me. First, it made it clear that experts were just as capable as anyone as being wrong about what LLMs can and can't do, even the people who teach AI at one of the best universities in the world. Second, education might be much safer than we realized (_at the time_). And finally, I started to understand how LLMs breakdown, which gave me meaningful intuition for predicting whether or not applying them to some problem would succeed.
+
+Finding the right way to describe the phenomenon eluded me, yet I kept trying. I eventually made it simple by saying _LLMs can do simple things, but they collapse whenever you do complicated stuff_. The folks who love AI **really** didn't like that. They'd accuse me of all kinds of things. I was trying to say _LLMs have limits_ and people would respond like I'm a luddite who can't see where things are going, or that I'm falling behind. I tried to avoid arguing from authority, by pointing out I learned what I learned building classes for Penn's new AI degree programs, but I'd drop it from time to time if I thought folks had crossed a line with me.
+
+By the end of 2024, I had become so fed up with everyone talking about AI as thought it was some kind of artificial god that I eventually burned out and stopped caring about AI. I even left Penn. And then Apple put out a paper confirming everything I had tried to say to people, called [The Illusion Of Thinking](https://machinelearning.apple.com/research/illusion-of-thinking).
+
+This paper claims that LLMs aren't actually intelligent. They simply do pattern matching. In cases where the structure of some problem is always the same they can perform very well, because the patterns are so clear. In cases where the structure has nuance, such picking parameters in a markov decision process, the pattern matching fails and LLMs cannot do it. The paper went further to show that above a certain level of complexity LLMs will completely collapse and their outputs turn into total nonsense. I could accept that people wouldn't believe me when I shared my experiences, but trying to claim Apple is wrong is something different entirely. I could also point to Apple's paper and say _see! they found the same thing!_, to validate my earlier claims.
+
+The best part about the release of that paper was that it normalized the conversation around LLMs. It didn't happen immediately, but it did happen. Folks have become significantly more grounded and I am grateful for that. Everyone has become much more reasonable in their expectations. We know LLMs can write code, but we don't fully trust them. No one is worried about them escaping and destroying the world anymore because we understand they're actually kinda dumb. This is amazing, imo, and the whole conversation around AI has greatly benefited from it.
+
+My personal experience was that I was lucky enough to learn those lessons early, but then unlucky enough to share them and find myself almost exiled for speaking truth in a climate of people who didn't want truth. I hadn't experienced that in a while and I forgot how lonely it truly is.
