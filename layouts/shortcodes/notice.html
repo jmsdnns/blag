@@ -86,6 +86,52 @@
     }
 
     /* Add your own notice rule below */
+
+    /* Dark mode */
+    html.dark-mode .notice-body {
+        background-color: hsl(0, 0%, 15%);
+        color: #d8dee9;
+    }
+
+    html.dark-mode .notice-body.tip {
+        background-color: #1a2e1a;
+    }
+
+    html.dark-mode .notice-body.note {
+        background-color: #1c1c1c;
+    }
+
+    html.dark-mode .notice-body.warning {
+        background-color: #2e2a1a;
+    }
+
+    html.dark-mode .notice-body code {
+        color: #d8dee9;
+    }
+
+    /* System dark mode preference */
+    @media (prefers-color-scheme: dark) {
+        :root:not(.light-mode) .notice-body {
+            background-color: hsl(0, 0%, 15%);
+            color: #d8dee9;
+        }
+
+        :root:not(.light-mode) .notice-body.tip {
+            background-color: #1a2e1a;
+        }
+
+        :root:not(.light-mode) .notice-body.note {
+            background-color: #1c1c1c;
+        }
+
+        :root:not(.light-mode) .notice-body.warning {
+            background-color: #2e2a1a;
+        }
+
+        :root:not(.light-mode) .notice-body code {
+            color: #d8dee9;
+        }
+    }
 </style>
 <svg width="0" height="0" display="none">
     <symbol id="notice-icon-tip" viewbox="0 0 256 256">

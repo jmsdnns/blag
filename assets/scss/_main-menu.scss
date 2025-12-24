@@ -2,7 +2,7 @@
 .menu-main {
   display: none;
   flex: 0;
-  @include breakpoint('medium') {
+  @include breakpoint('x-small') {
     display: block;
   }
   > ul {

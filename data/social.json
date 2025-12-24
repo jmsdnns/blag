@@ -6,6 +6,11 @@
             "image": "images/social/square-rss.svg"
         },
         {
+            "name": "bluesky",
+            "url": "https://bsky.app/profile/jmsdnns.bsky.social",
+            "image": "images/social/bluesky.svg"
+        },
+        {
             "name": "mastodon",
             "url": "https://mastodon.social/@jmsdnns",
             "image": "images/social/mastodon.svg"

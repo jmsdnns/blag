@@ -15,12 +15,18 @@
   }
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 
 .hamburger-trigger {
   height: 30px;
   display: flex;
   align-items: center;
-  @include breakpoint('medium') {
+  @include breakpoint('x-small') {
     display: none;
   }
 }

@@ -74,7 +74,7 @@
   height: 30px;
   display: flex;
   align-items: center;
-  @include breakpoint('medium') {
+  @include breakpoint('x-small') {
     display: none;
   }
 }

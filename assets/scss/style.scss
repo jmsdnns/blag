@@ -8,9 +8,54 @@
   --heading-color: {{ .Site.Params.headingColor | default "#1c1b1d" }};
   --text-color: {{ .Site.Params.textColor | default "#4e5157" }};
   --dot-color: {{ .Site.Params.dotColor | default "#7b16ff" }};
+  --inline-code-text: #000;
+  --inline-code-bg: #f5f5f5;
+  --code-bg: #f5f5f5;
+}
+
+// Dark theme via system preference
+@media (prefers-color-scheme: dark) {
+  :root:not(.light-mode) {
+    --base-color: {{ .Site.Params.darkBaseColor | default "#1a1a1a" }};
+    --base-offset-color: {{ .Site.Params.darkBaseOffsetColor | default "#2d2d2d" }};
+    --heading-color: {{ .Site.Params.darkHeadingColor | default "#e8e8e8" }};
+    --text-color: {{ .Site.Params.darkTextColor | default "#b4b4b4" }};
+    --highlight-color: {{ .Site.Params.darkHighlightColor | default "#5294e2" }};
+    --dot-color: {{ .Site.Params.darkDotColor | default "#5294e2" }};
+    --inline-code-text: #e8e8e8;
+    --inline-code-bg: #0d0e10;
+    --code-bg: #0d0e10;
+  }
+}
+
+// Dark theme via manual toggle
+html.dark-mode {
+  --base-color: {{ .Site.Params.darkBaseColor | default "#1a1a1a" }};
+  --base-offset-color: {{ .Site.Params.darkBaseOffsetColor | default "#2d2d2d" }};
+  --heading-color: {{ .Site.Params.darkHeadingColor | default "#e8e8e8" }};
+  --text-color: {{ .Site.Params.darkTextColor | default "#b4b4b4" }};
+  --highlight-color: {{ .Site.Params.darkHighlightColor | default "#5294e2" }};
+  --dot-color: {{ .Site.Params.darkDotColor | default "#5294e2" }};
+  --inline-code-text: #e8e8e8;
+  --inline-code-bg: #16191c;
+  --code-bg: #16191c;
+}
+
+// Light theme via manual toggle (overrides dark system preference)
+html.light-mode {
+  --base-color: {{ .Site.Params.baseColor | default "#ffffff" }};
+  --base-offset-color: {{ .Site.Params.baseOffsetColor | default "#eaeaea" }};
+  --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
+  --heading-color: {{ .Site.Params.headingColor | default "#1c1b1d" }};
+  --text-color: {{ .Site.Params.textColor | default "#4e5157" }};
+  --dot-color: {{ .Site.Params.dotColor | default "#7b16ff" }};
+  --inline-code-text: #000;
+  --inline-code-bg: #f5f5f5;
+  --code-bg: #f5f5f5;
 }
 
 $breakpoints: (
+  'x-small': 480px,
   'small': 767px,
   'medium': 992px,
   'large': 1200px,
@@ -27,7 +72,9 @@ $breakpoints: (
 @import 'pagination';
 @import 'main-menu';
 @import 'main-menu-mobile';
+@import 'theme-toggle';
 @import 'pygments/github';
+@import 'pygments/dark';
 
 html, body {
   box-sizing: border-box;
@@ -40,6 +87,7 @@ body {
   margin: 0;
   padding: 20px;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
   @include breakpoint('small') {
     padding: 50px;
   }

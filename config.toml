@@ -28,9 +28,15 @@ addFrame = false
 highlightColor = '#5294e2'
 baseColor = "#ffffff"
 baseOffsetColor = "#eaeaea"
-headingColor = "#1c1b1d"
+headingColor = "#000000"
 textColor = "#4e5157"
 dotColor = "#5294e2"
+darkBaseColor = "#16171a"
+darkBaseOffsetColor = "#2d2d2d"
+darkHeadingColor = "#ffffff"
+darkTextColor = "#c9c9c9"
+darkHighlightColor = "#5294e2"
+darkDotColor = "#5294e2"
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]

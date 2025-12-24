@@ -1,21 +1,28 @@
 <div class='header'>
   <a class="header-logo" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
-  <div class="menu-main">
-    <ul>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-      {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-      {{ $active = or $active (eq (.URL | relLangURL) ($currentPage.RelPermalink | relLangURL)) }}
-      <li class="menu-item-{{ .Name | lower }} {{ if $active }}active{{ end }}">
-        <a href="{{.URL}}">
-          {{ .Pre }}
-          <span>{{ .Name }}</span>
-        </a>
-      </li>
-      {{end}}
-    </ul>
-  </div>
-  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
-    <button class="hamburger">Menu</button>
+  <div class="header-nav">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <svg class="theme-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+    <div class="menu-main">
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+        {{ $active = or $active (eq (.URL | relLangURL) ($currentPage.RelPermalink | relLangURL)) }}
+        <li class="menu-item-{{ .Name | lower }} {{ if $active }}active{{ end }}">
+          <a href="{{.URL}}">
+            {{ .Pre }}
+            <span>{{ .Name }}</span>
+          </a>
+        </li>
+        {{end}}
+      </ul>
+    </div>
+    <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+      <button class="hamburger">Menu</button>
+    </div>
   </div>
 </div>

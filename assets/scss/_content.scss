@@ -132,8 +132,8 @@ ul {
     }
   }
   p code {
-    color: #000;
-    background-color: #f5f5f5;
+    color: var(--inline-code-text);
+    background-color: var(--inline-code-bg);
     font-size: 17px;
     padding: 0 2px 0 2px;
   }
@@ -142,6 +142,7 @@ ul {
     font-family: var(--font-family-monospace);
   }
   .highlight {
+    margin: 20px 0;
     pre {
       border-radius: 3px;
       font-size: 14px;
