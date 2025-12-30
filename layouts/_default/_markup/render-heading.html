@@ -1,3 +1,8 @@
+{{ $hasLink := findRE "<a\\s" (.Text | safeHTML) }}
 <h{{ .Level }} id="{{ .Anchor }}" class="heading-anchor">
+{{- if $hasLink -}}
+  {{- .Text | safeHTML -}}
+{{- else -}}
   <a href="#{{ .Anchor }}" class="anchor-link">{{- .Text | safeHTML -}}<span class="anchor-hash">#</span></a>
+{{- end -}}
 </h{{ .Level }}>
