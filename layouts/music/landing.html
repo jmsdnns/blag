@@ -8,7 +8,7 @@
     {{ end }}
   </div>
   {{ .Content }}
-  {{ range where .Pages.ByWeight.Reverse "Params.series" "Old Projects" }}
+  {{ range where .Pages.ByWeight.Reverse "Params.series" "Former Musical Projects" }}
     {{ .Render "projects" }}
   {{ end }}
 {{ end }}
