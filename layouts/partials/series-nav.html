@@ -1,0 +1,36 @@
+{{ with .Params.series }}
+{{ $currentPage := $ }}
+{{ $seriesList := . }}
+{{/* Handle both string and array formats */}}
+{{ if not (reflect.IsSlice .) }}
+  {{ $seriesList = slice . }}
+{{ end }}
+{{ range $seriesList }}
+  {{/* Skip series nav for Former Musical Projects */}}
+  {{ if eq . "Former Musical Projects" }}{{ continue }}{{ end }}
+  {{ $series := site.GetPage (printf "/series/%s" (. | urlize)) }}
+  {{ if $series }}
+  <div class="series-nav">
+    <p class="series-title">
+      This post is part of the series: <a href="{{ $series.Permalink }}">{{ . }}</a>
+    </p>
+    <ol class="series-toc">
+      {{/* Music section: newest to oldest. Everywhere else: oldest to newest */}}
+      {{ $pages := $series.Pages.ByWeight }}
+      {{ if eq $currentPage.Section "music" }}
+        {{ $pages = $series.Pages.ByWeight.Reverse }}
+      {{ end }}
+      {{ range $pages }}
+      <li{{ if eq . $currentPage }} class="current"{{ end }}>
+        {{ if eq . $currentPage }}
+          <strong>{{ .Title }}</strong> (You are here)
+        {{ else }}
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+  {{ end }}
+{{ end }}
+{{ end }}

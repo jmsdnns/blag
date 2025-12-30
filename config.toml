@@ -6,7 +6,10 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
 
-disableKinds = ["taxonomy", "term", "sitemap"]
+disableKinds = ["sitemap"]
+
+[taxonomies]
+series = "series"
 [outputs]
 section = ['html', 'rss']
 

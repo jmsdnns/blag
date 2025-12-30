@@ -19,7 +19,7 @@
 
   {{ .Content }}
   
-  {{ range .Pages }}
+  {{ range .Pages.ByDate.Reverse }}
     {{ .Render "summary" }}
   {{ end }}
 {{ end }}
