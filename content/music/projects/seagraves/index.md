@@ -2,7 +2,7 @@
 title: "Sea Graves"
 image: images/music/projects/seagraves.jpg
 date: 2023-03-31
-series: "Old Projects"
+series: "Former Musical Projects"
 weight: 5
 ---
 

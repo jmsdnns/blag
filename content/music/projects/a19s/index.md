@@ -2,7 +2,7 @@
 title: "Adventure Capitalists"
 image: images/music/projects/adcap.jpg
 date: 2023-03-31
-series: "Old Projects"
+series: "Former Musical Projects"
 weight: 6
 ---
 

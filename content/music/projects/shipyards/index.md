@@ -2,7 +2,7 @@
 title: "Shipyards"
 image: images/music/projects/shipyards.jpg
 date: 2023-03-31
-series: "Old Projects"
+series: "Former Musical Projects"
 weight: 3
 ---
 Shipyards was a short lived indie rock band from Brooklyn, NY.

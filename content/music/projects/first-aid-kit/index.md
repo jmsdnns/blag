@@ -2,7 +2,7 @@
 title: "First Aid Kit"
 image: images/music/projects/first-aid-kit.jpg
 date: 2023-03-31
-series: "Old Projects"
+series: "Former Musical Projects"
 weight: 2
 ---
 

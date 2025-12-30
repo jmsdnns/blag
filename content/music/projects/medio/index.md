@@ -2,7 +2,7 @@
 title: "Medio"
 image: images/music/projects/medio.jpg
 date: 2023-03-31
-series: "Old Projects"
+series: "Former Musical Projects"
 weight: 4
 ---
 
