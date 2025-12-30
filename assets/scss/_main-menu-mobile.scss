@@ -41,6 +41,7 @@
   ul {
     font-size: 2rem;
     font-family: var(--font-family-heading);
+    font-weight: bold;
     text-align: center;
     list-style: none;
     margin: 0;
@@ -133,5 +134,36 @@
   100% {
     opacity: 1;
     top: 0;
+  }
+}
+
+// Dark mode: flip the overlay colors (gray bg, blue text)
+@media (prefers-color-scheme: dark) {
+  :root:not(.light-mode) {
+    .menu-main-mobile {
+      background: var(--base-offset-color);
+
+      ul li a {
+        color: var(--highlight-color);
+      }
+    }
+
+    .hamburger.is-active {
+      color: var(--highlight-color);
+    }
+  }
+}
+
+html.dark-mode {
+  .menu-main-mobile {
+    background: var(--base-offset-color);
+
+    ul li a {
+      color: var(--highlight-color);
+    }
+  }
+
+  .hamburger.is-active {
+    color: var(--highlight-color);
   }
 }
