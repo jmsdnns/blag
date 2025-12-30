@@ -158,6 +158,29 @@ ul {
   }  
 }
 
+.heading-anchor {
+  .anchor-link {
+    color: var(--heading-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    .anchor-hash {
+      opacity: 0;
+      margin-left: 0.3em;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover {
+      color: var(--highlight-color);
+      text-decoration: none;
+
+      .anchor-hash {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 .dot {
   color: var(--dot-color);
 }
