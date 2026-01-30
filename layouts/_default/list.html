@@ -19,7 +19,18 @@
 
   {{ .Content }}
   
-  {{ range .Pages.ByDate.Reverse }}
-    {{ .Render "summary" }}
+  {{/* Build collection with effective dates (sections use most recent child's date) */}}
+  {{ $items := slice }}
+  {{ range .Pages }}
+    {{ $sortDate := .Date }}
+    {{ if .IsSection }}
+      {{ with index (.Pages.ByDate.Reverse) 0 }}
+        {{ $sortDate = .Date }}
+      {{ end }}
+    {{ end }}
+    {{ $items = $items | append (dict "Page" . "SortDate" $sortDate) }}
+  {{ end }}
+  {{ range sort $items "SortDate" "desc" }}
+    {{ .Page.Render "summary" }}
   {{ end }}
 {{ end }}
