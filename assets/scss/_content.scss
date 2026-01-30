@@ -35,14 +35,14 @@ ul {
   font-size: 18px;
   p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
   }
   h1 {
     font-size: 40px;
-    line-height: 1.6;
+    line-height: 46px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -52,7 +52,7 @@ ul {
   }
   h2 {
     font-size: 28px;
-    line-height: 1.4;
+    line-height: 32px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -61,12 +61,12 @@ ul {
     }
     @include breakpoint('small') {
       font-size: 30px;
-      line-height: 1.4;
+      line-height: 35px;
     }
   }
   h3 {
     font-size: 22px;
-    line-height: 1.4;
+    line-height: 26px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -108,6 +108,9 @@ ul {
   blockquote p {
     font-size: 17px;
     color: var(--color-base-text);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   img {
     margin: 20px 0 20px 0;
@@ -190,7 +193,10 @@ ul {
   .video-shortcode {
     max-width: 100%;
     height: auto;
-  }  
+  }
+  div:has(iframe) {
+    margin-bottom: 20px;
+  }
 }
 
 .heading-anchor {
