@@ -9,7 +9,8 @@ pygmentsUseClasses = true
 disableKinds = ["sitemap"]
 
 [taxonomies]
-series = "series"
+# disabled - using sections for series instead
+# series = "series"
 [outputs]
 section = ['html', 'rss']
 

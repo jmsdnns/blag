@@ -1,0 +1,11 @@
+<ul class="summary-series-posts">
+  {{ range .Pages.ByWeight }}
+  <li>
+    <span class="summary-series-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Params.description }}
+    <p class="summary-series-description">{{ . }}</p>
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>

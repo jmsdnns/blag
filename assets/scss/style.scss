@@ -1,5 +1,5 @@
 :root {
-  --font-family-heading: 'Poppins', sans-serif;
+  --font-family-heading: Helvetica, sans-serif;
   --font-family-paragraph: Helvetica, sans-serif;
   --font-family-monospace: monospace;
   --base-color: {{ .Site.Params.baseColor | default "#ffffff" }};

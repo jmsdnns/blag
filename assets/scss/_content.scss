@@ -141,6 +141,41 @@ ul {
   pre {
     font-family: var(--font-family-monospace);
   }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+
+    th, td {
+      padding: 10px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    td {
+      border-bottom: 1px solid var(--base-offset-color);
+    }
+
+    th {
+      font-weight: bold;
+      color: var(--heading-color);
+      background-color: var(--code-bg);
+    }
+
+    td {
+      color: var(--text-color);
+    }
+
+    code {
+      background-color: var(--inline-code-bg);
+      color: var(--inline-code-text);
+      padding: 2px 5px;
+      font-size: 15px;
+      white-space: nowrap;
+    }
+  }
+
   .highlight {
     margin: 20px 0;
     pre {
