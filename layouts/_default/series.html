@@ -16,6 +16,6 @@
   </div>
 
   <div class="summary">
-    {{ partial "series-posts.html" . }}
+    {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" false) }}
   </div>
 {{ end }}

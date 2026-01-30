@@ -5,6 +5,6 @@
   <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   <p class="summary-description">{{ .Params.description }}</p>
   {{ if .IsSection }}
-  {{ partial "series-posts.html" . }}
+  {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" true) }}
   {{ end }}
 </div>

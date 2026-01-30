@@ -1,5 +1,16 @@
 <ul class="summary-series-posts">
-  {{ range .Pages.ByWeight }}
+  {{/* sort: "weight" for manual ordering, "date" or unset for newest first */}}
+  {{/* limit: number of posts to show (only when ApplyLimit is true) */}}
+  {{ $section := .Section }}
+  {{ $applyLimit := .ApplyLimit }}
+  {{ $pages := $section.Pages.ByDate.Reverse }}
+  {{ if eq $section.Params.sort "weight" }}
+    {{ $pages = $section.Pages.ByWeight }}
+  {{ end }}
+  {{ if and $applyLimit $section.Params.limit }}
+    {{ $pages = first $section.Params.limit $pages }}
+  {{ end }}
+  {{ range $pages }}
   <li>
     <span class="summary-series-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
