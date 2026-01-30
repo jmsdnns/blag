@@ -3,7 +3,7 @@ title: "New Boobs, by NOFX"
 date: 2025-06-17
 series: "Guitar Covers"
 description: >
-    Another shredder from NOFX! The song is meant to mock superficial people in LA who believe the only way to get ahead in life is to have a boob job. It's also a rager on guitar.
+    Another shredder from NOFX! The song was written in the 80's to mock the superficial people in LA who believed the only way to get ahead in life was to have a boob job. It's also a rager on guitar.
 tags:
     - guitar cover
 ---
