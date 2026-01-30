@@ -1,5 +1,5 @@
 ---
-title: "Watershed, by Foo Fighters"
+title: "Wattershed, by Foo Fighters"
 date: 2025-09-27
 series: "Guitar Covers"
 description: >
