@@ -2,6 +2,9 @@
 .menu-main {
   display: none;
   flex: 0;
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  letter-spacing: -0.04em;
   @include breakpoint('x-small') {
     display: block;
   }

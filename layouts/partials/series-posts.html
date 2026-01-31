@@ -13,7 +13,7 @@
   {{ range $pages }}
   <li>
     <span class="summary-series-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
     {{ with .Params.description }}
     <p class="summary-series-description">{{ . }}</p>
     {{ end }}

@@ -39,17 +39,8 @@
       font-weight: 700;
       color: var(--heading-color);
     }
-    h3 {
+    h4 {
       margin: 2px 0 0 0;
-      font-size: 24px;
-      line-height: 28px;
-      @include breakpoint('small') {
-        font-size: 28px;
-        line-height: 32px;
-      }
-      a {
-        font-weight: 500;
-      }
     }
     .summary-series-description {
       margin: 6px 0 0 0;

@@ -8,11 +8,28 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: var(--heading-color);
   font-family: var(--font-family-heading);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+h4 {
+  font-size: 20px;
+  line-height: 26px;
+}
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+h6 {
+  font-size: 16px;
+  line-height: 22px;
 }
 p {
   color: var(--text-color);
@@ -43,7 +60,6 @@ ul {
   h1 {
     font-size: 40px;
     line-height: 46px;
-    font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
     &:first-of-type {
@@ -53,7 +69,6 @@ ul {
   h2 {
     font-size: 28px;
     line-height: 32px;
-    font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
     &:first-of-type {
@@ -67,9 +82,20 @@ ul {
   h3 {
     font-size: 22px;
     line-height: 26px;
-    font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+  h4 {
+    margin-top: 26px;
+    margin-bottom: 16px;
+  }
+  h5 {
+    margin-top: 22px;
+    margin-bottom: 14px;
+  }
+  h6 {
+    margin-top: 20px;
+    margin-bottom: 12px;
   }
   ul {
     list-style: disc;
