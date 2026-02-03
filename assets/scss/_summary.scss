@@ -12,7 +12,7 @@
     color: var(--heading-color);
   }
   .summary-title {
-    margin: 4px 0 16px 0;
+    margin: 4px 0;
     font-size: 34px;
     line-height: 38px;
     @include breakpoint('small') {
@@ -21,6 +21,7 @@
     }
   }
   .summary-description {
+    margin: 0;
   }
   .summary-series-posts {
     list-style: none;
@@ -43,7 +44,7 @@
       margin: 2px 0 0 0;
     }
     .summary-series-description {
-      margin: 6px 0 0 0;
+      margin: 4px 0 0 0;
       font-size: 16px;
       color: var(--text-color);
     }
