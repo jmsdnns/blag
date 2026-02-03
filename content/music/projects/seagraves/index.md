@@ -28,7 +28,7 @@ Our first recording. 3 songs released in 2013. Recorded with Greg Giorgio.
 
 This video is from the first Sea Graves show, which was also the first time I performed drums live.
 
-{{< youtube SqglOmofdUg >}}<br />
+{{< youtube SqglOmofdUg >}}
 
 
 # Photos

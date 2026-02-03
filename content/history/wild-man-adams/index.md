@@ -21,7 +21,6 @@ My favorite way to consider him is to imagine his crew singing Fugazi lyrics as 
 If Samuel Adams were alive today, I believe he'd wear a black hoodie and he'd listen to [Fugazi](https://www.youtube.com/watch?v=c_5OZOwAhas&t=1207s) or [Propagandhi](https://www.youtube.com/watch?v=CDhTf3eaeoM). There is an undeniable punk rock vibe throughout his story. By the time I was done with the book the second time, I felt I had to share Sam's story with all my musical friends and my hacker friends. I wondered if perhaps they'd see themselves in his story. Maybe my creative friends, who are used to feeling the difficulty of living creative lives, would feel encouraged by how much they have in common with the people who created the US. They were the outliers, the artists, and the misfits. The ones who try to live humbly for their ideals with the certainty that comes from believing the ideas themselves are unfuckwithable. Maybe his story will inspire us to resist when necessary too, in case that comes up for any reason.
 
 {{< youtube id=-jidupajVTM start=45 >}}
-<br>
 
 
 ## First, A Quiet Man
@@ -57,7 +56,6 @@ _Samuel came from an anti-slavery family. He never owned slaves and he was anti-
 Patrick Henry took up the cause in Virginia. The Pennsylvania Journal printed skulls n crossbones with thick black borders to protest the tax. The New Hampshire Gazette did the same. Massachusetts, Virginia, Pennsylvania, Maryland, Rhode Island, and New York all had protesters in the streets chanting "_no taxation without representation_". The protest was huge and effective. Britain cancelled the Stamp Act and went back to the drawing board.
 
 ![The skull n crossbones with a thick black border used in the Pennsylvania Journal](TheFatalStamp.jpg)
-
 
 ## Sons of Liberty
 
@@ -125,7 +123,6 @@ I love this part of his story so much. I love it because the US has been a coffe
 I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics while tossing tea in Boston Harbor. I sang those lyrics a couple years ago, when I recorded a cover of Fugazi's Merchandise while teaching myself how to record music. I'm on drums, guitar, and you'll hear me sing _We owe you nothing! You have no control!_
 
 {{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1953628591&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
-<br>
 
 
 ## A Union Is Born

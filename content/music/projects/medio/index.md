@@ -30,22 +30,20 @@ This is the complete set, except for the first song, from my first show playing 
 
 This video is from my first show playing drums with Medio. This is also the first song this band wrote after I became the drummer. All these years later, playing these drums is still some of the most fun I have as a drummer.
 
-{{< youtube dK-V7K-61J4 >}}<br/>
+{{< youtube dK-V7K-61J4 >}}
 
 ## SCLD (Drums)
 
 This song is a wildly complicated one. We wrote this song back when I played guitar in the band, with my contributions intentionally trying to give our drummer a gnarly challenge. The irony was very funny for me, years later, as I tried to take on this beast of a song.
 
-{{< youtube SotnUXjMmIg >}}<br />
+{{< youtube SotnUXjMmIg >}}
 
 
 ## Just Watch Me (Guitar)
 
-Arlene's Grocery 11.04.11
-
 Here is a video from our show at Arlene's Grocery on Nov 4th, 2011. I'm playing the black Tele on the left of the stage.
 
-{{< youtube HzFBUz0cmgI >}}<br />
+{{< youtube HzFBUz0cmgI >}}
 
 # Photos
 

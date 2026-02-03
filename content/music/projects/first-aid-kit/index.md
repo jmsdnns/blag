@@ -44,7 +44,7 @@ Our first recording. 11 songs released in 2002. This is the first record I did w
 
 A music video for Living or Lively made with footage from a tour First Aid Kit did with Finch, Recover, and Counterfit in 2004.
 
-{{< youtube lLVmh1iOI4Q >}}<br />
+{{< youtube lLVmh1iOI4Q >}}
 
 A performance from 2003 at the El N Gee in New London, CT.
 

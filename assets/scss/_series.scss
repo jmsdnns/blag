@@ -1,3 +1,19 @@
+// When inside .intro, series-nav hugs the image
+.intro {
+  img.has-series-nav {
+    display: block;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 0;
+  }
+
+  .series-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0 0 4px 4px;
+    border-left: none;
+  }
+}
+
 .series-nav {
   background: var(--code-bg);
   border-left: 4px solid var(--highlight-color);

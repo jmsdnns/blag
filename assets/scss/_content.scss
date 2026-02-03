@@ -60,18 +60,18 @@ ul {
   h1 {
     font-size: 40px;
     line-height: 46px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    &:first-of-type {
+    &:first-child {
       margin-top: 0;
     }
   }
   h2 {
     font-size: 28px;
     line-height: 32px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    &:first-of-type {
+    &:first-child {
       margin-top: 0;
     }
     @include breakpoint('small') {
@@ -82,8 +82,11 @@ ul {
   h3 {
     font-size: 22px;
     line-height: 26px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   h4 {
     margin-top: 26px;
@@ -97,18 +100,6 @@ ul {
     margin-top: 20px;
     margin-bottom: 12px;
   }
-  ul {
-    list-style: disc;
-    li {
-      list-style: disc;
-    }
-  }
-  ol {
-    list-style: decimal;
-    li {
-      list-style: decimal;
-    }
-  }
   ul,
   ol {
     margin-left: 10px;
@@ -121,10 +112,16 @@ ul {
       margin-left: 10px;
     }
   }
+  ul {
+    list-style: disc;
+    li { list-style: disc; }
+  }
+  ol {
+    list-style: decimal;
+    li { list-style: decimal; }
+  }
   a {
     text-decoration: underline;
-    &:hover {
-    }
   }
   blockquote {
     border-left: 5px solid var(--highlight-color);
@@ -139,9 +136,13 @@ ul {
     }
   }
   img {
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     max-width: 100%;
     height: auto;
+  }
+  :is(h1, h2, h3) + img,
+  :is(h1, h2, h3) + p > img:first-child {
+    margin-top: 0;
   }
   figure {
     margin: 2.6rem 0 1.18rem;
@@ -182,10 +183,6 @@ ul {
       vertical-align: top;
     }
 
-    td {
-      border-bottom: 1px solid var(--base-offset-color);
-    }
-
     th {
       font-weight: bold;
       color: var(--heading-color);
@@ -194,6 +191,7 @@ ul {
 
     td {
       color: var(--text-color);
+      border-bottom: 1px solid var(--base-offset-color);
     }
 
     code {
