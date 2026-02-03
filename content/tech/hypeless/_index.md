@@ -9,4 +9,4 @@ description: >
     A series about using AI tools without the hype
 ---
 
-Here is my series introduction for Hypeless.
+I wrote a series of posts that can take someone from 0 experience to having a complete software project written entirely by subagents.
