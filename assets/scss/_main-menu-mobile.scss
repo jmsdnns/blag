@@ -40,9 +40,8 @@
   }
   ul {
     font-size: 2.5rem;
-    font-family: var(--font-family-heading);
+    @include heading-font;
     font-weight: 400;
-    letter-spacing: -0.04em;
     text-align: center;
     list-style: none;
     margin: 0;

@@ -2,13 +2,15 @@
 .menu-main {
   display: none;
   flex: 0;
-  font-family: var(--font-family-heading);
+  @include heading-font;
   font-weight: 400;
-  letter-spacing: -0.04em;
   @include breakpoint('x-small') {
     display: block;
   }
   > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;

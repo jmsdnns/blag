@@ -54,6 +54,11 @@ html.light-mode {
   --code-bg: #f5f5f5;
 }
 
+@mixin heading-font {
+  font-family: var(--font-family-heading);
+  letter-spacing: -0.04em;
+}
+
 $breakpoints: (
   'x-small': 480px,
   'small': 767px,
@@ -61,7 +66,6 @@ $breakpoints: (
   'large': 1200px,
 );
 
-@import 'normalize';
 @import 'breakpoints';
 @import 'header';
 @import 'footer';
@@ -78,6 +82,8 @@ $breakpoints: (
 @import 'pygments/dark';
 
 html, body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 

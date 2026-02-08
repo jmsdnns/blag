@@ -29,9 +29,8 @@
     a {
       color: var(--highlight-color);
       text-decoration: none;
-      font-family: var(--font-family-heading);
+      @include heading-font;
       font-weight: 400;
-      letter-spacing: -0.04em;
 
       &:hover {
         text-decoration: underline;
@@ -73,9 +72,8 @@
     a {
       color: var(--highlight-color);
       text-decoration: none;
-      font-family: var(--font-family-heading);
+      @include heading-font;
       font-weight: 400;
-      letter-spacing: -0.04em;
 
       &:hover {
         text-decoration: underline;

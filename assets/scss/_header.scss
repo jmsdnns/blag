@@ -9,9 +9,8 @@
     margin-bottom: 40px;
   }
   a.header-logo {
-    font-family: var(--font-family-heading);
+    @include heading-font;
     font-weight: 400;
-    letter-spacing: -0.04em;
     text-transform: uppercase;
     margin-right: 30px;
   }
@@ -21,16 +20,6 @@
   display: flex;
   align-items: center;
   gap: 15px;
-}
-
-
-.hamburger-trigger {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  @include breakpoint('x-small') {
-    display: none;
-  }
 }
 
 .hamburger {
