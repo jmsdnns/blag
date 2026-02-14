@@ -11,7 +11,7 @@ tags:
     - AI
 ---
 
-In the [previous post]({{< ref "/tech/hypeless-ai/mcp" >}}) we built a weather MCP server. Now let's use it.
+In the [previous post]({{< ref "/tech/hypeless-claude-code/mcp" >}}) we built a weather MCP server. Now let's use it.
 
 # Install
 
