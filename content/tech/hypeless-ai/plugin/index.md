@@ -1,15 +1,17 @@
 ---
-title: "Plugin to build APIs"
+title: "Make a plugin to build APIs"
 date: 2026-01-27
 image: images/tech/hypeless-ai/plugin.jpg
 series: "Hypeless AI"
-weight: 3
+weight: 2
 draft: true
 description: >
     I put together a simple plugin to give you a great first experience building REST APIs with Express, TypeScript, and Prisma. It has skills to scaffold common things, agents that know the stack, and a hook that runs type checking after edits.
 tags:
     - AI
 ---
+
+# Design Considerations
 
 I put together a simple plugin to give you a great first experience building REST APIs with Express, TypeScript, and Prisma. It has skills to scaffold common things, agents that know the stack, and a hook that runs type checking after edits.
 

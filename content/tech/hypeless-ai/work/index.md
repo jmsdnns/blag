@@ -1,9 +1,9 @@
 ---
-title: "Getting work done"
+title: "Structing work"
 date: 2026-02-13
 image: images/tech/hypeless-ai/work.jpg
 series: "Hypeless AI"
-weight: 2
+weight: 6
 draft: true
 description: >
     I'm going to quickly layout the gist of how I use Claude for coding. This is for anyone who is recently curious.
@@ -11,15 +11,13 @@ tags:
     - AI
 ---
 
-# Tasks
-
 Claude Code has built-in task management. When you give it complex work, it can generate a plan, break the plan into tasks, and work through them while showing progress. Run `/tasks` to see the current list.
 
 This matters because complex work benefits from visible structure. You can see Claude's plan, catch mistakes early, and pick up where you left off if you need to stop.
 
 The trick is getting Claude to actually use it. By default, it often just starts working without creating tasks. You have to ask for it.
 
-## Building A Project With Tasks
+# Building A Project With Tasks
 
 Let's say we're building a link shortener. The prompts are short. Claude does the rest.
 
@@ -48,7 +46,7 @@ Claude updates the list and begins. You'll see tasks marked in progress and comp
 
 That's it. One prompt to get the plan, one prompt to tune it, then watch it work.
 
-## Other Examples
+# Other Examples
 
 Here are a few more task lists Claude might generate for different kinds of work.
 
