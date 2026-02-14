@@ -9,4 +9,4 @@ description: >
   A series of posts that can take someone from 0 experience to having a complete software project written entirely by subagents.
 ---
 
-A series of posts that can take someone from 0 experience to having a complete software project written entirely by subagents.
+A series of posts that can take someone from 0 experience to having a complete software project written entirely by agents.

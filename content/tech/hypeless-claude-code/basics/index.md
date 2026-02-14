@@ -100,13 +100,11 @@ Think of it like a whiteboard. You and Claude are working together, writing on t
 
 This has practical implications because it directly affects the quality of the output you get from Claude. You'll start out bad at doing this, but you'll get the hang of it soon.
 
-## Task Sessions
+## Sessions
 
-I think of each session as a focused unit of work, eg a task. I'm either going to do some work or an agent is. I start Claude, do a thing, maybe do a few related things, then stop. When I come back later, I start a fresh session.
+I think of each session I do with Claude as a focused unit of work, eg a task. I'm either going to do some work or an agent is. I start Claude, do a thing, maybe do a few related things, then stop. Whenever I come back to do more work, I will start a fresh session.
 
-This isn't about the tool forcing you to work this way. It's about working with the grain of how context works. A clean context window means Claude has room to think about what matters now, not what mattered two hours ago.
-
-Some sessions are exploratory. You're poking around, reading files, understanding a codebase. These fill the context with useful information. Other sessions are executional. You know what you want and you're getting it done. These benefit from starting with just enough context to do the work.
+A clean context window means Claude has room to think about what matters now, not what mattered two hours ago. Some sessions are exploratory. You're poking around, reading files, understanding a codebase. These fill the context with useful information. Other sessions are executional. You know what you want and you're getting it done. These benefit from starting with just enough context to do the work.
 
 - **Start sessions with intent.** The first things you tell Claude set the tone and direction. If you start by having it read your main files to understand the architecture, the answers it generates for questions about the architecture will be better. Be intentional about what goes in each context window and the output will be better.
 

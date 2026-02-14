@@ -11,6 +11,8 @@ tags:
     - AI
 ---
 
+# The Plan
+
 We're going to build a plugin from scratch. By the end, you'll have a tool that scaffolds REST APIs with Express, TypeScript, and Prisma, complete with specialist agents that know the stack, skills that generate boilerplate, and a hook that catches type errors after every edit.
 
 The plugin is called [hypeless](https://github.com/jmsdnns/hypeless). You can install the finished version if you just want to use it, but this post walks through building it piece by piece so you understand how plugins work.
@@ -45,7 +47,7 @@ Create the manifest at `hypeless/plugin/.claude-plugin/plugin.json`.
 That's a working plugin! It doesn't do anything yet, but Claude Code will recognize it. Install it by cloning or symlinking it into your project's `.claude/plugins/` directory and restarting Claude. Run `/plugins` to verify it shows up.
 
 
-# A first agent
+## A first agent
 
 Agents are markdown files that give Claude specialized knowledge. We'll start with `typescript-pro` — an agent that knows TypeScript deeply.
 
@@ -82,7 +84,7 @@ That description line matters. When Claude is deciding whether to spin up an age
 The real `typescript-pro` agent is much longer. It includes sections on advanced type patterns, full-stack type safety, build optimization, error handling, and framework-specific typing for Express. The more context you give an agent, the better its output. Think of it as writing documentation that the agent will reference while it works.
 
 
-# Agents, agents, agents
+## Agents, agents, agents
 
 The pattern is the same for each. Create a markdown file, declare what it knows, write a system prompt that teaches it.
 
@@ -142,7 +144,7 @@ relational data modeling.
 Each of these has a much longer body in the real plugin with detailed code examples, pattern libraries, and review checklists. The snippets above are the skeletons. Fill them out based on what you want the agent to know.
 
 
-# An agent for agents
+## An agent for agents
 
 Three specialists need a coordinator. The `stack-orchestrator` agent decides which specialist handles each request.
 
@@ -219,7 +221,7 @@ When given a feature or complex task:
 Five agents total. Three specialists, one coordinator, one planner. Each is a markdown file.
 
 
-# Add the first skill
+# Our first skill
 
 Skills are slash commands. They're also markdown files, but they live in a `skills/` directory and each gets its own subdirectory with a `SKILL.md` file.
 
@@ -275,11 +277,11 @@ The skill continues with templates for the other key files too: `package.json` s
 When someone types `/init-rest`, this entire document gets loaded into context. Claude reads it and generates the project accordingly using the instructions we provided in the skill definition.
 
 
-# Add scaffolding skills
+## Scaffolding skills
 
 The same pattern applies for the remaining skills. Each one teaches Claude how to scaffold a specific piece of the stack.
 
-## /model
+### /model
 
 Create `hypeless/plugin/skills/model/SKILL.md`. This skill adds Prisma models to the schema.
 
@@ -314,7 +316,7 @@ model User {
 
 It includes a field type reference table, relation examples (one-to-many, many-to-many), and conventions like always including `id`, `createdAt`, `updatedAt`. After adding the model, it prompts the user about creating routes and a controller too.
 
-## /route
+### /route
 
 Create `hypeless/plugin/skills/route/SKILL.md`. This skill scaffolds REST endpoints with a controller.
 
@@ -340,7 +342,7 @@ Ask the user for:
 
 It includes full templates for both the route file and controller file, with async handlers, proper error passing to `next()`, and correct HTTP status codes. The last step is wiring the new route into `src/routes/index.ts`.
 
-## /middleware
+### /middleware
 
 Create `hypeless/plugin/skills/middleware/SKILL.md`. This skill generates middleware for auth, validation, rate limiting, logging, or custom.
 
@@ -365,7 +367,7 @@ Ask the user for:
 
 Each type has a complete template. The auth middleware extends the Request type to include user info. The validation middleware uses Zod schemas. The rate limiter tracks requests by IP. The logger uses `res.on('finish')` to capture response time.
 
-## /service
+### /service
 
 Create `hypeless/plugin/skills/service/SKILL.md`. This skill extracts business logic out of controllers and into a service layer.
 
@@ -389,7 +391,7 @@ It includes a service template with `findAll`, `findById`, `create`, `update`, a
 This is the skill that teaches the separation between controllers (HTTP concerns) and services (business logic). Controllers become thin; they call the service and send the response.
 
 
-# Add the hook
+# Add hook
 
 Hooks are different from agents and skills. They're configured in JSON, not written in markdown, and they fire automatically instead of being invoked.
 
@@ -415,9 +417,9 @@ The `| head -20` keeps the output short. You don't want 200 lines of compiler er
 One hook, and every edit gets type-checked automatically.
 
 
-# Add the review skill
+# Code review skill
 
-This one ties everything together. The `/review` skill coordinates all three specialist agents to review code from different angles.
+OK, one more skill. This one ties everything together. The `/review` skill coordinates all three specialist agents to review code from different angles.
 
 Create `hypeless/plugin/skills/review/SKILL.md`.
 
@@ -458,7 +460,7 @@ transaction gaps, schema issues
 It also defines an output format with priority levels (HIGH, MED, LOW), specific file and line references, and a summary with the top recommendation. The guideline at the end says "if the code is solid, say so. Don't invent issues." That's important. Without it, review tools tend to nitpick.
 
 
-# The finished plugin
+# Finished
 
 Here's what we built.
 
