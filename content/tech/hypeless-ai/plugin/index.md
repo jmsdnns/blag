@@ -1,7 +1,7 @@
 ---
-title: "Plugin"
+title: "Plugin to build APIs"
 date: 2026-01-27
-image: images/tech/hypeless/plugin.jpg
+image: images/tech/hypeless-ai/plugin.jpg
 series: "Hypeless AI"
 weight: 3
 draft: true
