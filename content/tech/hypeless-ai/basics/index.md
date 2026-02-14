@@ -153,7 +153,7 @@ This solves the repetition problem. Instead of typing the same instructions ever
 
 Skills run inside your current conversation context. They can see what you've been working on and build on it. Type `/help` to see what's available.
 
-A skill lives in a directory with a `SKILL.md` file. Frontmatter has a name and description. The body is a detailed guide that gets loaded into context when invoked — concepts, code examples, best practices.
+A skill lives in a directory with a `SKILL.md` file. Frontmatter has a name and description. The body is a detailed guide that gets loaded into context when invoked. It's great for concepts, code examples, best practices.
 
 ```markdown
 ---

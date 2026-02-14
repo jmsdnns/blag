@@ -62,7 +62,7 @@ Now just ask for weather. You don't need to mention MCP or tool names. Claude re
 > what's the weather in portland?
 ```
 
-Claude will call `get-forecast` with `{"city": "Portland"}`, get the response, and present the result in plain language. You'll see the tool call happen in the output — Claude shows you when it's reaching for a tool.
+Claude will call `get-forecast` with `{"city": "Portland"}`, get the response, and present the result in plain language. You'll see the tool call happen in the output. Claude shows you when it's reaching for a tool.
 
 You can also use it as part of a larger task. The tool is just another thing Claude can reach for.
 
@@ -71,7 +71,7 @@ You can also use it as part of a larger task. The tool is just another thing Cla
 > Check the weather and tell me if Saturday or Sunday looks better.
 ```
 
-Claude will call the tool twice, compare the results, and give you a recommendation. It's not doing anything special — it's making two tool calls and reasoning about the output, the same way it reasons about file contents or command output.
+Claude will call the tool twice, compare the results, and give you a recommendation. It's not doing anything special. It's making two tool calls and reasoning about the output, the same way it reasons about file contents or command output.
 
 # Combine it with other tools
 

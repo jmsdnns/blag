@@ -26,18 +26,18 @@ Let's say we're building a link shortener. The prompts are short. Claude does th
 Claude generates something like this.
 
 ```
-1. Initialize project with TypeScript, Hono, Drizzle, and SQLite — Set up the project structure with package.json, tsconfig.json, and install dependencies: hono, drizzle-orm, better-sqlite3, @types/better-sqlite3, typescript, tsx, drizzle-kit. Configure scripts for dev, build, and db migrations.
-2. Define Drizzle schema for links table — Create src/db/schema.ts with links table: id (primary key), originalUrl (text, not null), shortCode (text, unique, indexed), clicks (integer, default 0), createdAt (timestamp), expiresAt (optional timestamp). Set up drizzle.config.ts for migrations.
-3. Set up database connection and migrations — Create src/db/index.ts with SQLite connection using better-sqlite3 and Drizzle. Generate and run initial migration. Export db instance for use across the app.
-4. Implement short code generation utility — Create src/utils/shortCode.ts with function to generate unique, URL-safe short codes. Consider: length (6-8 chars), character set (alphanumeric, no ambiguous chars), collision checking strategy.
-5. Create link service layer — Create src/services/linkService.ts with business logic: createLink(url, customCode?), getLink(code), incrementClicks(code), deleteLink(code), getLinkStats(code). Handle validation, uniqueness, and expiration logic.
-6. Build Hono API routes — Create src/routes/links.ts with endpoints: POST /api/shorten, GET /api/links/:code/stats, DELETE /api/links/:code. Create src/routes/redirect.ts for GET /:code redirect handler.
-7. Add input validation with Zod — Install zod and @hono/zod-validator. Create src/validators/linkValidator.ts with schemas for URL validation (valid URL format, optional custom code constraints).
-8. Implement error handling middleware — Create src/middleware/errorHandler.ts with centralized error handling. Define custom error classes (NotFoundError, ValidationError, ConflictError). Return consistent JSON error responses.
-9. Add rate limiting middleware — Implement rate limiting for production readiness. Create src/middleware/rateLimiter.ts using in-memory store. Configure different limits for creation (stricter) vs redirect (lenient) endpoints.
-10. Create main app entry point — Create src/index.ts that initializes Hono app, applies middleware (error handling, rate limiting, CORS, logging), mounts routes, and starts server. Add health check endpoint GET /health.
-11. Add environment configuration — Create src/config.ts to load environment variables: PORT, DATABASE_URL, BASE_URL (for generating full short URLs), RATE_LIMIT settings. Add .env.example with documented defaults.
-12. Write tests for core functionality — Set up vitest. Create tests for: short code generation, link service operations, API endpoint responses (create, redirect, stats, delete, error cases).
+1. Initialize project with TypeScript, Hono, Drizzle, and SQLite. Set up the project structure with package.json, tsconfig.json, and install dependencies: hono, drizzle-orm, better-sqlite3, @types/better-sqlite3, typescript, tsx, drizzle-kit. Configure scripts for dev, build, and db migrations.
+2. Define Drizzle schema for links table. Create src/db/schema.ts with links table: id (primary key), originalUrl (text, not null), shortCode (text, unique, indexed), clicks (integer, default 0), createdAt (timestamp), expiresAt (optional timestamp). Set up drizzle.config.ts for migrations.
+3. Set up database connection and migrations. Create src/db/index.ts with SQLite connection using better-sqlite3 and Drizzle. Generate and run initial migration. Export db instance for use across the app.
+4. Implement short code generation utility. Create src/utils/shortCode.ts with function to generate unique, URL-safe short codes. Consider: length (6-8 chars), character set (alphanumeric, no ambiguous chars), collision checking strategy.
+5. Create link service layer. Create src/services/linkService.ts with business logic: createLink(url, customCode?), getLink(code), incrementClicks(code), deleteLink(code), getLinkStats(code). Handle validation, uniqueness, and expiration logic.
+6. Build Hono API routes. Create src/routes/links.ts with endpoints: POST /api/shorten, GET /api/links/:code/stats, DELETE /api/links/:code. Create src/routes/redirect.ts for GET /:code redirect handler.
+7. Add input validation with Zod. Install zod and @hono/zod-validator. Create src/validators/linkValidator.ts with schemas for URL validation (valid URL format, optional custom code constraints).
+8. Implement error handling middleware. Create src/middleware/errorHandler.ts with centralized error handling. Define custom error classes (NotFoundError, ValidationError, ConflictError). Return consistent JSON error responses.
+9. Add rate limiting middleware. Implement rate limiting for production readiness. Create src/middleware/rateLimiter.ts using in-memory store. Configure different limits for creation (stricter) vs redirect (lenient) endpoints.
+10. Create main app entry point. Create src/index.ts that initializes Hono app, applies middleware (error handling, rate limiting, CORS, logging), mounts routes, and starts server. Add health check endpoint GET /health.
+11. Add environment configuration. Create src/config.ts to load environment variables: PORT, DATABASE_URL, BASE_URL (for generating full short URLs), RATE_LIMIT settings. Add .env.example with documented defaults.
+12. Write tests for core functionality. Set up vitest. Create tests for: short code generation, link service operations, API endpoint responses (create, redirect, stats, delete, error cases).
 ```
 
 **Prompt 2:** `skip docker and linting. 6 character codes. add api key auth for creating links. add a task for custom short codes. start.`

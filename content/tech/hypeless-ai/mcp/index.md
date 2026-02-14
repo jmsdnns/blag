@@ -90,7 +90,7 @@ const transport = new StdioServerTransport();
 await server.connect(transport);
 ```
 
-The server communicates over stdio by default — Claude launches it as a subprocess and sends JSON back and forth. The `tool` method registers a tool name, a description that tells Claude when to use it, a Zod schema for input validation, and a handler that does the actual work.
+The server communicates over stdio by default. Claude launches it as a subprocess and sends JSON back and forth. The `tool` method registers a tool name, a description that tells Claude when to use it, a Zod schema for input validation, and a handler that does the actual work.
 
 # Test it manually
 
