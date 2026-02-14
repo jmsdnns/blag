@@ -17,14 +17,19 @@
 .series-nav {
   background: var(--code-bg);
   border-left: 4px solid var(--highlight-color);
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   margin-bottom: 2rem;
   border-radius: 0 4px 4px 0;
 
   .series-title {
-    margin: 0 0 0.75rem 0;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @include breakpoint('small') {
+      font-size: 24px;
+    }
     color: var(--text-color);
+    margin-bottom: 0.25rem;
 
     a {
       color: var(--highlight-color);
@@ -38,25 +43,40 @@
     }
   }
 
+  .series-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin: 0 0 0.5rem 0;
+  }
+
   .series-toc {
+    list-style: none;
     margin: 0;
-    padding-left: 1.5rem;
+    padding-left: 0;
 
     li {
-      margin: 0.4rem 0;
-      font-size: 0.9rem;
+      margin: 0;
+      padding: 0.5rem 0;
+      font-size: 1rem;
+      border-bottom: 1px solid #303030;
+
+      &:last-child {
+        border-bottom: none;
+      }
 
       a {
-        color: var(--text-color);
+        color: var(--highlight-color);
         text-decoration: none;
 
         &:hover {
-          color: var(--highlight-color);
+          text-decoration: underline;
         }
       }
 
       &.current {
-        color: var(--heading-color);
+        color: var(--highlight-color);
+        font-weight: 400;
       }
     }
   }

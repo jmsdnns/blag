@@ -1,10 +1,14 @@
 <div class="summary">
-  {{ if not .IsSection }}
+  {{ if .IsSection }}
+    {{ with index (.Pages.ByDate.Reverse) 0 }}
+    <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
+    {{ end }}
+  {{ else }}
   <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
   {{ end }}
   <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   <p class="summary-description">{{ .Params.description }}</p>
   {{ if .IsSection }}
-  {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" true) }}
+  {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" true "ShowDates" false) }}
   {{ end }}
 </div>

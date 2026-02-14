@@ -3,6 +3,7 @@
   {{/* limit: number of posts to show (only when ApplyLimit is true) */}}
   {{ $section := .Section }}
   {{ $applyLimit := .ApplyLimit }}
+  {{ $showDates := .ShowDates }}
   {{ $pages := $section.Pages.ByDate.Reverse }}
   {{ if eq $section.Params.sort "weight" }}
     {{ $pages = $section.Pages.ByWeight }}
@@ -12,7 +13,7 @@
   {{ end }}
   {{ range $pages }}
   <li>
-    <span class="summary-series-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+    {{ if $showDates }}<span class="summary-series-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>{{ end }}
     <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
     {{ with .Params.description }}
     <p class="summary-series-description">{{ . }}</p>

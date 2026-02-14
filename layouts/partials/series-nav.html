@@ -4,10 +4,13 @@
 {{/* Only show series nav if parent is a subsection (not a top-level section), skip music */}}
 {{ if and $parent (not $parent.IsHome) ($parent.Parent) (ne $currentPage.Section "music") }}
   <div class="series-nav">
-    <p class="series-title">
-      <a href="{{ $parent.Permalink }}">{{ $parent.Title }}</a> series
-    </p>
-    <ol class="series-toc">
+    <div class="series-title">
+      <a href="{{ $parent.Permalink }}">{{ $parent.Title }}</a>
+    </div>
+    {{ with $parent.Params.description }}
+    <p class="series-description">{{ . }}</p>
+    {{ end }}
+    <ul class="series-toc">
       {{/* Music section: newest to oldest. Everywhere else: oldest to newest */}}
       {{ $pages := $parent.Pages.ByWeight }}
       {{ if eq $currentPage.Section "music" }}
@@ -22,7 +25,7 @@
         {{ end }}
       </li>
       {{ end }}
-    </ol>
+    </ul>
   </div>
 {{ end }}
 {{ end }}
