@@ -33,8 +33,11 @@ With that said, LLMs actually do represent a massive leap forward in terms of ho
 The key things that LLMs did to push the field forward are:
 
 1. **Learning from huge amounts of text**. They get better as you give them more data and you can give them seemingly endless data. As the size of the training data grows, they become more likely to produce accurate and coherent responses. This is why AI companies are so aggressive about collecting as much data. Being able to build such gigantic models using as much data as can be collected is new.
+
 2. **Understanding context.** LLMs can understand text of any size, allowing them to consider not just the individual words, but the context of entire documents or conversations. Prior models were significantly more limited in scope, focused on smaller portions of documents like phrases or sentences.
+
 3. **They have an "Attention Mechanism".** LLMs can _pay attention_ to the most relevant parts of a document to figure out what other parts of the document mean. As an analogy, consider how the meaning of "apple" would change if it was used in a sentence with "kitchen" or with "technology".
+
 4. **Generating human-like text**. They can write, chat, and respond in ways that _feel_ like a real conversation with a person. If we put aside their notorious tendency to hallucinate, the quality of their text outputs is the best the AI industry has ever achieved.
 
 Once all of the model training is done, you can think of LLMs as essentially being a big mapping of how words are arranged when humans use them to communicate. One word leads to another word, which leads to another word, and so on. This is why they're called _language models_. They attempt to model the flow of language.
@@ -238,5 +241,3 @@ I hope this post has given you some understanding of both how LLMs work and how 
 Being able to produce huge amounts of reliable text on demand can be a blessing or a curse, depending on how you do it. My hope is that all of my history teacher friends experience the blessing side a lot more often after reading this post.
 
 Good luck!
-
-
