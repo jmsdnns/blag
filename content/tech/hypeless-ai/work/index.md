@@ -1,5 +1,5 @@
 ---
-title: "Structing work"
+title: "Structuring work"
 date: 2026-02-13
 image: images/tech/hypeless-ai/work.jpg
 series: "Hypeless AI"
