@@ -1,5 +1,5 @@
 ---
-title: "A Hypeless Primer to AI"
+title: "A Hypeless Primer to Claude Code"
 layout: series
 draft: true
 sort: weight

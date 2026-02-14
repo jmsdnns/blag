@@ -1,8 +1,8 @@
 ---
 title: "Make an MCP server for weather"
 date: 2026-01-25
-image: images/tech/hypeless-ai/mcp.jpg
-series: "Hypeless AI"
+image: images/tech/hypeless-claude-code/mcp.jpg
+series: "Hypeless Claude Code"
 weight: 4
 draft: true
 description: >

@@ -1,8 +1,8 @@
 ---
 title: "Claude basics"
 date: 2026-01-25
-image: images/tech/hypeless-ai/basics.jpg
-series: "Hypeless AI"
+image: images/tech/hypeless-claude-code/basics.jpg
+series: "Hypeless Claude Code"
 weight: 1
 draft: true
 description: >

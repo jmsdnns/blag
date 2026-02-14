@@ -1,8 +1,8 @@
 ---
 title: "Add the weather to a session"
 date: 2026-01-25
-image: images/tech/hypeless-ai/weather.jpg
-series: "Hypeless AI"
+image: images/tech/hypeless-claude-code/weather.jpg
+series: "Hypeless Claude Code"
 weight: 5
 draft: true
 description: >

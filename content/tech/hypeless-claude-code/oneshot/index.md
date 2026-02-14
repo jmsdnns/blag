@@ -1,8 +1,8 @@
 ---
 title: "Oneshot a whole API"
 date: 2026-01-25
-image: images/tech/hypeless-ai/oneshot.jpg
-series: "Hypeless AI"
+image: images/tech/hypeless-claude-code/oneshot.jpg
+series: "Hypeless Claude Code"
 weight: 3
 draft: true
 description: >

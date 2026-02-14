@@ -1,8 +1,8 @@
 ---
 title: "Make a plugin to build APIs"
 date: 2026-01-27
-image: images/tech/hypeless-ai/plugin.jpg
-series: "Hypeless AI"
+image: images/tech/hypeless-claude-code/plugin.jpg
+series: "Hypeless Claude Code"
 weight: 2
 draft: true
 description: >

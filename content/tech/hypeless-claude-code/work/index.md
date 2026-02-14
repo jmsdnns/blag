@@ -1,8 +1,8 @@
 ---
 title: "Structuring work"
 date: 2026-02-13
-image: images/tech/hypeless-ai/work.jpg
-series: "Hypeless AI"
+image: images/tech/hypeless-claude-code/work.jpg
+series: "Hypeless Claude Code"
 weight: 6
 draft: true
 description: >
