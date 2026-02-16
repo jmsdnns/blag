@@ -16,6 +16,6 @@
   </div>
 
   <div class="summary">
-    {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" false "ShowDates" true) }}
+    {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" false "ShowDates" .Params.showSeriesPageDates) }}
   </div>
 {{ end }}

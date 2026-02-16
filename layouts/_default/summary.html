@@ -9,6 +9,6 @@
   <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   <p class="summary-description">{{ .Params.description }}</p>
   {{ if .IsSection }}
-  {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" true "ShowDates" false) }}
+  {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" true "ShowDates" .Params.showNestedDates) }}
   {{ end }}
 </div>
