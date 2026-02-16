@@ -3,6 +3,8 @@ title: "A Hypeless Primer to Claude Code"
 layout: series
 draft: true
 sort: weight
+showNestedDates: false
+showSeriesPageDates: false
 image: images/tech/hypeless-claude-code/index.jpg
 date: 2026-01-25
 description: >
