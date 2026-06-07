@@ -11,14 +11,14 @@
             "image": "images/social/bluesky.svg"
         },
         {
-            "name": "mastodon",
-            "url": "https://mastodon.social/@jmsdnns",
-            "image": "images/social/mastodon.svg"
-        },
-        {
             "name": "github",
             "url": "https://github.com/jmsdnns",
             "image": "images/social/github.svg"
+        },
+        {
+            "name": "soundcloud",
+            "url": "https://soundcloud.com/jmsdnns",
+            "image": "images/social/soundcloud.svg"
         }
     ]
 }

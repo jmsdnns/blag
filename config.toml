@@ -1,10 +1,6 @@
 baseURL = "/"
-languageCode = "en-us"
+locale = "en-us"
 title = "JmsDnns"
-
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-pygmentsUseClasses = true
 
 disableKinds = ["sitemap"]
 
@@ -20,7 +16,7 @@ pagerSize = 3
 [module]
 [module.hugoVersion]
 extended = true
-min = "0.55.0"
+min = "0.158.0"
 
 [params]
 google_analytics_id = ""
@@ -49,6 +45,10 @@ darkDotColor = "#5294e2"
 hardWraps = false
 unsafe = true
 xhtml = false
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+noClasses = false
 
 [deployment]
 
