@@ -4,8 +4,6 @@ date: 2024-04-14
 image: images/tech/penn_ai_conf.jpg
 description: >
     I attended University of Pennylvania's first AI conference last Friday, where I heard several talks and hung out with an old friend that teaches there. I went to the conf with an open mind, but some cynicism about AI hype. I came back from the conf with new opinions and a sense that, instead of harming them, creatives will likely just get faster at doing what they already do.
-tags:
-   - python
 ---
 
 I attended University of Pennylvania's first AI conference last Friday, where I heard several talks and hung out with an old friend that teaches there. I went to the conference with an open mind, but I must confess that I've been cynical about AI after feeling blasted by AI tech bros and doomers. I am grateful to have learned from the perspective of more level-headed folks and I even changed some of my opinions about where it's all going.

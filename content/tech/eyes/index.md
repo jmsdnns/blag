@@ -4,9 +4,6 @@ date: 2024-03-08
 image: images/tech/the_eyes.gif
 description: >
     I have been dabbling with writing Rust code. I tell the story of using Rust to build a small project; a non-blocking, asynchronous port scanner called Eyes.
-tags:
-   - rust
-   - netsec
 ---
 
 Rust appears to be taking over a mindshare that has long been considered unaccessible to anything other than C++. The language makes some fascinating security guarantees at a time when it seems like the C++ community is tired of struggling with using the language to build secure systems, and when younger generations are choosing not to take on that pain. Stuff built with Rust can often be faster than C++ too. From what I can tell, there is a perception that just choosing to use Rust makes software both more secure and faster.

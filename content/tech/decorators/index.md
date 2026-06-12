@@ -4,8 +4,6 @@ draft: false
 image: images/tech/decorators/decorators-101.jpg
 date: 2023-08-21
 description: "Python decorators are initially a mystery, but they're basically middleware with weird syntax."
-tags:
-   - python
 ---
 
 It is underappreciated that Python decorators are syntactic sugar for function wrappers. People new to Python usually encounter them first by writing like `@foo` above a function `bar` and observing that `bar` behaves differently than it used to.

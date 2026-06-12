@@ -5,8 +5,6 @@ image: images/tech/algo_underground.gif
 draft: false
 description: >
     I have been thinking about something Jean Baudrillard said a lot recently. It comes to mind because of the current moment and what is happening around generative AI. He said, "Art does not die because there is no more art. It dies because there is too much." 
-tags:
-    - AI
 ---
 
 I have been thinking about something Jean Baudrillard said a lot recently. It comes to mind because of the current moment and what is happening around generative AI.

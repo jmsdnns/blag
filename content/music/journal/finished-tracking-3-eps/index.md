@@ -4,8 +4,6 @@ date: 2024-03-08
 image: images/music/journal/finished-tracking-3-eps.jpg
 description: >
     I have been writing and recording three EPs for my solo project, american f00d, and I'm thrilled to report I have finished tracking everything.
-tags:
-    - american f00d
 ---
 
 I am very pleased to say I have completed tracking for the first releases by American Food! It has taken a lot of time and effort to get through everything, especially if you consider the time I spent learning how to do things I hadn't done before.

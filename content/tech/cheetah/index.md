@@ -5,10 +5,6 @@ image: images/tech/cheetah.jpg
 draft: true
 description: >
     Last year, I was on a team that worked on the class designs for UPenn's new AI degree programs. We were quite concerned about how well cheating with AI might work. There was a lot of speculation, but that ain't my style, so I rolled up my sleeves and got hacking until I had a tool, Cheetah, that could tell us just how cheatable the classes really were.
-tags:
-    - AI
-    - Penn
-    - Cheetah
 ---
 
 The last couple years have been a wild ride for tech because of AI. While the optimists and the pessimists have been arguing about AI's future, universities have been changing their degree programs to point towards a future where AI has a prominent role in society. UPenn's approach has been to create new undergratuate and graduate degrees for AI. That's right, someone can major in AI now, just like computer science or history, etc. AI was simply an elective back when I was in undergrad.

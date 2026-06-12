@@ -6,9 +6,6 @@ aliases:
   - /tech/ai-for-teachers/
 description: >
     Teachers are being told they must use AI and must help students learn how to use AI, but no one has told them how to use AI. I'm here to help!
-tags:
-   - teachers
-   - ai
 ---
 
 AI has been a whole thing for several years now and it's been hyped beyond belief. One of the ways we notice how excessive the hype has been is how many people are sure AI is going to change everything, yet they can't quite describe _how_ anyone should use it. They're just convinced it's the future and that we're all going to lose our jobs.

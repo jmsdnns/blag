@@ -4,8 +4,6 @@ date: 2024-03-10
 image: images/music/journal/guide-simple-demos.jpg
 description: >
     Here are the steps I use when I'm prototyping a song in Logic. It is based almost entirely on plugins that come builtin with Logic, except for the amp sim. You only need to bring your eyes, your ears, and your guitars.
-tags:
-    - recording
 ---
 
 Sharing music can be a complicated task for folks who play guitars. We can easily use something like voice memos to capture us playing a guitar, but the song we have in our heads is usually big enough to include drums, a bass, and maybe a second or third guitar.  Learning to play instruments and how to write music were already huge undertakings, so it always makes sense to me when musicians don't _also_ know how to produce music.

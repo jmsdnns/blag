@@ -4,8 +4,6 @@ date: 2024-09-25
 image: images/tech/cartons.png
 description: >
     About two months ago I decided I would immerse myself in Rust and build small project after small project, each based on familiar ideas, until I reached a point where I felt like the language made good sense. It's one thing to read about a language and something quite different to actually use it, after all. All of those projects are contained in a repo I call "Cartons", with a nod and a wink to Rust's concept of a "Crate".
-tags:
-   - rust
 ---
 
 I've learned to use many programming languages over the years. Most of them could reasonably described as ordinary, but every now and then I come across something unlike anything else I've seen before. After all these years programming, it's also just been a long time since I felt a language offered a genuinely new idea to the world. And yet, Rust actually is like no other language I've seen before and with some genuinely new ideas too.

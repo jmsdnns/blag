@@ -4,8 +4,6 @@ date: 2024-11-11
 image: images/music/journal/learning-with-covers.jpg
 description: >
     I have been teaching myself how to record music for several years. To get started, I figured I should do a bunch of cover songs and I would switch to recording my own music once I got the hang of it. I never shared the covers... until now!
-tags:
-    - covers
 ---
 
 I have been teaching myself how to record music for several years. To get started, I figured I should do a bunch of cover songs where I play drums, bass, the guitars, and sing to quickly create a bunch of data for me to learn with. Once I got the hang of it, I would switch to recording my own music. This is what I did to learn how to record so I could then record the music I wrote for [American Food]({{<ref americanf00d >}}).

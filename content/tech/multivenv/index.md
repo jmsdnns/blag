@@ -3,8 +3,6 @@ title: MultiVenv
 date: 2023-08-04
 image: images/tech/multivenv.jpg
 description: "I replaced virtualenvwrapper with 100 lines of bash"
-tags:
-   - python
 ---
 
 I replaced virtualenvwrapper with 100 lines of bash, simplifying the core experience into something you can drop on any box without installing anything.

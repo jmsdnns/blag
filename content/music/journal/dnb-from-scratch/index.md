@@ -5,9 +5,6 @@ draft: false
 image: images/music/journal/dnb-from-scratch.jpg
 description: >
     I tried an experiment recently where I wrote drum n bass with drums, bass, and guitars. I first wrote a song, then slowed it down to track the drums, and then sped it back up, because that's roughly how the genre was created to begin with.
-tags:
-    - dnb
-    - drums
 ---
 
 I have listened to drum n bass for a long time. For me, it always felt like the punk rock side of EDM. I learned of it during the 90's when it was still rudimentary but still had a distinct direction. I had never seen engineering done the way dnb producers did it back then. Inventing new subgenres and seeing how far they can be stretched out creatively is a lot of work. I bet it didn't feel like work, tho. I bet it was an amazing time.
