@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://jmsdnns.com/"
 locale = "en-us"
 title = "JmsDnns"
 
@@ -23,8 +23,3 @@ xhtml = false
 [markup.highlight]
 codeFences = true
 noClasses = false
-
-[[deployment.targets]]
-name = "live"
-URL = "s3://jmsdnns.com?region=us-east-1"
-cloudFrontDistributionID = "E28NFOMHCWR2CR"
