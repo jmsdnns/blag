@@ -1,4 +1,5 @@
-baseURL = "https://jmsdnns.com/"
+#baseURL = "https://jmsdnns.com/"
+baseURL = "/"
 locale = "en-us"
 title = "JmsDnns"
 

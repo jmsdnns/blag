@@ -2,9 +2,9 @@
 {{ if gt $paginator.TotalPages 1 }}
 <nav class="pagination" aria-label="Pagination">
   {{ if $paginator.HasPrev }}
-  <a class="pagination-button" href="{{ $paginator.Prev.URL }}">Previous</a>
+  <a class="pagination-button" href="{{ $paginator.Prev.URL }}">Back</a>
   {{ else }}
-  <span class="pagination-button is-disabled" aria-hidden="true">Previous</span>
+  <span class="pagination-button is-disabled" aria-hidden="true">Back</span>
   {{ end }}
   <span class="pagination-count">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
   {{ if $paginator.HasNext }}
