@@ -2,10 +2,10 @@
 
 {{ define "main" }}
   <div class="intro">
-    <h1>
-      {{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}
+    <h1 class="intro-title">
+      <span>{{ .Title }}<span class="dot">.</span></span>
       <span class="social-icon">
-        <a rel="rss" href="index.xml" title="meow" target="_blank" rel="noopener">
+        <a href="index.xml" title="RSS feed" target="_blank" rel="noopener">
           <img src="/images/social/square-rss.svg" alt="RSS"/>
         </a>
       </span>
@@ -19,18 +19,19 @@
 
   {{ .Content }}
   
-  {{/* Build collection with effective dates (sections use most recent child's date) */}}
+  {{/* Order by effective date (sections use most recent child's date) */}}
   {{ $items := slice }}
   {{ range .Pages }}
-    {{ $sortDate := .Date }}
-    {{ if .IsSection }}
-      {{ with index (.Pages.ByDate.Reverse) 0 }}
-        {{ $sortDate = .Date }}
-      {{ end }}
-    {{ end }}
-    {{ $items = $items | append (dict "Page" . "SortDate" $sortDate) }}
+    {{ $items = $items | append (dict "Page" . "SortDate" (partial "latest-date.html" .)) }}
   {{ end }}
+  {{ $ordered := slice }}
   {{ range sort $items "SortDate" "desc" }}
-    {{ .Page.Render "summary" }}
+    {{ $ordered = $ordered | append .Page }}
   {{ end }}
+
+  {{ $paginator := .Paginate $ordered }}
+  {{ range $paginator.Pages }}
+    {{ .Render "summary" }}
+  {{ end }}
+  {{ partial "pagination.html" . }}
 {{ end }}

@@ -11,32 +11,7 @@ disableKinds = ["sitemap"]
 section = ['html', 'rss']
 
 [pagination]
-pagerSize = 3
-
-[module]
-[module.hugoVersion]
-extended = true
-min = "0.158.0"
-
-[params]
-google_analytics_id = ""
-showAuthorOnHomepage = false
-showAuthorOnPosts = false
-showPostsOnHomepage = false
-addDot = true
-addFrame = false
-highlightColor = '#5294e2'
-baseColor = "#ffffff"
-baseOffsetColor = "#eaeaea"
-headingColor = "#000000"
-textColor = "#4e5157"
-dotColor = "#5294e2"
-darkBaseColor = "#16171a"
-darkBaseOffsetColor = "#2d2d2d"
-darkHeadingColor = "#ffffff"
-darkTextColor = "#c9c9c9"
-darkHighlightColor = "#5294e2"
-darkDotColor = "#5294e2"
+pagerSize = 5
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]
@@ -47,10 +22,7 @@ unsafe = true
 xhtml = false
 [markup.highlight]
 codeFences = true
-guessSyntax = true
 noClasses = false
-
-[deployment]
 
 [[deployment.targets]]
 name = "live"

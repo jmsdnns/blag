@@ -1,0 +1,8 @@
+{{/* Returns a page's effective date: sections use their most recent child's date */}}
+{{ $date := .Date }}
+{{ if .IsSection }}
+  {{ with index .Pages.ByDate.Reverse 0 }}
+    {{ $date = .Date }}
+  {{ end }}
+{{ end }}
+{{ return $date }}

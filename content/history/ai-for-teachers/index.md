@@ -1,7 +1,9 @@
 ---
 title: "AI For History Teachers"
 date: 2025-09-07
-image: images/tech/ai-for-teachers.jpg
+image: images/history/ai-for-teachers.jpg
+aliases:
+  - /tech/ai-for-teachers/
 description: >
     Teachers are being told they must use AI and must help students learn how to use AI, but no one has told them how to use AI. I'm here to help!
 tags:
