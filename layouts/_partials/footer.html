@@ -3,7 +3,7 @@
   <div class="footer-links">
     {{ range hugo.Data.social.links }}
       <span class="social-icon social-icon-{{ .name | urlize }}">
-        <a rel="me" href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener">
+        <a rel="me noopener" href="{{ .url }}" title="{{ .name }}" target="_blank">
           <img src="{{ .image | relURL }}" width="24" height="24" alt="{{ .name }}"/>
         </a>
       </span>
