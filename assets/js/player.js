@@ -205,9 +205,12 @@
     }
 
     // Names that overflow the card scroll sideways; the animation distance
-    // and pace come from how far the text sticks out.
+    // and pace come from how far the text sticks out. Measured from the
+    // span's own geometry, not the wrap's scrollWidth: with text-overflow:
+    // ellipsis active, Safari reports scrollWidth as the clipped width.
     function refreshScroll(wrap) {
-      const over = wrap.scrollWidth - wrap.clientWidth;
+      const over = wrap.firstElementChild.getBoundingClientRect().width
+        - wrap.getBoundingClientRect().width;
       if (over > 2) {
         wrap.style.setProperty('--mp-scroll-dist', over + 'px');
         wrap.style.setProperty('--mp-scroll-dur', (4 + over / 40).toFixed(1) + 's');
