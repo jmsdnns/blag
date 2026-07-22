@@ -1,5 +1,11 @@
 // Nord theme syntax highlighting
 html.dark-mode {
+  .content pre:not(.chroma) {
+    background: var(--code-bg);
+    color: #ffffff;
+    border: 1px solid #303030;
+  }
+
   .highlight {
     background: var(--code-bg);
     color: #ffffff;
@@ -72,6 +78,12 @@ html.dark-mode {
 // System dark mode preference
 @media (prefers-color-scheme: dark) {
   :root:not(.light-mode) {
+    .content pre:not(.chroma) {
+      background: var(--code-bg);
+      color: #ffffff;
+      border: 1px solid #303030;
+    }
+
     .highlight {
       background: var(--code-bg);
       color: #ffffff;

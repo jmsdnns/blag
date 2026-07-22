@@ -1,5 +1,6 @@
 // Nord light theme syntax highlighting
-.highlight { background: #f0f0f0; color: #2e3440; border: 1px solid #cbcbcb; }
+.highlight,
+.content pre:not(.chroma) { background: #f0f0f0; color: #2e3440; border: 1px solid #cbcbcb; }
 .highlight .hll { background-color: #d8dee9; } /* Highlight line - nord4 */
 .highlight .c { color: #4c566a; font-style: italic; } /* Comment - nord3 */
 .highlight .err { color: #bf616a; } /* Error - nord11 */

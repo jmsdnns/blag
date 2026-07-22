@@ -15,6 +15,10 @@
       document.documentElement.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
     })();
   </script>
+  <style>
+    html.dark-mode { color-scheme: dark; background-color: #16171a; }
+    html.light-mode { color-scheme: light; background-color: #ffffff; }
+  </style>
 
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
   <link rel="canonical" href="{{ .Permalink }}" />

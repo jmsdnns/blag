@@ -7,7 +7,6 @@
   height: 100vh;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
   display: none;
   justify-content: center;
@@ -19,25 +18,6 @@
     height: 100%;
     z-index: 10;
     display: flex;
-    li {
-      animation: fadeInTop 0.5s ease forwards;
-      animation-delay: 0.1s;
-      &:nth-of-type(2) {
-        animation-delay: 0.15s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: 0.20s;
-      }
-      &:nth-of-type(4) {
-        animation-delay: 0.25s;
-      }
-      &:nth-of-type(5) {
-        animation-delay: 0.30s;
-      }
-      &:nth-of-type(6) {
-        animation-delay: 0.35s;
-      }
-    }
   }
   ul {
     font-size: 2.5rem;
@@ -50,8 +30,6 @@
     flex: 0;
     li {
       display: block;
-      position: relative;
-      opacity: 0;
       a {
         display: block;
         position: relative;
@@ -106,22 +84,11 @@
   }
 }
 
-@keyframes fadeInTop {
-  0% {
-    opacity: 0;
-    top: 20%;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-
-// Dark mode: flip the overlay colors (gray bg, blue text)
+// Dark mode: overlay matches the site background, links in blue
 @media (prefers-color-scheme: dark) {
   :root:not(.light-mode) {
     .menu-main-mobile {
-      background: var(--base-offset-color);
+      background: var(--base-color);
 
       ul li a {
         color: var(--highlight-color);
@@ -139,7 +106,7 @@
 
 html.dark-mode {
   .menu-main-mobile {
-    background: var(--base-offset-color);
+    background: var(--base-color);
 
     ul li a {
       color: var(--highlight-color);
