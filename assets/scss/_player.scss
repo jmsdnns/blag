@@ -1,0 +1,447 @@
+// Two layers: the card (album art, transport, seek bar) looks the same
+// whether it's one track or many, and the track list is a slightly narrower
+// panel tucked up behind the card so it reads as a drawer sliding out from
+// under the rounded corners.
+.music-player {
+  margin: 30px 0;
+
+  .mp-card {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr);
+    grid-template-areas:
+      "art head"
+      "art seek";
+    column-gap: 16px;
+    background: var(--code-bg);
+    border: 1px solid var(--base-offset-color);
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include breakpoint('small') {
+      grid-template-columns: 170px minmax(0, 1fr);
+      column-gap: 20px;
+    }
+
+    @include breakpoint('medium') {
+      grid-template-columns: 220px minmax(0, 1fr);
+    }
+  }
+
+  .mp-art {
+    grid-area: art;
+    position: relative;
+    width: 116px;
+    height: 116px;
+    align-self: start;
+    background: var(--base-offset-color);
+
+    @include breakpoint('small') {
+      width: 170px;
+      height: 170px;
+    }
+
+    @include breakpoint('medium') {
+      width: 220px;
+      height: 220px;
+    }
+
+    svg {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 40px;
+      height: 40px;
+      fill: var(--text-color);
+      opacity: 0.35;
+
+      @include breakpoint('small') {
+        width: 56px;
+        height: 56px;
+      }
+
+      @include breakpoint('medium') {
+        width: 72px;
+        height: 72px;
+      }
+    }
+
+    img {
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &[hidden] {
+        display: none;
+      }
+    }
+  }
+
+  .mp-head {
+    grid-area: head;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    align-self: end;
+    padding: 0 16px 0 0;
+
+    // On bigger screens the taller art leaves vertical room: the head moves
+    // to the top of the card and the seek row drops to the bottom.
+    @include breakpoint('small') {
+      align-self: start;
+      gap: 14px;
+      padding: 18px 20px 0 0;
+    }
+  }
+
+  .mp-play {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: var(--highlight-color);
+    color: #fff;
+    cursor: pointer;
+
+    @include breakpoint('small') {
+      width: 48px;
+      height: 48px;
+    }
+
+    @include breakpoint('medium') {
+      width: 56px;
+      height: 56px;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+
+      @include breakpoint('small') {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include breakpoint('medium') {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .mp-play-icon {
+      transform: translateX(1px);
+    }
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  .mp-pause-icon {
+    display: none;
+  }
+
+  &.playing {
+    .mp-play-icon {
+      display: none;
+    }
+
+    .mp-pause-icon {
+      display: block;
+    }
+  }
+
+  .mp-meta {
+    min-width: 0;
+
+    // Names too long for the card scroll sideways (player.js measures the
+    // overflow and turns the animation on) instead of wrapping or truncating.
+    .mp-artist,
+    .mp-title {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      span {
+        display: inline-block;
+      }
+
+      &.mp-scroll {
+        text-overflow: clip;
+
+        span {
+          animation: mp-marquee var(--mp-scroll-dur, 8s) linear infinite alternate;
+
+          @media (prefers-reduced-motion: reduce) {
+            animation: none;
+          }
+        }
+      }
+    }
+
+    .mp-artist {
+      font-size: 13px;
+      opacity: 0.75;
+
+      @include breakpoint('small') {
+        font-size: 14px;
+      }
+    }
+
+    .mp-title {
+      @include heading-font;
+      color: var(--heading-color);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.3;
+
+      @include breakpoint('small') {
+        font-size: 18px;
+      }
+
+      @include breakpoint('medium') {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .mp-seek {
+    grid-area: seek;
+    display: flex;
+    align-items: center;
+    align-self: start;
+    gap: 10px;
+    padding: 10px 16px 0 0;
+
+    @include breakpoint('small') {
+      align-self: end;
+      padding: 0 20px 18px 0;
+    }
+
+    .mp-time {
+      font-family: var(--font-family-monospace);
+      font-size: 12px;
+      opacity: 0.8;
+      flex-shrink: 0;
+
+      @include breakpoint('medium') {
+        font-size: 13px;
+      }
+    }
+
+    .mp-seekbar {
+      appearance: none;
+      -webkit-appearance: none;
+      flex: 1;
+      min-width: 0;
+      height: 4px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-radius: 2px;
+      background: linear-gradient(
+        to right,
+        var(--highlight-color) var(--mp-fill, 0%),
+        var(--base-offset-color) var(--mp-fill, 0%)
+      );
+      cursor: pointer;
+
+      @include breakpoint('small') {
+        height: 5px;
+      }
+
+      @include breakpoint('medium') {
+        height: 6px;
+        border-radius: 3px;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: none;
+        background: var(--highlight-color);
+
+        @include breakpoint('small') {
+          width: 15px;
+          height: 15px;
+        }
+
+        @include breakpoint('medium') {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: none;
+        background: var(--highlight-color);
+
+        @include breakpoint('small') {
+          width: 15px;
+          height: 15px;
+        }
+
+        @include breakpoint('medium') {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  // Narrower than the card and pulled up behind it, so the top edge hides
+  // under the card and the panel emerges from behind the rounded corners.
+  .mp-tracklist {
+    list-style: none;
+    margin: -12px 8px 0;
+    padding: 12px 0 0;
+    background: var(--code-bg);
+    border: 1px solid var(--base-offset-color);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      // The first row's highlight reaches 1px up to meet the card's bottom
+      // edge (the panel border eats 1px of the tuck) without moving the text.
+      &:first-child button {
+        margin-top: -1px;
+        padding-top: 12px;
+      }
+
+      // The breathing room under the last row belongs to the row itself,
+      // so its highlight fills all the way to the panel's bottom edge.
+      &:last-child button {
+        padding-bottom: 13px;
+      }
+
+      // Dividers are inset to line up with the row text, not the panel edge.
+      // Mixed from the text color so they stay equally faint in both themes.
+      + li {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 18px;
+          right: 18px;
+          border-top: 1px solid color-mix(in srgb, var(--text-color) 8%, transparent);
+
+          @include breakpoint('small') {
+            left: 20px;
+            right: 20px;
+          }
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      width: 100%;
+      background: none;
+      border: none;
+      // Slightly heavier top padding: Helvetica leaves descender room under
+      // the baseline, so equal padding makes the text sit optically high.
+      padding: 11px 18px 9px;
+      cursor: pointer;
+      font-family: var(--font-family-paragraph);
+      font-size: 14px;
+      line-height: 1;
+      color: var(--text-color);
+      text-align: left;
+
+      @include breakpoint('small') {
+        padding: 12px 20px 10px;
+      }
+
+      .mp-track-num {
+        font-family: var(--font-family-monospace);
+        font-size: 12px;
+        opacity: 0.5;
+        min-width: 1.3em;
+        flex-shrink: 0;
+
+        @include breakpoint('small') {
+          font-size: 13px;
+        }
+      }
+
+      .mp-track-title {
+        flex: 1;
+        min-width: 0;
+        font-size: 12px;
+        opacity: 0.6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @include breakpoint('small') {
+          font-size: 13px;
+        }
+      }
+
+      .mp-track-length {
+        font-family: var(--font-family-monospace);
+        font-size: 12px;
+        opacity: 0.6;
+        flex-shrink: 0;
+
+        @include breakpoint('small') {
+          font-size: 13px;
+        }
+      }
+
+      &:hover {
+        background: var(--base-offset-color);
+        color: var(--highlight-color);
+      }
+
+      &.current {
+        color: var(--highlight-color);
+
+        .mp-track-num,
+        .mp-track-title {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // Single track: same layout, just no track list.
+  &.single {
+    .mp-tracklist {
+      display: none;
+    }
+  }
+}
+
+// Slides overflowing text to its end, holds, and drifts back (via alternate).
+@keyframes mp-marquee {
+  0%, 15% {
+    transform: translateX(0);
+  }
+
+  85%, 100% {
+    transform: translateX(calc(-1 * var(--mp-scroll-dist, 0px)));
+  }
+}

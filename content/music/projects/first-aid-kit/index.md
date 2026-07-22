@@ -23,21 +23,21 @@ In retrospect, we were a wildly productive band. We were too busy trying to get 
 
 Our third recording. 2 songs, recorded in 2005, but never actually released. Recorded with Greg Giorgio.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546357&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "First Aid Kit/Ships and One Offs" >}}
 
 
 ## Forgot ID
 
 Our second recording. 3 songs released in 2003. Recorded with Greg Giorgio.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546351&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "First Aid Kit/Forgot ID" >}}
 
 
 ## Frights And Shivers
 
 Our first recording. 11 songs released in 2002. This is the first record I did with Greg Giorgio.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2546323&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "First Aid Kit/Frights + Shivers" >}}
 
 
 # Videos

@@ -48,7 +48,7 @@ I used the time I saved _not_ recording drums (_yet_) to start learning how to s
 
 I wrote a song about my cat during this period and it'll be on Internet On The TV, one of the EPs.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/405533601&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
+{{< playermtrls "American Food/Internet On The TV/01 Wanna Be A Cat.mp3" >}}
 
 
 ## Recording Drums
@@ -88,14 +88,14 @@ Up next is the part where I learn how to mix and master everything. At some poin
 
 ### Silent Artillery Of Time
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1789100784&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "American Food/Silent Artillery of Time" >}}
 
 
 ### Internet On The TV
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1789100508&color=%23ff5500&auto_play=false&hide_related=false&show_comments=fals&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "American Food/Internet On The TV" >}}
 
 
 ### Street Fight
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1789100094&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "American Food/Street Fight" >}}

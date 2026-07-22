@@ -21,7 +21,7 @@ After a few years, our drummer wanted to leave the band to study for the CFA, a 
 
 This is the complete set, except for the first song, from my first show playing drums with Medio.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/125208502&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">}}
+{{< playermtrls "Medio/Live 07.11.15" >}}
 
 
 # Videos

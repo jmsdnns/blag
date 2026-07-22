@@ -22,7 +22,7 @@ I left this band to move to Boston and immerse myself in computing for a while. 
 
 This was the last recording I did with Counterfit before I left California. You can hear our punk roots in it, especially on tracks 3 & 5, but you can also hear the beginnings of what becomes Counterfit's sound too.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/257305822&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "Counterfit/On The Downside" >}}
 
 
 # Video

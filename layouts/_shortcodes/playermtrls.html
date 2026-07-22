@@ -1,0 +1,68 @@
+{{- $tracks := slice -}}
+{{- range .Params -}}
+  {{- $arg := . -}}
+  {{- if strings.HasSuffix (lower $arg) ".mp3" -}}
+    {{- if not (os.FileExists (printf "static/audio/%s" $arg)) -}}
+      {{- errorf "playermtrls: file %q not found under static/audio (%s)" $arg $.Position -}}
+    {{- else -}}
+      {{- $tracks = $tracks | append (dict "url" (printf "/audio/%s" $arg) "file" (path.Base $arg)) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $dir := printf "static/audio/%s" $arg -}}
+    {{- if not (os.FileExists $dir) -}}
+      {{- errorf "playermtrls: folder %q not found under static/audio (%s)" $arg $.Position -}}
+    {{- else -}}
+      {{- $found := false -}}
+      {{- range (os.ReadDir $dir) -}}
+        {{- if strings.HasSuffix (lower .Name) ".mp3" -}}
+          {{- $found = true -}}
+          {{- $tracks = $tracks | append (dict "url" (printf "/audio/%s/%s" $arg .Name) "file" .Name) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if not $found -}}{{- errorf "playermtrls: no mp3s under static/audio/%s (%s)" $arg $.Position -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $tracks -}}{{- errorf "playermtrls: needs at least one path (%s)" .Position -}}{{- end -}}
+<div class="music-player{{ if eq (len $tracks) 1 }} single{{ end }}" data-player>
+  <div class="mp-card">
+    <div class="mp-art">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+      <img alt="Album art" hidden>
+    </div>
+    <div class="mp-head">
+      <button type="button" class="mp-play" aria-label="Play or pause">
+        <svg class="mp-play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="mp-pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+      <div class="mp-meta">
+        <div class="mp-artist"><span></span></div>
+        <div class="mp-title"><span>&nbsp;</span></div>
+      </div>
+    </div>
+    <div class="mp-seek">
+      <span class="mp-time mp-elapsed">0:00</span>
+      <input class="mp-seekbar" type="range" min="0" max="0" step="0.1" value="0" aria-label="Seek">
+      <span class="mp-time mp-duration">0:00</span>
+    </div>
+  </div>
+  <ol class="mp-tracklist">
+    {{- range $i, $t := $tracks }}
+    {{- $name := replaceRE "^[0-9]+\\s+" "" (replaceRE "\\.mp3$" "" $t.file) }}
+    {{- /* percent-encode path characters that would break the URL; % must go first */ -}}
+    {{- $src := replace $t.url "%" "%25" }}
+    {{- $src = replace $src " " "%20" }}
+    {{- $src = replace $src "#" "%23" }}
+    {{- $src = replace $src "?" "%3F" }}
+    {{- $src = replace $src "\\" "%5C" }}
+    <li>
+      <button type="button" data-src="{{ $src }}" data-name="{{ $name }}">
+        <span class="mp-track-num">{{ add $i 1 }}</span>
+        <span class="mp-track-title">{{ $name }}</span>
+        <span class="mp-track-length"></span>
+      </button>
+    </li>
+    {{- end }}
+  </ol>
+  <audio preload="metadata"></audio>
+</div>

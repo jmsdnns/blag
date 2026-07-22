@@ -122,7 +122,7 @@ I love this part of his story so much. I love it because the US has been a coffe
 
 I mentioned earlier that I could see Samuel & his crew singing Fugazi lyrics while tossing tea in Boston Harbor. I sang those lyrics a couple years ago, when I recorded a cover of Fugazi's Merchandise while teaching myself how to record music. I'm on drums, guitar, and you'll hear me sing _We owe you nothing! You have no control!_
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1953628591&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
+{{< playermtrls "Jms Dnns/Y2K Covers For Fast People/01 Merchandise.mp3" >}}
 
 
 ## A Union Is Born

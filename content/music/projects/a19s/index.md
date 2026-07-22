@@ -27,21 +27,21 @@ We wrote our final EP, **Unicore** together as a band and went into the studio i
 
 Our last release. 6 songs, released in 2018. Recorded with Greg Giorgio.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/886516540&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "Adventure Capitalists/Unicore" >}}
 
 
 ## MVP
 
 Our first EP. 6 songs, released in 2015. Recorded with John Miller.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/133452560&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "Adventure Capitalists/MVP" >}}
 
 
 ## No Spoilers Allowed
 
 Our first single. Released in 2013. Recorded by me and Rob.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102343071&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
+{{< playermtrls "Adventure Capitalists/No Spoilers Allowed" >}}
 
 
 # Videos

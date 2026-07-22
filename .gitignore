@@ -5,3 +5,6 @@
 
 # macos
 **/.DS_Store
+
+# audio (static data, never committed)
+/static/audio/

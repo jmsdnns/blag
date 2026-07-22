@@ -50,7 +50,7 @@
     {{ partial "footer.html" . }}
   </div>
 
-  {{ $js := slice (resources.Get "js/scripts.js") (resources.Get "js/theme-toggle.js") | resources.Concat "js/bundle.js" }}
+  {{ $js := slice (resources.Get "js/scripts.js") (resources.Get "js/theme-toggle.js") (resources.Get "js/player.js") | resources.Concat "js/bundle.js" }}
   {{ if not hugo.IsServer }}{{ $js = $js | minify | fingerprint }}{{ end }}
   <script src="{{ $js.RelPermalink }}"></script>
 

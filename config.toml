@@ -3,6 +3,8 @@ baseURL = "/"
 locale = "en-us"
 title = "JmsDnns"
 
+audioFiles = "https://www.dropbox.com/scl/fi/0akdjky97iqzl8uojkug9/audio.zip?rlkey=hnnl8wnocvnpurrcs0ckt61mh&dl=1"
+
 disableKinds = ["sitemap"]
 
 [taxonomies]

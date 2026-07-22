@@ -41,10 +41,10 @@ Once I had samples, guitars, and bass arranged as a whole song, I could then slo
 
 Here is where the experiment ended up. The song is called _Reinitializing_. It's cymbalic.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2025929680&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
+{{< playermtrls "Amphase/tHatt neW OS/01 Renitializing.mp3" >}}
 
 ### Just Drums & Drum Samples
 
 I also want to share how cool it sounds when you hear my drumming sped up alongside the samples I used when I originally wrote the song.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2025928576&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true" >}}
+{{< playermtrls "Amphase/tHatt neW OS/Renitializing Drums.mp3" >}}

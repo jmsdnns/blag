@@ -17,5 +17,5 @@ You'll hear fluctuation in the quality of the songs, but I think they all sound 
 
 # Y2K Covers For Fast People
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1904801231&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" >}}
+{{< playermtrls "Jms Dnns/Y2K Covers For Fast People" >}}
 

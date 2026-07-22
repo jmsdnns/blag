@@ -18,7 +18,7 @@ For me, this band feels like one that had so much potential, but never had a rea
 
 Our first EP. We recorded this with Greg Giorgio. The music here captures a love of Dave Brubeck, Radiohead, and good ol' fashioned blues rock.
 
-{{< soundcloud stream="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2690767&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">}}
+{{< playermtrls "Shipyards/A Dream Is A Town" >}}
 
 
 # Videos
