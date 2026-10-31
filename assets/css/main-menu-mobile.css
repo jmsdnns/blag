@@ -21,7 +21,8 @@
   }
   ul {
     font-size: 2.5rem;
-    @include heading-font;
+    font-family: var(--font-family-heading);
+    letter-spacing: -0.04em;
     font-weight: 700;
     text-align: center;
     list-style: none;
@@ -79,12 +80,12 @@
   height: 30px;
   display: flex;
   align-items: center;
-  @include breakpoint('x-small') {
+  @media (min-width: 480px) {
     display: none;
   }
 }
 
-// Dark mode: overlay matches the site background, links in blue
+/* Dark mode: overlay matches the site background, links in blue */
 @media (prefers-color-scheme: dark) {
   :root:not(.light-mode) {
     .menu-main-mobile {

@@ -1,4 +1,4 @@
-// Nord light theme syntax highlighting
+/* Nord light theme syntax highlighting */
 .highlight,
 .content pre:not(.chroma) { background: #f0f0f0; color: #2e3440; border: 1px solid #cbcbcb; }
 .highlight .hll { background-color: #d8dee9; } /* Highlight line - nord4 */

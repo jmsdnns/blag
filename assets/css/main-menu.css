@@ -1,10 +1,10 @@
-
 .menu-main {
   display: none;
   flex: 0;
-  @include heading-font;
+  font-family: var(--font-family-heading);
+  letter-spacing: -0.04em;
   font-weight: 400;
-  @include breakpoint('x-small') {
+  @media (min-width: 480px) {
     display: block;
   }
   > ul {

@@ -4,12 +4,13 @@
   align-items: center;
   margin-bottom: 30px;
   font-size: 16px;
-  @include breakpoint('small') {
+  @media (min-width: 767px) {
     padding-bottom: 5px;
     margin-bottom: 40px;
   }
   a.header-logo {
-    @include heading-font;
+    font-family: var(--font-family-heading);
+    letter-spacing: -0.04em;
     font-weight: 400;
     text-transform: uppercase;
     margin-right: 30px;

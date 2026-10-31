@@ -15,7 +15,8 @@ h6 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: var(--heading-color);
-  @include heading-font;
+  font-family: var(--font-family-heading);
+  letter-spacing: -0.04em;
   font-weight: 700;
 }
 h4 {
@@ -63,7 +64,7 @@ p {
     &:first-child {
       margin-top: 0;
     }
-    @include breakpoint('small') {
+    @media (min-width: 767px) {
       font-size: 30px;
       line-height: 35px;
     }

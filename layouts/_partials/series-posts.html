@@ -15,7 +15,7 @@
   <li>
     {{ if $showDates }}<span class="summary-series-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>{{ end }}
     <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-    {{ with .Params.description }}
+    {{ with .Description }}
     <p class="summary-series-description">{{ . }}</p>
     {{ end }}
   </li>

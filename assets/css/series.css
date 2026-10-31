@@ -1,4 +1,4 @@
-// When inside .intro, series-nav hugs the image
+/* When inside .intro, series-nav hugs the image */
 .intro {
   img.has-series-nav {
     display: block;
@@ -24,17 +24,18 @@
   .series-title {
     font-size: 20px;
     line-height: 1.2;
-
-    @include breakpoint('small') {
-      font-size: 24px;
-    }
     color: var(--text-color);
     margin-bottom: 0.25rem;
+
+    @media (min-width: 767px) {
+      font-size: 24px;
+    }
 
     a {
       color: var(--highlight-color);
       text-decoration: none;
-      @include heading-font;
+      font-family: var(--font-family-heading);
+      letter-spacing: -0.04em;
       font-weight: 400;
 
       &:hover {
@@ -92,7 +93,8 @@
     a {
       color: var(--highlight-color);
       text-decoration: none;
-      @include heading-font;
+      font-family: var(--font-family-heading);
+      letter-spacing: -0.04em;
       font-weight: 400;
 
       &:hover {

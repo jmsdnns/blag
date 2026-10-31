@@ -7,7 +7,7 @@
     <div class="series-title">
       <a href="{{ $parent.Permalink }}">{{ $parent.Title }}</a>
     </div>
-    {{ with $parent.Params.description }}
+    {{ with $parent.Description }}
     <p class="series-description">{{ . }}</p>
     {{ end }}
     <ul class="series-toc">

@@ -1,7 +1,7 @@
 <div class="summary">
   <div class="summary-date">{{ dateFormat "Jan 2, 2006" (partial "latest-date.html" .) }}</div>
   <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p class="summary-description">{{ .Params.description }}</p>
+  <p class="summary-description">{{ .Description }}</p>
   {{ if .IsSection }}
   {{ partial "series-posts.html" (dict "Section" . "ApplyLimit" true "ShowDates" .Params.showNestedDates) }}
   {{ end }}
