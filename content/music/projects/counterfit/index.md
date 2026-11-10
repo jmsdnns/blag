@@ -1,6 +1,6 @@
 ---
 title: "Counterfit"
-image: images/music/projects/counterfit.jpg
+image: images/music/projects/counterfit.png
 date: 2023-03-31
 series: "Former Musical Projects"
 weight: 1
@@ -47,3 +47,8 @@ This is one of my favorite musical memories.
 Here is a live video of the band in 2004, playing Better Late Then Never, from Super Amusement Machine.
 
 {{< youtube Bq1aSVwHsR4 >}}
+
+
+# Photos
+
+![Cassette J-card from the 1998 demo, recorded in Marc's bathroom](cassette-jcard.jpg)
