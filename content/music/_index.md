@@ -14,14 +14,14 @@ menu:
 
 I make my musical life observable to the internet through my music journal. Go there first if you're curious what I've been doing lately.
 
-## [Music Journal]({{< ref "journal" >}})
+{{< music-card "/music/journal" >}}
 
 
 # Current Projects
 
 Most of my song writing time goes towards a band I do by myself, _american f00d_.
 
-## [american f00d]({{< ref "americanf00d" >}})
+{{< music-card "/music/projects/americanf00d" >}}
 
 
 # In The Past

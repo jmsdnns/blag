@@ -2,6 +2,7 @@
 title: "american f00d"
 image: images/music/projects/amfoo.jpg
 date: 2023-03-31
+hideCardName: true
 ---
 
 american f00d is a musical experiement.

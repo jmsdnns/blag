@@ -8,7 +8,9 @@
     {{ end }}
   </div>
   {{ .Content }}
+  <div class="music-cards">
   {{ range where .Pages.ByWeight.Reverse "Params.series" "Former Musical Projects" }}
     {{ .Render "projects" }}
   {{ end }}
+  </div>
 {{ end }}
