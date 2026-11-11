@@ -1,0 +1,2 @@
+{{- /* The small line in a music-item row, like "Brooklyn, NY | 2013–2019". Takes a list of strings. */ -}}
+{{- with . }}<p class="music-item-meta">{{ range $i, $m := . }}{{ if $i }}<span class="music-item-meta-sep" aria-hidden="true">|</span>{{ end }}<span>{{ $m }}</span>{{ end }}</p>{{ end -}}

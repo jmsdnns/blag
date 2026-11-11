@@ -1,5 +1,6 @@
-/* Music page lists. Below 768px each item is a card with the photo full width and the text under it.
-   From 768px up, the photo takes a third of the page width with the name and description beside it. */
+/* Photo lists on Music, History, and Tech. Below 768px each item is a card with the photo full width
+   and the text under it. From 768px the photo sits beside the text: half the width on tablets
+   (768-991px), a third from 992px up. */
 .music-list {
   display: flex;
   flex-direction: column;
@@ -16,8 +17,11 @@
   gap: 14px;
   align-items: start;
   @media (min-width: 768px) {
-    grid-template-columns: 33.333% 1fr;
+    grid-template-columns: 50% 1fr;
     gap: 24px;
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: 33.333% 1fr;
   }
 
   .music-item-image img {
@@ -89,6 +93,10 @@
       @media (min-width: 768px) {
         margin: -3.6px 0 -3.65px 0;
       }
+    }
+    /* when the small line sits above the name, it gets its own line */
+    .music-item-text--meta-first & {
+      flex-basis: 100%;
     }
     span {
       white-space: nowrap;

@@ -1,0 +1,52 @@
+{{- /* Intro and photo list for a section page. Music, History, and Tech all use it.
+       Takes a dict:
+         page   the section page
+         items  pages to list, all on one page. Without it, the section's pages are listed newest
+                first and paginated.
+         meta   "date" (default) puts each page's date above its title; "place" puts its city
+                and years there instead
+         rss    show the RSS icon beside the title (default true) */ -}}
+{{- $page := .page -}}
+{{- $rss := true }}{{ if isset . "rss" }}{{ $rss = .rss }}{{ end -}}
+{{- $byPlace := eq (.meta | default "date") "place" -}}
+<div class="intro">
+  <h1 class="intro-title">
+    <span>{{ $page.Title }}<span class="dot">.</span></span>
+    {{ if $rss }}
+    <span class="social-icon">
+      <a href="index.xml" title="RSS feed" target="_blank" rel="noopener">
+        <img src="/images/social/square-rss.svg" alt="RSS"/>
+      </a>
+    </span>
+    {{ end }}
+  </h1>
+
+  {{ with $page.Params.image }}
+  <img src="{{ . | relURL }}" />
+  {{ end }}
+</div>
+
+{{ $page.Content }}
+
+{{ $items := .items }}
+{{ $paginate := not $items }}
+{{ if $paginate }}
+  {{/* Order by effective date (sections use most recent child's date), like the default list */}}
+  {{ $dated := slice }}
+  {{ range $page.Pages }}
+    {{ $dated = $dated | append (dict "Page" . "SortDate" (partial "latest-date.html" .)) }}
+  {{ end }}
+  {{ $ordered := slice }}
+  {{ range sort $dated "SortDate" "desc" }}
+    {{ $ordered = $ordered | append .Page }}
+  {{ end }}
+  {{ $items = ($page.Paginate $ordered).Pages }}
+{{ end }}
+<div class="music-list">
+{{ range $items }}
+  {{ $meta := slice }}
+  {{ if not $byPlace }}{{ $meta = slice (dateFormat "Jan 2, 2006" .Date) }}{{ end }}
+  {{ partial "music-item.html" (dict "page" . "description" .Description "meta" $meta "metaFirst" true) }}
+{{ end }}
+</div>
+{{ if $paginate }}{{ partial "pagination.html" $page }}{{ end }}

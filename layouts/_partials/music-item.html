@@ -1,14 +1,21 @@
-{{- /* A row on the music page: photo at a third of the width, name and description beside it.
-       Takes a dict with "page" and an optional "description" (already rendered). */ -}}
+{{- /* A row in a photo list: photo beside the name and description (a card on small screens).
+       Takes a dict with "page", an optional "description" (already rendered), and an optional
+       "meta" list of strings for the small line beside the name. Without "meta", the line is
+       built from the page's location and years. With "metaFirst", the small line goes above
+       the name instead. */ -}}
 {{- $p := .page -}}
 <div class="music-item">
   <a class="music-item-image" href="{{ $p.RelPermalink }}">{{ with $p.Params.image }}<img src="{{ . | relURL }}" alt="" />{{ end }}</a>
-  <div class="music-item-text">
-    <h2 class="music-item-name"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
-    {{- $meta := slice }}
+  {{- $meta := .meta }}
+  {{- if not $meta }}
+    {{- $meta = slice }}
     {{- with $p.Params.location }}{{ $meta = $meta | append . }}{{ end }}
     {{- with $p.Params.years }}{{ $meta = $meta | append (replace . "-" "–") }}{{ end }}
-    {{ with $meta }}<p class="music-item-meta">{{ range $i, $m := . }}{{ if $i }}<span class="music-item-meta-sep" aria-hidden="true">|</span>{{ end }}<span>{{ $m }}</span>{{ end }}</p>{{ end }}
+  {{- end }}
+  <div class="music-item-text{{ if .metaFirst }} music-item-text--meta-first{{ end }}">
+    {{ if .metaFirst }}{{ partial "music-item-meta.html" $meta }}{{ end }}
+    <h2 class="music-item-name"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+    {{ if not .metaFirst }}{{ partial "music-item-meta.html" $meta }}{{ end }}
     {{ with .description }}<p class="music-item-description">{{ . }}</p>{{ end }}
   </div>
 </div>

@@ -1,7 +1,10 @@
-{{/* Usage: {{< music-item "/music/journal" >}}Description in markdown{{< /music-item >}} */}}
+{{/* Usage: {{< music-item "/music/journal" ["text for the small line"] >}}Description in markdown{{< /music-item >}}
+     The optional second argument replaces the page's city and years in the small line. */}}
 {{ $desc := $.Page.RenderString (trim .Inner " \n") }}
+{{ $meta := slice }}
+{{ with .Get 1 }}{{ $meta = slice . }}{{ end }}
 {{ with site.GetPage (.Get 0) }}
-{{ partial "music-item.html" (dict "page" . "description" $desc) }}
+{{ partial "music-item.html" (dict "page" . "description" $desc "meta" $meta "metaFirst" true) }}
 {{ else }}
 {{ errorf "music-item: page %q not found in %s" (.Get 0) .Position }}
 {{ end }}

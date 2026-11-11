@@ -1,16 +1,5 @@
 {{ define "body_classes" }}page-default-list{{ end }}
 
 {{ define "main" }}
-  <div class="intro">
-    <h1>{{ .Title }}<span class="dot">.</span></h1>
-    {{ if .Params.image }}
-    <img src="{{ .Params.image | relURL }}" />
-    {{ end }}
-  </div>
-  {{ .Content }}
-  <div class="music-list">
-  {{ range where .Pages.ByWeight.Reverse "Params.series" "Former Musical Projects" }}
-    {{ .Render "projects" }}
-  {{ end }}
-  </div>
+  {{ partial "post-list.html" (dict "page" . "items" (where .Pages.ByWeight.Reverse "Params.series" "Former Musical Projects") "meta" "place" "rss" false) }}
 {{ end }}
