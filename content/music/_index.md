@@ -14,7 +14,7 @@ menu:
 
 {{< music-list >}}
 {{< music-item "/music/projects/americanf00d" >}}Most of my song writing time goes towards a band I do by myself, _american f00d_.{{< /music-item >}}
-{{< music-item "/music/journal" "jmsdnns.com/music/journal" >}}I make my musical life observable to the internet through my music journal. Go there first if you're curious what I've been doing lately.{{< /music-item >}}
+{{< music-item "/music/journal" "/music/journal" >}}I make my musical life observable to the internet through my music journal. Go there first if you're curious what I've been doing lately.{{< /music-item >}}
 {{< /music-list >}}
 
 

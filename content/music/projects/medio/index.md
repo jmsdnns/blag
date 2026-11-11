@@ -2,7 +2,7 @@
 title: "Medio"
 image: images/music/projects/medio.jpg
 date: 2023-03-31
-description: "Heavy, dirty rock somewhere between Mars Volta and Deftones."
+description: "Heavy, dirty rock, inspired by Mars Volta and Deftones."
 location: "Brooklyn, NY"
 years: "2007-2022"
 series: "Former Musical Projects"

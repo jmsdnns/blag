@@ -5,11 +5,14 @@
                 first and paginated.
          meta   "date" (default) puts each page's date above its title; "place" puts its city
                 and years there instead
-         rss    show the RSS icon beside the title (default true) */ -}}
+         rss    show the RSS icon beside the title (default true)
+         hideHeroOnCards  drop the section's image on screens where the list items are cards, since
+                each card already leads with a photo (default false) */ -}}
 {{- $page := .page -}}
 {{- $rss := true }}{{ if isset . "rss" }}{{ $rss = .rss }}{{ end -}}
 {{- $byPlace := eq (.meta | default "date") "place" -}}
-<div class="intro">
+{{- $hideHeroOnCards := .hideHeroOnCards -}}
+<div class="intro{{ if $hideHeroOnCards }} intro--no-hero-on-cards{{ end }}">
   <h1 class="intro-title">
     <span>{{ $page.Title }}<span class="dot">.</span></span>
     {{ if $rss }}
@@ -22,7 +25,8 @@
   </h1>
 
   {{ with $page.Params.image }}
-  <img src="{{ . | relURL }}" />
+  {{- /* Lazy loading keeps browsers from downloading the image while CSS has it hidden. */}}
+  <img src="{{ . | relURL }}"{{ if $hideHeroOnCards }} loading="lazy"{{ end }} />
   {{ end }}
 </div>
 

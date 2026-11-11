@@ -2,7 +2,7 @@
 title: "Shipyards"
 image: images/music/projects/shipyards.jpg
 date: 2023-03-31
-description: "Short lived indie rock with a love of Dave Brubeck, Radiohead, and good ol' fashioned blues rock."
+description: "Indie rock with odd times, fuzz pedals, and swagger."
 location: "Brooklyn, NY"
 years: "2007-2009"
 series: "Former Musical Projects"

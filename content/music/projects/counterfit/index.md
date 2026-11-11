@@ -2,7 +2,7 @@
 title: "Counterfit"
 image: images/music/projects/counterfit.png
 date: 2023-03-31
-description: "Skate punk that grew into early 2000s emo."
+description: "High school skate punk that grew into early 2000s emo."
 location: "San Diego, CA"
 years: "1997-2000"
 series: "Former Musical Projects"

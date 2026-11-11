@@ -1,5 +1,5 @@
 {{ define "body_classes" }}page-default-list{{ end }}
 
 {{ define "main" }}
-  {{ partial "post-list.html" (dict "page" .) }}
+  {{ partial "post-list.html" (dict "page" . "hideHeroOnCards" true) }}
 {{ end }}
