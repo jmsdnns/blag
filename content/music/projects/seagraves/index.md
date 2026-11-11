@@ -2,6 +2,9 @@
 title: "Sea Graves"
 image: images/music/projects/seagraves.jpg
 date: 2023-03-31
+description: "Loud and fast post-hardcore."
+location: "Brooklyn, NY"
+years: "2011-2012"
 series: "Former Musical Projects"
 weight: 5
 ---

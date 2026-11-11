@@ -10,20 +10,12 @@ menu:
     weight: 3
 ---
 
-# Keeping Up
-
-I make my musical life observable to the internet through my music journal. Go there first if you're curious what I've been doing lately.
-
-{{< music-card "/music/journal" >}}
-
-
 # Current Projects
 
-Most of my song writing time goes towards a band I do by myself, _american f00d_.
-
-{{< music-card "/music/projects/americanf00d" >}}
+{{< music-list >}}
+{{< music-item "/music/projects/americanf00d" >}}Most of my song writing time goes towards a band I do by myself, _american f00d_.{{< /music-item >}}
+{{< music-item "/music/journal" >}}I make my musical life observable to the internet through my music journal. Go there first if you're curious what I've been doing lately.{{< /music-item >}}
+{{< /music-list >}}
 
 
 # In The Past
-
-Each of these were once the most important thing in my life. They all have stories worth sharing and music we loved making.

@@ -1,0 +1,14 @@
+{{- /* A row on the music page: photo at a third of the width, name and description beside it.
+       Takes a dict with "page" and an optional "description" (already rendered). */ -}}
+{{- $p := .page -}}
+<div class="music-item">
+  <a class="music-item-image" href="{{ $p.RelPermalink }}">{{ with $p.Params.image }}<img src="{{ . | relURL }}" alt="" />{{ end }}</a>
+  <div class="music-item-text">
+    <h2 class="music-item-name"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+    {{- $meta := slice }}
+    {{- with $p.Params.location }}{{ $meta = $meta | append . }}{{ end }}
+    {{- with $p.Params.years }}{{ $meta = $meta | append (replace . "-" "–") }}{{ end }}
+    {{ with $meta }}<p class="music-item-meta">{{ range $i, $m := . }}{{ if $i }}<span class="music-item-meta-sep" aria-hidden="true">|</span>{{ end }}<span>{{ $m }}</span>{{ end }}</p>{{ end }}
+    {{ with .description }}<p class="music-item-description">{{ . }}</p>{{ end }}
+  </div>
+</div>

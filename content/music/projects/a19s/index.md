@@ -2,6 +2,9 @@
 title: "Adventure Capitalists"
 image: images/music/projects/adcap.jpg
 date: 2023-03-31
+description: "Startup themed punk rock, like a cross between the TV show Silicon Valley and Blink 182."
+location: "Brooklyn, NY"
+years: "2013-2019"
 series: "Former Musical Projects"
 weight: 6
 ---

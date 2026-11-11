@@ -2,6 +2,9 @@
 title: "Medio"
 image: images/music/projects/medio.jpg
 date: 2023-03-31
+description: "Heavy, dirty rock somewhere between Mars Volta and Deftones."
+location: "Brooklyn, NY"
+years: "2007-2022"
 series: "Former Musical Projects"
 weight: 4
 ---
@@ -10,7 +13,7 @@ Medio was a rock band from New York City.
 
 It was 2007 and I was working at Bear Stearns (RIP) and learned there was a Wall St Battle of the Bands. I went and found the bands were terrible, and I wanted to make a band and play the next year. I found someone with a Sepultura tattoo, convinced him to jam, and off we went.
 
-The members of this band were always career driven. We'd play whenever our busy schedules allowed, which was never often enough, and we wrote heavy, dirty songs about life. This band loved to shred and our singer loved to flow, so the music we wrote was was somewhere between Mars Volta, Deftones, and Tool.
+The members of this band were always career driven. We'd play whenever our busy schedules allowed, which was never often enough, and we wrote heavy, dirty songs about life. This band loved to shred and our singer loved to flow, so the music we wrote was somewhere between Mars Volta and Deftones.
 
 After a few years, our drummer wanted to leave the band to study for the CFA, a grueling test that financial analysts spend 3 years preparing for. I was already starting to dabble with playing drums at the time, but his departure gave me a way to become an actual drummer, so I bought his old kit and switched to drums.
 

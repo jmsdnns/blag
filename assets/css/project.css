@@ -1,61 +1,111 @@
-.music-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+/* Music page lists. Below 768px each item is a card with the photo full width and the text under it.
+   From 768px up, the photo takes a third of the page width with the name and description beside it. */
+.music-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   margin: 24px 0 40px 0;
-  @media (min-width: 767px) {
-    grid-template-columns: 1fr 1fr;
+  @media (min-width: 768px) {
     gap: 24px;
   }
 }
 
-.music-card {
-  position: relative;
-  display: block;
-  aspect-ratio: 2 / 1;
-  overflow: hidden;
-  color: #fff;
-  background: var(--base-offset-color);
-  &:hover {
-    text-decoration: none;
+.music-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: start;
+  @media (min-width: 768px) {
+    grid-template-columns: 33.333% 1fr;
+    gap: 24px;
   }
-  img {
+
+  .music-item-image img {
     display: block;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 2 / 1;
     object-fit: cover;
-    transition: transform 0.4s ease;
-  }
-  &:hover img {
-    transform: scale(1.05);
   }
 
-  .music-card-overlay {
-    position: absolute;
-    inset: 0;
+  /* The name and the city/years line share a line, centered on each other, and the city/years
+     line wraps under the name when it doesn't fit. The description always starts a new line.
+     The row gap is the space under a name's baseline: it leaves about 4px between letters with
+     tails (p, y, g), which reach 0.275em below the baseline, and a wrapped city/years line. */
+  .music-item-text {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 10px;
+    @media (min-width: 768px) {
+      row-gap: 12px;
+    }
   }
 
-  .music-card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .music-card-name {
+  /* The name and the city/years line trim the space Poppins leaves above its capitals and below
+     its baseline. Their boxes are then exactly the height of their capitals, so the name lines up
+     with the top of the photo and centering the two boxes centers their capitals.
+     Browsers without text-box get negative margins of the same amounts instead, measured from the
+     font (ascent 1.05em, descent 0.35em, cap height 0.702em, plus half-leading). */
+  .music-item-name {
     margin: 0;
-    padding: 8px 14px 10px 14px;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    font-size: 24px;
-    line-height: 28px;
-    @media (min-width: 767px) {
-      padding: 12px 20px 14px 20px;
-      font-size: 30px;
-      line-height: 34px;
+    font-size: 22px;
+    line-height: 26px;
+    text-box: trim-both cap alphabetic;
+    @media (min-width: 768px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    @supports not (text-box: trim-both cap alphabetic) {
+      margin: -5.3px 0 -5.3px 0;
+      @media (min-width: 768px) {
+        margin: -6.1px 0 -6.2px 0;
+      }
+    }
+  }
+
+  .music-item-meta {
+    margin: 0;
+    /* cards always put the city/years line under the name */
+    flex-basis: 100%;
+    @media (min-width: 768px) {
+      flex-basis: auto;
+    }
+    font-family: var(--font-family-heading);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    /* a lighter version of the body text color, so it also adapts in dark mode */
+    color: color-mix(in srgb, var(--text-color) 65%, var(--base-color));
+    text-box: trim-both cap alphabetic;
+    @media (min-width: 768px) {
+      font-size: 11px;
+      line-height: 15px;
+    }
+    @supports not (text-box: trim-both cap alphabetic) {
+      margin: -3.5px 0 -3.5px 0;
+      @media (min-width: 768px) {
+        margin: -3.6px 0 -3.65px 0;
+      }
+    }
+    span {
+      white-space: nowrap;
+    }
+    .music-item-meta-sep {
+      margin: 0 6px;
+      font-weight: 400;
+    }
+  }
+
+  .music-item-description {
+    flex-basis: 100%;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    @media (min-width: 768px) {
+      font-size: 16px;
     }
   }
 }

@@ -1,9 +1,0 @@
-{{- $showName := not .Params.hideCardName -}}
-<a class="music-card" href="{{ .RelPermalink }}">
-  {{ with .Params.image }}<img src="{{ . | relURL }}" alt="{{ if not $showName }}{{ $.Title }}{{ end }}" />{{ end }}
-  <div class="music-card-overlay">
-    <div class="music-card-text">
-      {{ if $showName }}<h2 class="music-card-name">{{ .Title }}</h2>{{ end }}
-    </div>
-  </div>
-</a>

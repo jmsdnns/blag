@@ -2,7 +2,8 @@
 title: "american f00d"
 image: images/music/projects/amfoo.jpg
 date: 2023-03-31
-hideCardName: true
+location: "Portland, OR"
+years: "2022-present"
 ---
 
 american f00d is a musical experiement.

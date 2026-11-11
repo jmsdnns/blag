@@ -2,6 +2,9 @@
 title: "First Aid Kit"
 image: images/music/projects/first-aid-kit.jpg
 date: 2023-03-31
+description: "Post-rock that challenged the listener's sense of melody and time."
+location: "Rockville, CT"
+years: "2001-2004"
 series: "Former Musical Projects"
 weight: 2
 ---

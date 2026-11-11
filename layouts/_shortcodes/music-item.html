@@ -1,0 +1,7 @@
+{{/* Usage: {{< music-item "/music/journal" >}}Description in markdown{{< /music-item >}} */}}
+{{ $desc := $.Page.RenderString (trim .Inner " \n") }}
+{{ with site.GetPage (.Get 0) }}
+{{ partial "music-item.html" (dict "page" . "description" $desc) }}
+{{ else }}
+{{ errorf "music-item: page %q not found in %s" (.Get 0) .Position }}
+{{ end }}
