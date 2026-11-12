@@ -1,7 +1,8 @@
 {{- /*
   A release page: one band-page player on its own, with the same songs, on a
   blurred copy of its cover. player.html publishes one for each player on a
-  band page. A #song-name in the URL cues that song. The cover art comes only
+  band page. A #song-name in the URL cues that song, and the player's share
+  buttons link back here, to the page or a song on it. The cover art comes only
   from the MP3s, read by the player; the big cover and the blurred background
   take it from there.
 
@@ -36,7 +37,8 @@
 
   <main class="release">
     <div class="release-body">
-      {{- /* The big cover beside the player on wide screens; phones use the card's own small cover. */}}
+      {{- /* The big cover and the band's name beside the player on wide screens; phones
+             use the card's own small cover, and the card names the band. */}}
       <div class="release-cover">
         <img id="release-cover" alt="{{ .title }} cover art" hidden>
       </div>
@@ -44,7 +46,7 @@
         <header class="release-head">
           <h1>{{ .artist }}<span class="dot">.</span></h1>
         </header>
-        {{ partial "player.html" (dict "paths" .paths "position" .position "cue" true "more" .bandURL "release" .title) }}
+        {{ partial "player.html" (dict "paths" .paths "position" .position "cue" true "more" .bandURL "release" .title "by" .artist "share" (dict "url" .permalink "title" $name)) }}
       </div>
     </div>
   </main>

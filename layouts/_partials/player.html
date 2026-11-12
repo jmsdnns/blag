@@ -8,18 +8,29 @@
     more      optional URL; adds a "Who is this band?" link under the songs
     release   optional; shown in place of the tagged artist, for pages that
               already name the band in their title
+    by        optional, with release; the band, added as "Release, by Band"
+              in a .mp-by span, for pages to show where their title is hidden
     band      the band page, when the player is on one: the player also gets
               a page of its own with the same songs (release-page.html), at
-              the band page's URL plus the release folder's name, and share
-              buttons that lead there: one in the card (for the release, or
-              for the song when there's only one) and one per song, which
-              adds #song-name to cue that song
+              the band page's URL plus the release folder's name; a boombox
+              at the end of the controls opens it, and a share button per
+              song copies a link there with #song-name added, which cues that
+              song
+    share     for a player on a page of its own (release-page.html): a dict
+              with the page's url and title, for the same share buttons per
+              song, leading to the page itself; the boombox there copies the
+              page's link (or the song's, when there's only one)
 */ -}}
 {{- $shareURL := "" -}}
 {{- $shareTitle := "" -}}
+{{- $release := "" -}}
+{{- with .share -}}
+  {{- $shareURL = .url -}}
+  {{- $shareTitle = .title -}}
+{{- end -}}
 {{- with .band -}}
   {{- $first := index $.paths 0 -}}
-  {{- $release := path.Base (cond (strings.HasSuffix (lower $first) ".mp3") (path.Dir $first) $first) -}}
+  {{- $release = path.Base (cond (strings.HasSuffix (lower $first) ".mp3") (path.Dir $first) $first) -}}
   {{- /* "Frights + Shivers" -> "frights-shivers", the same way player.js slugs song names */ -}}
   {{- $slug := strings.Trim (replaceRE "[^a-z0-9]+" "-" (replaceRE "['’]" "" (lower $release))) "-" -}}
   {{- $shareURL = printf "%s%s/" .RelPermalink $slug -}}
@@ -29,6 +40,7 @@
   {{- $_ := (resources.FromString (printf "%sindex.html" (strings.TrimPrefix "/" $shareURL)) $html).RelPermalink -}}
 {{- end -}}
 {{- $shareIcons := `<svg class="mp-share-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5l-1.42 1.42-1.59-1.59V16h-1.98V4.83L9.42 6.42 8 5l4-4 4 4zm4 5v11c0 1.1-.9 2-2 2H6c-1.11 0-2-.9-2-2V10c0-1.11.89-2 2-2h3v2H6v11h12V10h-3V8h3c1.1 0 2 .89 2 2z"/></svg><svg class="mp-check-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>` | safeHTML -}}
+{{- $boombox := `<svg class="mp-boombox-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill-rule="evenodd" d="M4 8h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2zm2.5 3.5a3 3 0 1 0 0 6 3 3 0 1 0 0-6zm0 1.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 1 0 0-2.2zm11-1.9a3 3 0 1 0 0 6 3 3 0 1 0 0-6zm0 1.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 1 0 0-2.2zM10.5 10.5h3v2h-3z"/></svg>` | safeHTML -}}
 {{- $position := .position -}}
 {{- $tracks := slice -}}
 {{- range .paths -}}
@@ -63,7 +75,7 @@
     </div>
     <div class="mp-meta">
       {{- if .release }}
-      <div class="mp-artist"><span class="mp-artist-name" data-fixed>{{ .release }}</span></div>
+      <div class="mp-artist"><span class="mp-artist-name" data-fixed>{{ .release }}{{ with .by }}<span class="mp-by">, by {{ . }}</span>{{ end }}</span></div>
       {{- else }}
       <div class="mp-artist" hidden><span class="mp-artist-name"></span></div>
       {{- end }}
@@ -73,8 +85,10 @@
       <svg class="mp-play-icon" viewBox="8 5 11 14" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
       <svg class="mp-pause-icon" viewBox="6 5 12 14" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
     </button>
-    {{- if $shareURL }}
-    <button type="button" class="mp-share" aria-label="Share a link to {{ if eq (len $tracks) 1 }}this song{{ else }}this release{{ end }}">{{ $shareIcons }}</button>
+    {{- if .band }}
+    <a class="mp-boombox" href="{{ $shareURL }}" aria-label="Open the player for {{ $release }}" title="Open the release player">{{ $boombox }}</a>
+    {{- else if $shareURL }}
+    <button type="button" class="mp-boombox" aria-label="Copy a link to {{ if eq (len $tracks) 1 }}this song{{ else }}this release{{ end }}" title="Copy a link to this {{ if eq (len $tracks) 1 }}song{{ else }}release{{ end }}">{{ $boombox }}<svg class="mp-check-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></button>
     {{- end }}
     <div class="mp-scrub">
       <span class="mp-time mp-elapsed">0:00</span>
@@ -100,7 +114,7 @@
         <span class="mp-track-title">{{ $name }}</span>
       </button>
       {{- if $shareURL }}
-      <button type="button" class="mp-share-song" aria-label="Share a link to {{ $name }}">{{ $shareIcons }}</button>
+      <button type="button" class="mp-share-song" aria-label="Copy a link to {{ $name }}">{{ $shareIcons }}</button>
       {{- end }}
       <span class="mp-track-length"></span>
     </li>
@@ -108,6 +122,10 @@
   </ol>
   {{- with .more }}
   <a class="mp-more" href="{{ . }}"><span class="mp-track-num" aria-hidden="true"></span><span class="mp-track-title">Who is this band?</span></a>
+  {{- end }}
+  {{- if $shareURL }}
+  {{- /* tells screen readers when a song's link was copied */}}
+  <p class="mp-status" role="status"></p>
   {{- end }}
   <audio preload="metadata"></audio>
 </div>

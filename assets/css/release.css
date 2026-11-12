@@ -61,7 +61,7 @@ body.release-page {
   max-width: 880px;
   margin: 0 auto;
   padding:
-    max(72px, calc(env(safe-area-inset-top, 0px) + 40px))
+    calc(env(safe-area-inset-top, 0px) + 16px)
     max(16px, env(safe-area-inset-right, 0px))
     max(48px, calc(env(safe-area-inset-bottom, 0px) + 24px))
     max(16px, env(safe-area-inset-left, 0px));
@@ -69,7 +69,7 @@ body.release-page {
   flex-direction: column;
   gap: 24px;
 
-  /* Phones start at the top, with some room above the band name; bigger
+  /* Phones start at the top, the cover a gutter below the clock; bigger
      screens center the player in the window. */
   @media (min-width: 767px) {
     justify-content: center;
@@ -90,6 +90,26 @@ body.release-page {
   min-width: 0;
 }
 
+/* Phones: the card carries its own small cover, so the big one stays hidden,
+   and the band's name moves out of the title and into the card, after the
+   release's name ("Release, by Band"), so the cover starts at the top. */
+.release-head,
+.release-cover {
+  display: none;
+}
+
+/* The release's name stands out from the band's after it, in the heading
+   color (white in dark mode). */
+.release {
+  .mp-artist-name {
+    color: var(--heading-color);
+  }
+
+  .mp-by {
+    color: var(--text-color);
+  }
+}
+
 .release-head {
 
   /* The player sits just under the title: the title's box is trimmed to its
@@ -100,16 +120,11 @@ body.release-page {
     text-box: trim-both cap alphabetic;
     font-family: var(--font-family-heading);
     font-weight: 700;
-    font-size: 38px;
-    line-height: 44px;
+    font-size: 62px;
+    line-height: 67px;
     letter-spacing: -0.04em;
     color: var(--heading-color);
     text-wrap: balance;
-
-    @media (min-width: 767px) {
-      font-size: 62px;
-      line-height: 67px;
-    }
   }
 
   .dot {
@@ -117,29 +132,28 @@ body.release-page {
   }
 }
 
-/* Phones: the card carries its own small cover, so the big one stays hidden. */
-.release-cover {
-  display: none;
-}
-
 /* Wide screens: the big cover on the left, the title and player on the
    right, with the title's letters starting where the cover's corner ends.
    The card drops its own small cover here. */
 @media (min-width: 900px) {
   .release {
-    max-width: 1080px;
+    max-width: 1160px;
   }
 
+  /* Two columns of the same width, the cover and the player, so the cover
+     is as wide as the player and the gap between them falls on the middle
+     of the window. The player keeps at least 500px, below which it would
+     switch to its phone layout; on windows too narrow for two of those the
+     cover gives up the difference. */
   .release-body {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(500px, 1fr);
+    align-items: start;
     gap: 56px;
   }
 
   .release-cover {
     display: block;
-    flex: none;
-    width: clamp(320px, 34vw, 420px);
     aspect-ratio: 1 / 1;
     border-radius: 8px;
     overflow: hidden;
@@ -157,8 +171,21 @@ body.release-page {
     }
   }
 
-  .release-side {
-    flex: 1;
+
+  /* The title names the band here, so the card names only the release, in
+     the line's usual gray. */
+  .release-head {
+    display: block;
+  }
+
+  .release {
+    .mp-artist-name {
+      color: inherit;
+    }
+
+    .mp-by {
+      display: none;
+    }
   }
 
   /* The title's capitals start where the cover's top corner straightens into
@@ -169,14 +196,26 @@ body.release-page {
 
   /* The big cover sits beside the card, so the card drops its own copy and
      the play button takes its place, a big square in the top left corner,
-     with the seek line under it across the whole card. */
+     with the seek line under it across the card to the boombox. The song name's room
+     for two lines moves up from the bottom edge until its first line is
+     level with the middle of the play button; a one-line name still sits in
+     the bottom of the two, where a two-line name ends. The margin puts the
+     first line's box, 1.12em tall, half of it above the middle (in Poppins
+     the box's middle is also the middle of the capitals), less what comes
+     before it: the padding and the release's line, which end the inset
+     plus 1.05 times the line's size down (its capitals start at the inset,
+     0.35em into the line, and the line is 1.4em tall). */
   .release .music-player {
+    .mp-title {
+      margin-top: calc(var(--mp-art) / 2 - 0.56em - var(--mp-inset) - 1.05 * var(--mp-artist-size));
+    }
+
     .mp-card {
-      grid-template-columns: var(--mp-art) minmax(0, 1fr);
+      grid-template-columns: var(--mp-art) minmax(0, 1fr) auto;
       grid-template-rows: var(--mp-art) var(--mp-bar);
       grid-template-areas:
-        "play meta"
-        "seek seek";
+        "play meta meta"
+        "seek seek open";
     }
 
     .mp-art {

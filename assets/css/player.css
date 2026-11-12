@@ -7,8 +7,16 @@
 .music-player {
   /* The cover starts at 132px and grows with the player's width (1cqi is
      1% of it) up to 200px, so the art can be seen on wider screens. The
-     artist and song name grow with it. */
+     song name beside it grows with it, filling the room a wide player has,
+     from a size that reads at a glance in a narrow one; it reaches its
+     largest with the cover, at 1000px, and starts growing a little before
+     it does. Everything else stays one size, and phones have smaller sizes
+     of their own. */
   --mp-art: clamp(132px, 20cqi, 200px);
+  --mp-artist-size: 20px;
+  --mp-title-size: clamp(32px, 4.4cqi, 44px);
+  /* How far the artist and song name sit in from the edges they meet. */
+  --mp-inset: 17px;
   --mp-space: 12px;
   /* The seek row's height, and the play button's width and height. */
   --mp-bar: 44px;
@@ -21,6 +29,7 @@
   container-type: inline-size;
   margin: 30px 0;
 
+  a:focus-visible,
   button:focus-visible,
   input:focus-visible {
     outline: 2px solid var(--highlight-color);
@@ -31,15 +40,64 @@
     position: relative;
     display: grid;
     /* The first column is the play button's width, so the cover spans it
-       and the next one, and the seek line starts right after the button. */
-    grid-template-columns: var(--mp-bar) calc(var(--mp-art) - var(--mp-bar)) minmax(0, 1fr);
+       and the next one, and the seek line starts right after the button.
+       The last is for the boombox (band pages), at the other end of the
+       seek line; without one it's empty, so the seek line runs on. */
+    grid-template-columns: var(--mp-bar) calc(var(--mp-art) - var(--mp-bar)) minmax(0, 1fr) auto;
     grid-template-rows: var(--mp-art) var(--mp-bar);
     grid-template-areas:
-      "art art meta"
-      "play seek seek";
+      "art art meta meta"
+      "play seek seek open";
     background: var(--mp-card-bg);
     border: 1px solid var(--base-offset-color);
     border-radius: var(--mp-radius);
+    /* For the blue wash below, behind the controls. */
+    isolation: isolate;
+
+    /* Once the boombox (release pages) copies the release's link, the row
+       of controls it ends says so, the way a song's row does: a blue wash
+       comes on at once and fades away, the scrubber gives way to "Link
+       copied", and the boombox turns into a check. The song and the details
+       above are left alone. The wash covers the card's bottom row, the
+       controls' height, under the controls themselves. */
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: var(--mp-bar);
+      z-index: -1;
+      border-radius: 0 0 calc(var(--mp-radius) - 1px) calc(var(--mp-radius) - 1px);
+      background: color-mix(in srgb, var(--highlight-color) 14%, transparent);
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      pointer-events: none;
+    }
+
+    &.copied {
+      &::before {
+        opacity: 1;
+        transition-duration: 0s;
+      }
+
+      .mp-scrub {
+        position: relative;
+
+        > * {
+          visibility: hidden;
+        }
+
+        /* Next to the boombox, where the total time ends. */
+        &::after {
+          content: "Link copied";
+          position: absolute;
+          top: 50%;
+          right: var(--mp-space);
+          transform: translateY(-50%);
+        }
+      }
+    }
   }
 
   /* Flush in the card's top left corner, rounded only where it meets the
@@ -115,20 +173,29 @@
     }
   }
 
-  /* Beside the art. The right side leaves room for the share button. */
+  /* Beside the art, set in evenly from the three edges it meets: the
+     artist's capitals the inset below the top, the song's last baseline
+     the inset above the controls, and both the inset from the cover (or
+     the play button). In Poppins the capitals start 0.35em into a line
+     1.4em tall, and the baseline sits 0.21em above the bottom of a line
+     1.12em tall; the capitals' own side bearing is about 1px. */
   .mp-meta {
     grid-area: meta;
     min-width: 0;
     display: flex;
     flex-direction: column;
-    padding: 10px 34px 10px var(--mp-space);
+    padding:
+      calc(var(--mp-inset) - 0.35 * var(--mp-artist-size))
+      var(--mp-space)
+      calc(var(--mp-inset) - 0.21 * var(--mp-title-size))
+      calc(var(--mp-inset) - 1px);
   }
 
   /* The artist (or, on release pages, the release name), pinned to the top. */
   .mp-artist {
     font-family: var(--font-family-heading);
     font-weight: 400;
-    font-size: clamp(13px, 1.5cqi, 16px);
+    font-size: var(--mp-artist-size);
     line-height: 1.4;
     letter-spacing: -0.02em;
     color: var(--text-color);
@@ -141,17 +208,21 @@
     }
   }
 
-  /* The song name fills the bottom half, room for two lines, with its last
-     line on the bottom edge. */
+  /* The song name keeps room for two lines at the bottom, with its last line
+     on the bottom edge. At the smallest cover, 132px, the artist's line
+     (1.4 × 20px) and two lines of 32px (2 × 1.12 × 32 = 72px) leave 12px
+     between them inside the padding; as the player widens the cover grows
+     faster than the name, so the room only grows. */
   .mp-title {
-    flex: 0 0 50%;
+    flex: 0 0 calc(2 * 1.12em);
     margin-top: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     font-family: var(--font-family-heading);
-    font-weight: 400;
-    font-size: clamp(18px, 3cqi, 30px);
+    /* Light, so the name sits easy at its larger sizes. */
+    font-weight: 300;
+    font-size: var(--mp-title-size);
     line-height: 1.12;
     letter-spacing: -0.03em;
     color: var(--heading-color);
@@ -173,8 +244,8 @@
     flex: none;
     font-family: var(--mp-mono);
     font-variant-numeric: tabular-nums;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 16px;
     color: var(--text-color);
   }
 
@@ -247,7 +318,13 @@
   }
 
   /* Plain rows under the card: two-digit numbers, a blue dot in place of the
-     number on the current track, and lengths on the right. The list is inset
+     number on the current track, and lengths on the right. The numbers are
+     centered under the play button and the names start under the elapsed
+     time: each row's content starts the scrubber's padding (12px) in from
+     the card, so a number cell the play button's width less twice that
+     (20px) is centered on the button, and a gap of twice that (24px) after
+     it reaches the play button's width plus the scrubber's padding, where
+     the elapsed time starts. The list is inset
      by the card's corner radius, so it starts and ends where the card's
      rounded corners straighten out, and each row's right padding puts the
      song lengths on the same edge as the total time in the scrubber (the
@@ -265,7 +342,7 @@
       display: flex;
       align-items: stretch;
       gap: 4px;
-      min-height: 44px;
+      min-height: 50px;
       margin: 0;
       padding: 0 calc(var(--mp-space) + 1px - var(--mp-radius));
       border-bottom: 1px solid var(--mp-hair);
@@ -275,12 +352,39 @@
       line-height: 1.3;
     }
 
+    /* The rows share one set of columns (each row is a subgrid of the
+       list), so the lengths form a column as wide as the longest of them,
+       right-aligned, and the share buttons a column just before it: one
+       long song moves every share button over with it. Without share
+       buttons the middle column is empty and only costs the song names a
+       gap. Browsers without subgrid keep each row's own flex layout. */
+    @supports (grid-template-columns: subgrid) {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      column-gap: 4px;
+
+      li {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: subgrid;
+      }
+    }
+
+    /* The song (a button the row's height, so all of it plays the song),
+       its number and name, its length and its share icon are each centered
+       in the row by the middle of their capitals or digits, so text of
+       different sizes lines up through its middle, and a bigger size grows
+       up and down alike. Each text's box is trimmed to its capitals, from
+       their tops to the baseline, so centering the box centers them;
+       browsers that can't trim center the text's line instead, within a
+       pixel or so. */
     .mp-pick {
+      grid-column: 1;
       flex: 1;
       min-width: 0;
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: calc(2 * var(--mp-space));
       padding: 0;
       border: 0;
       background: none;
@@ -298,9 +402,10 @@
       flex: none;
       display: flex;
       align-items: center;
-      min-width: 20px;
+      width: calc(var(--mp-bar) - 2 * var(--mp-space));
+      justify-content: center;
       font-family: var(--mp-mono);
-      font-size: 12px;
+      font-size: 14px;
 
       i {
         display: none;
@@ -312,35 +417,48 @@
 
       b {
         font-weight: 400;
+        text-box: trim-both cap alphabetic;
       }
     }
 
+    /* Clipped only sideways, for the ellipsis: its box is just the
+       capitals, and its ascenders and descenders reach past it. */
     .mp-track-title {
       flex: 1;
       min-width: 0;
       white-space: nowrap;
-      overflow: hidden;
+      overflow-x: clip;
       text-overflow: ellipsis;
+      text-box: trim-both cap alphabetic;
     }
 
     .mp-track-length {
+      grid-column: 3;
       flex: none;
       align-self: center;
+      justify-self: end;
+      text-box: trim-both cap alphabetic;
       font-family: var(--mp-mono);
       font-variant-numeric: tabular-nums;
-      font-size: 12px;
+      /* The same size as the times in the seek row above, so the lengths
+         read as one column with the total. */
+      font-size: 13px;
     }
 
     li:has(> .current) .mp-track-length {
       color: var(--heading-color);
     }
 
+    /* The current song's share button is blue, like its dot, and sits back
+       at the same half opacity as the others. */
+    li:has(> .current) .mp-share-song {
+      color: var(--highlight-color);
+    }
+
+    /* The current song: in the heading color (white in dark mode), with a
+       blue dot for its number. */
     .current {
       color: var(--heading-color);
-
-      .mp-track-title {
-        font-weight: 700;
-      }
 
       .mp-track-num {
         i {
@@ -354,12 +472,12 @@
     }
   }
 
-  /* Share buttons (band pages, leading to the release's standalone player):
-     one in the card's top right corner and one per song in the list. They
-     stay quiet, in the text gray, and show a blue check for a moment once a
-     link is copied. */
-  .mp-share,
+  /* Share buttons, one per song in the list, copying a link to the song on
+     the release's standalone player. They sit back, in the text gray at
+     half opacity, come forward on hover or focus, and show a blue check
+     for a moment once a link is copied. */
   .mp-share-song {
+    opacity: 0.5;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -369,28 +487,36 @@
     border-radius: 6px;
     background: transparent;
     color: var(--text-color);
+    text-decoration: none;
     cursor: pointer;
 
-    /* At 16px the share icon's box is as tall as the 14px text's capitals;
-       lifting it 2.5px sets that box on the text's baseline and cap height,
-       with the arrow rising above, in the card and in the list alike. */
+    /* The icon's box (its lower 15/24, under the arrow) is as tall as the
+       digits of the song lengths beside it, about 0.77em of the monospace
+       font, so the icon is 0.77 × 24/15 = 1.23em; and it's raised by that
+       box's offset from the icon's middle (3.5/24 of it), so the box is
+       centered in the row with the digits. The button takes the lengths'
+       font and size, so this follows them. */
     svg {
       flex: none;
-      width: 16px;
-      height: 16px;
+      width: 1.23em;
+      height: 1.23em;
       fill: currentColor;
-      transform: translateY(-2.5px);
+      transform: translateY(-0.18em);
     }
 
     .mp-check-icon {
       display: none;
     }
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
       color: var(--heading-color);
     }
 
-    &.copied {
+    &.copied,
+    .copied > & {
+      opacity: 1;
       color: var(--highlight-color);
 
       .mp-share-icon {
@@ -403,49 +529,150 @@
     }
   }
 
-  /* The card's share button sits on the line above the song, its right edge
-     on the same column as the times and song lengths. The drawn icon sits
-     1/6 of its width inside its box, so that's taken off too, putting its
-     visible edge on the column. */
-  .mp-share {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    height: 28px;
-    padding: 0 6px;
+  /* The boombox: on band pages a link that opens the release's own player,
+     and on that page a button that copies its link (and turns into a check
+     while the card says so). It sits at the other end of the seek line from
+     the play button and mirrors it: the same square, flush against the
+     card's bottom right corner, with a hairline on its two inner sides,
+     rounded only where it meets the card's corner. The boombox is 20px, as
+     big as the artist's name. */
+  .mp-boombox {
+    grid-area: open;
+    box-sizing: border-box;
+    width: var(--mp-bar);
+    height: var(--mp-bar);
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid var(--base-offset-color);
+    border-left: 1px solid var(--base-offset-color);
+    background-color: transparent;
+    background-clip: padding-box;
+    border-radius: 0 0 calc(var(--mp-radius) - 1px) 0;
+    color: var(--heading-color);
+    cursor: pointer;
 
     &:hover {
-      background: var(--mp-tile);
+      background-color: var(--mp-tile);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .mp-check-icon {
+      display: none;
+    }
+
+    .copied > & {
+      color: var(--highlight-color);
+
+      .mp-boombox-icon {
+        display: none;
+      }
+
+      .mp-check-icon {
+        display: block;
+      }
     }
   }
 
-  /* Each song's share button: always shown on touch screens, which have no
-     hover; with a mouse, shown while its row is hovered, or while it has
-     keyboard focus or is confirming a copy. */
+  /* With a boombox, the song list mirrors the controls above it: each
+     song's share button is a column under the boombox, the same 44px
+     square (it reaches out past the row's padding and the list's inset,
+     12px, to the card's edge), and the lengths come before it, under the
+     total time (which sits the scrubber's padding, 12px, in from the
+     boombox, so 8px more than the gap between the columns). Both are held
+     to the row's one line: the length comes after the share button in the
+     page but before it in the row, and the grid would otherwise start a
+     new line for it rather than go back. */
+  &:has(.mp-boombox) .mp-tracklist {
+    .mp-track-length {
+      grid-row: 1;
+      grid-column: 2;
+      margin-right: calc(var(--mp-space) - 4px);
+    }
+
+    .mp-share-song {
+      grid-row: 1;
+      grid-column: 3;
+      width: var(--mp-bar);
+      margin-right: calc(-1 * var(--mp-space));
+    }
+  }
+
+  /* Each song's share button, always shown, copies the song's link. */
   .mp-tracklist .mp-share-song {
+    grid-column: 2;
     flex: none;
     width: 32px;
-    opacity: 0.6;
+    font-family: var(--mp-mono);
+    font-size: 13px;
+  }
 
-    &:hover,
-    &:focus-visible,
+  /* Once a song's link is copied, its whole row says so for a moment, the
+     way the controls do for the boombox: it lights up in blue, its number,
+     name and length step aside, "Link copied" sits next to the share
+     button, ending where the length did, and the share icon turns into a
+     check. The blue comes on at once and fades away. */
+  .mp-tracklist li {
+    transition: background-color 0.6s ease;
+
     &.copied {
-      opacity: 1;
+      background-color: color-mix(in srgb, var(--highlight-color) 14%, transparent);
+      transition-duration: 0s;
+
+      .mp-pick,
+      .mp-track-length {
+        visibility: hidden;
+      }
+
+      .mp-track-length {
+        position: relative;
+
+        &::after {
+          content: "Link copied";
+          visibility: visible;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+      }
     }
   }
 
-  @media (hover: hover) {
-    .mp-tracklist li:not(:hover) .mp-share-song:not(:focus-visible, .copied) {
-      opacity: 0;
-    }
+  /* "Link copied", in a song row's type, wherever it shows. */
+  .mp-card.copied .mp-scrub::after,
+  .mp-tracklist li.copied .mp-track-length::after {
+    color: var(--highlight-color);
+    font-family: var(--font-family-paragraph);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  /* Read out by screen readers when a song's link is copied; not shown. */
+  .mp-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 
   /* An optional link under the songs, lined up with the song titles. */
   .mp-more {
     display: flex;
     align-items: center;
-    gap: 14px;
-    min-height: 44px;
+    gap: calc(2 * var(--mp-space));
+    min-height: 50px;
     margin: 0 var(--mp-radius);
     padding: 0 calc(var(--mp-space) + 1px - var(--mp-radius));
     color: var(--highlight-color);
@@ -456,7 +683,7 @@
 
     .mp-track-num {
       flex: none;
-      min-width: 20px;
+      width: calc(var(--mp-bar) - 2 * var(--mp-space));
     }
 
     &:hover .mp-track-title {
@@ -473,15 +700,16 @@
      details under it and the play button and seek line at the bottom. The
      title keeps room for two lines, its last line at the bottom, and the
      share button moves down beside the details, just under the cover (100cqi
-     is the card's width, so the cover's height). */
+     is the card's width, so the cover's height). The text goes back to
+     smaller sizes, to fit. */
   @container (max-width: 499px) {
     .mp-card {
-      grid-template-columns: var(--mp-bar) minmax(0, 1fr);
+      grid-template-columns: var(--mp-bar) minmax(0, 1fr) auto;
       grid-template-rows: auto auto var(--mp-bar);
       grid-template-areas:
-        "art art"
-        "meta meta"
-        "play seek";
+        "art art art"
+        "meta meta meta"
+        "play seek open";
     }
 
     .mp-art {
@@ -493,13 +721,59 @@
       }
     }
 
-    .mp-title {
-      flex: 0 0 calc(2 * 1.12em);
-      margin-top: 4px;
+    .mp-artist {
+      font-size: 13px;
     }
 
-    .mp-share {
-      top: calc(100cqi + 2px);
+    /* Under the cover the details keep the card's usual padding, and the
+       small song name its regular weight. */
+    .mp-meta {
+      padding: 10px var(--mp-space);
     }
+
+    .mp-title {
+      margin-top: 4px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .mp-time {
+      font-size: 11px;
+      line-height: 14px;
+    }
+
+    .mp-tracklist li,
+    .mp-more {
+      min-height: 44px;
+      font-size: 13px;
+    }
+
+    .mp-tracklist .mp-track-num {
+      font-size: 12px;
+    }
+
+    .mp-tracklist .mp-track-length,
+    .mp-tracklist .mp-share-song {
+      font-size: 11px;
+    }
+
+    .mp-card.copied .mp-scrub::after,
+    .mp-tracklist li.copied .mp-track-length::after {
+      font-size: 13px;
+    }
+
+    /* Here the play button is in the controls row, so while the row says
+       the link was copied it steps aside too: its icon and the hairline
+       beside it go, and it can't be pressed. The row's top line stays. */
+    .mp-card.copied .mp-play {
+      border-right-color: transparent;
+      pointer-events: none;
+
+      svg {
+        visibility: hidden;
+      }
+    }
+
+
   }
 }

@@ -151,20 +151,8 @@
 
   // ---------- sharing ----------
 
-  // Opens the device's share sheet where there is one (phones, mostly);
-  // otherwise copies the link and briefly shows a check on the button.
-  function shareLink(btn, url, title) {
-    if (navigator.share) {
-      navigator.share({ title: title, url: url }).catch(function(err) {
-        if (!err || err.name !== 'AbortError') copyLink(btn, url);
-      });
-    } else {
-      copyLink(btn, url);
-    }
-  }
-
-  function copyLink(btn, url) {
-    const done = function() { flashCopied(btn); };
+  // Copies the url, then calls done if that worked.
+  function copyLink(url, done) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(url).then(done, function() {
         if (legacyCopy(url)) done();
@@ -188,12 +176,13 @@
     return ok;
   }
 
-  // The share icon turns into a check for a moment, then back.
-  function flashCopied(btn) {
-    btn.classList.add('copied');
-    clearTimeout(btn._copiedTimer);
-    btn._copiedTimer = setTimeout(function() {
-      btn.classList.remove('copied');
+  // Marks a share button (its icon turns into a check) or a song's row (it
+  // says "Link copied") as copied for a moment, then puts it back.
+  function flashCopied(el) {
+    el.classList.add('copied');
+    clearTimeout(el._copiedTimer);
+    el._copiedTimer = setTimeout(function() {
+      el.classList.remove('copied');
     }, 1800);
   }
 
@@ -444,29 +433,40 @@
       return tracks.findIndex(function(t) { return slugify(t.name) === want; });
     }
 
-    // Share buttons (band pages): links go to the release's standalone page,
-    // and a song's link adds #song-name, which cues that song when it's
-    // opened. The card's button shares the release (or the song, when the
-    // player has only one).
+    // Share buttons: links go to the release's standalone page, and a song's
+    // link adds #song-name, which cues that song when it's opened. They're
+    // there to get a link, so they copy it, and say so where they are, for
+    // screen readers too: a song's button in its row, and on release pages
+    // the boombox, which copies the release's link, or the song's when the
+    // player has only one, across the whole card. (On band pages the boombox
+    // is a link to the release's page instead.)
     if (root.dataset.share) {
       const pageUrl = new URL(root.dataset.share, location.href).href;
       const pageTitle = root.dataset.shareTitle || document.title;
       const songLink = function(t) {
         return [pageUrl + '#' + slugify(t.name), trackTitle(t) + ' · ' + pageTitle];
       };
-      const cardBtn = root.querySelector('.mp-share');
+      const status = root.querySelector('.mp-status');
+      const cardBtn = root.querySelector('button.mp-boombox');
       if (cardBtn) {
+        const card = root.querySelector('.mp-card');
         cardBtn.addEventListener('click', function() {
           const link = tracks.length === 1 ? songLink(tracks[0]) : [pageUrl, pageTitle];
-          shareLink(cardBtn, link[0], link[1]);
+          copyLink(link[0], function() {
+            flashCopied(card);
+            if (status) status.textContent = 'Copied a link to ' + link[1];
+          });
         });
       }
       tracks.forEach(function(t) {
-        const btn = t.btn.parentElement.querySelector('.mp-share-song');
+        const row = t.btn.parentElement;
+        const btn = row.querySelector('.mp-share-song');
         if (!btn) return;
         btn.addEventListener('click', function() {
-          const link = songLink(t);
-          shareLink(btn, link[0], link[1]);
+          copyLink(songLink(t)[0], function() {
+            flashCopied(row);
+            if (status) status.textContent = 'Copied a link to ' + trackTitle(t);
+          });
         });
       });
     }
