@@ -1,0 +1,23 @@
+  <!-- Theme initialization - must run before page renders -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme-preference') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+    })();
+  </script>
+  <style>
+    html.dark-mode { color-scheme: dark; background-color: #16171a; }
+    html.light-mode { color-scheme: light; background-color: #ffffff; }
+  </style>
+
+  <link rel="icon" href="{{ site.BaseURL }}favicon.png">
+
+  {{/* target: oldest browsers to support; newer syntax like nesting is rewritten for them */ -}}
+  {{ $style := resources.Get "css/style.css" | css.Build (dict
+    "minify" (not hugo.IsServer)
+    "sourceMap" (cond hugo.IsServer "linked" "none")
+    "target" (slice "chrome115" "edge115" "firefox116" "ios16.4" "opera101" "safari16.4")
+  ) }}
+  {{ if not hugo.IsServer }}{{ $style = $style | fingerprint }}{{ end }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">

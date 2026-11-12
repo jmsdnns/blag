@@ -1,0 +1,70 @@
+{{- /*
+  A release page: one band-page player on its own, with the same songs, on a
+  blurred copy of its cover. player.html publishes one for each player on a
+  band page. A #song-name in the URL cues that song. The cover art comes only
+  from the MP3s, read by the player; the big cover and the blurred background
+  take it from there.
+
+  Takes a dict:
+    title      the release name
+    artist     the band, as its page names it
+    permalink  this page's full URL
+    bandURL    the band's page, for "Who is this band?"
+    paths      the player's songs
+    position   where the player was called from, for build errors
+*/ -}}
+{{- $name := printf "%s · %s" .title .artist -}}
+{{- $desc := printf "Listen to %s by %s." .title .artist -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ $name }}</title>
+  <meta name="description" content="{{ $desc }}">
+  <link rel="canonical" href="{{ .permalink }}" />
+  <meta property="og:url" content="{{ .permalink }}">
+  <meta property="og:type" content="music.album">
+  <meta property="og:title" content="{{ $name }}">
+  <meta property="og:description" content="{{ $desc }}">
+{{ partial "head-assets.html" . }}
+</head>
+
+<body class="release-page">
+  <img class="release-blur" id="release-blur" alt="" aria-hidden="true" hidden>
+  <div class="release-scrim" aria-hidden="true"></div>
+
+  <main class="release">
+    <div class="release-body">
+      {{- /* The big cover beside the player on wide screens; phones use the card's own small cover. */}}
+      <div class="release-cover">
+        <img id="release-cover" alt="{{ .title }} cover art" hidden>
+      </div>
+      <div class="release-side">
+        <header class="release-head">
+          <h1>{{ .artist }}<span class="dot">.</span></h1>
+        </header>
+        {{ partial "player.html" (dict "paths" .paths "position" .position "cue" true "more" .bandURL "release" .title) }}
+      </div>
+    </div>
+  </main>
+
+{{ partial "scripts.html" . }}
+  <script>
+    // The big cover and the blurred background show the album art the
+    // player reads out of the MP3s, once it has loaded.
+    (function () {
+      var art = document.querySelector('.release .mp-art img');
+      var targets = [document.getElementById('release-blur'), document.getElementById('release-cover')]
+        .filter(Boolean);
+      if (!art || !targets.length) return;
+      art.addEventListener('load', function () {
+        targets.forEach(function (el) {
+          el.src = art.src;
+          el.hidden = false;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -144,6 +144,59 @@
   const allPlayers = [];
   let activePlayer = null;
 
+  // "Don't Try" -> "dont-try": the form a song takes after # in a link.
+  function slugify(s) {
+    return String(s).toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  // ---------- sharing ----------
+
+  // Opens the device's share sheet where there is one (phones, mostly);
+  // otherwise copies the link and briefly shows a check on the button.
+  function shareLink(btn, url, title) {
+    if (navigator.share) {
+      navigator.share({ title: title, url: url }).catch(function(err) {
+        if (!err || err.name !== 'AbortError') copyLink(btn, url);
+      });
+    } else {
+      copyLink(btn, url);
+    }
+  }
+
+  function copyLink(btn, url) {
+    const done = function() { flashCopied(btn); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(done, function() {
+        if (legacyCopy(url)) done();
+      });
+    } else if (legacyCopy(url)) {
+      done();
+    }
+  }
+
+  function legacyCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { /* unsupported */ }
+    ta.remove();
+    return ok;
+  }
+
+  // The share icon turns into a check for a moment, then back.
+  function flashCopied(btn) {
+    btn.classList.add('copied');
+    clearTimeout(btn._copiedTimer);
+    btn._copiedTimer = setTimeout(function() {
+      btn.classList.remove('copied');
+    }, 1800);
+  }
+
   function fmtTime(s) {
     if (!isFinite(s) || s < 0) s = 0;
     const m = Math.floor(s / 60);
@@ -169,9 +222,12 @@
     const audio = root.querySelector('audio');
     const artImg = root.querySelector('.mp-art img');
     const titleEl = root.querySelector('.mp-title');
-    const artistEl = root.querySelector('.mp-artist');
+    const artistBox = root.querySelector('.mp-artist');
+    const artistEl = root.querySelector('.mp-artist-name');
+    const fixedLine = artistEl.hasAttribute('data-fixed');
     const playBtn = root.querySelector('.mp-play');
     const seekEl = root.querySelector('.mp-seekbar');
+    const fillEl = root.querySelector('.mp-fill');
     const elapsedEl = root.querySelector('.mp-elapsed');
     const durationEl = root.querySelector('.mp-duration');
 
@@ -201,28 +257,7 @@
     function updateSeekFill() {
       const max = +seekEl.max;
       const pct = max > 0 ? (seekEl.value / max) * 100 : 0;
-      seekEl.style.setProperty('--mp-fill', pct + '%');
-    }
-
-    // Names that overflow the card scroll sideways; the animation distance
-    // and pace come from how far the text sticks out. Measured from the
-    // span's own geometry, not the wrap's scrollWidth: with text-overflow:
-    // ellipsis active, Safari reports scrollWidth as the clipped width.
-    function refreshScroll(wrap) {
-      const over = wrap.firstElementChild.getBoundingClientRect().width
-        - wrap.getBoundingClientRect().width;
-      if (over > 2) {
-        wrap.style.setProperty('--mp-scroll-dist', over + 'px');
-        wrap.style.setProperty('--mp-scroll-dur', (4 + over / 40).toFixed(1) + 's');
-        wrap.classList.add('mp-scroll');
-      } else {
-        wrap.classList.remove('mp-scroll');
-      }
-    }
-
-    function setScrollText(wrap, text) {
-      wrap.firstElementChild.textContent = text;
-      refreshScroll(wrap);
+      fillEl.style.width = pct + '%';
     }
 
     function updateMediaMetadata() {
@@ -270,8 +305,15 @@
 
     function showTrack() {
       const t = tracks[current];
-      setScrollText(titleEl, trackTitle(t));
-      setScrollText(artistEl, (t.meta && t.meta.artist) || '');
+      titleEl.textContent = trackTitle(t);
+      // The line above the title shows the tagged artist; without one it's
+      // hidden and the title moves up. Pages that set the line themselves
+      // (release pages show the release name there) keep it as written.
+      if (!fixedLine) {
+        const artist = (t.meta && t.meta.artist) || '';
+        artistEl.textContent = artist;
+        artistBox.hidden = !artist;
+      }
       tracks.forEach(function(o, i) {
         o.btn.classList.toggle('current', i === current);
       });
@@ -291,11 +333,16 @@
       if (autoplay) audio.play();
     }
 
+    // Previous restarts the song if it's a few seconds in, like most players,
+    // and only steps back a track from near the start.
     const handlers = {
       play: function() { audio.play(); },
       pause: function() { audio.pause(); },
-      prev: tracks.length > 1 ? function() { load(current - 1, true); } : null,
-      next: tracks.length > 1 ? function() { load(current + 1, true); } : null,
+      prev: tracks.length > 1 ? function() {
+        if (audio.currentTime > 3) audio.currentTime = 0;
+        else load(current - 1, !audio.paused);
+      } : null,
+      next: tracks.length > 1 ? function() { load(current + 1, !audio.paused); } : null,
       seekto: function(details) {
         audio.currentTime = details.seekTime;
         updatePositionState();
@@ -376,7 +423,7 @@
           if (i === current) showTrack();
         });
 
-      const lengthEl = track.btn.querySelector('.mp-track-length');
+      const lengthEl = track.btn.parentElement.querySelector('.mp-track-length');
       if (lengthEl) {
         const probe = new Audio();
         probe.preload = 'metadata';
@@ -387,16 +434,51 @@
       }
     });
 
-    // Overflow depends on layout, so re-check when the fonts arrive and
-    // whenever the card changes width.
-    function remeasure() {
-      refreshScroll(titleEl);
-      refreshScroll(artistEl);
+    // Players marked data-cue (the release pages) let a #song-name in the URL
+    // pick the first song. It's cued, not played: browsers only start audio
+    // after the visitor taps something.
+    function cuedIndex() {
+      if (!root.hasAttribute('data-cue')) return -1;
+      const want = decodeURIComponent(location.hash.replace(/^#/, '')).toLowerCase();
+      if (!want) return -1;
+      return tracks.findIndex(function(t) { return slugify(t.name) === want; });
     }
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(remeasure);
-    window.addEventListener('resize', remeasure);
 
-    load(0, false);
+    // Share buttons (band pages): links go to the release's standalone page,
+    // and a song's link adds #song-name, which cues that song when it's
+    // opened. The card's button shares the release (or the song, when the
+    // player has only one).
+    if (root.dataset.share) {
+      const pageUrl = new URL(root.dataset.share, location.href).href;
+      const pageTitle = root.dataset.shareTitle || document.title;
+      const songLink = function(t) {
+        return [pageUrl + '#' + slugify(t.name), trackTitle(t) + ' · ' + pageTitle];
+      };
+      const cardBtn = root.querySelector('.mp-share');
+      if (cardBtn) {
+        cardBtn.addEventListener('click', function() {
+          const link = tracks.length === 1 ? songLink(tracks[0]) : [pageUrl, pageTitle];
+          shareLink(cardBtn, link[0], link[1]);
+        });
+      }
+      tracks.forEach(function(t) {
+        const btn = t.btn.parentElement.querySelector('.mp-share-song');
+        if (!btn) return;
+        btn.addEventListener('click', function() {
+          const link = songLink(t);
+          shareLink(btn, link[0], link[1]);
+        });
+      });
+    }
+
+    if (root.hasAttribute('data-cue')) {
+      window.addEventListener('hashchange', function() {
+        const i = cuedIndex();
+        if (i >= 0 && i !== current) load(i, !audio.paused);
+      });
+    }
+
+    load(Math.max(0, cuedIndex()), false);
   }
 
   function init() {
