@@ -1,10 +1,10 @@
 {{- /*
   A release page: one band-page player on its own, with the same songs, on a
-  blurred copy of its cover. player.html publishes one for each player on a
-  band page. A #song-name in the URL cues that song, and the player's share
-  buttons link back here, to the page or a song on it. The cover art comes only
-  from the MP3s, read by the player; the big cover and the blurred background
-  take it from there.
+  gradient made from its cover's colors. player.html publishes one for each
+  player on a band page. A #song-name in the URL cues that song, and the
+  player's share buttons link back here, to the page or a song on it. The cover
+  art comes only from the MP3s, read by the player; release.js gives it to the
+  big cover and makes the background from it.
 
   Takes a dict:
     title      the release name
@@ -32,7 +32,7 @@
 </head>
 
 <body class="release-page">
-  <img class="release-blur" id="release-blur" alt="" aria-hidden="true" hidden>
+  <div class="release-bg" id="release-bg" aria-hidden="true" hidden></div>
   <div class="release-scrim" aria-hidden="true"></div>
 
   <main class="release">
@@ -52,21 +52,5 @@
   </main>
 
 {{ partial "scripts.html" . }}
-  <script>
-    // The big cover and the blurred background show the album art the
-    // player reads out of the MP3s, once it has loaded.
-    (function () {
-      var art = document.querySelector('.release .mp-art img');
-      var targets = [document.getElementById('release-blur'), document.getElementById('release-cover')]
-        .filter(Boolean);
-      if (!art || !targets.length) return;
-      art.addEventListener('load', function () {
-        targets.forEach(function (el) {
-          el.src = art.src;
-          el.hidden = false;
-        });
-      });
-    })();
-  </script>
 </body>
 </html>

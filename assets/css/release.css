@@ -1,11 +1,11 @@
-/* Release pages: the same player as everywhere else, alone on a blurred copy
-   of the cover. The player's card goes translucent here so the
-   blur shows through them, the way they sit on the plain page background
-   elsewhere. */
+/* Release pages: the same player as everywhere else, alone on a gradient made
+   from the cover's colors (release.js). The player's card goes translucent
+   here so the gradient shows through it, the way it sits on the plain page
+   background elsewhere. */
 :root {
   --release-scrim: rgba(255, 255, 255, 0.35);
-  --release-blur-opacity: 0.6;
-  --release-blur-saturate: 1.8;
+  --release-bg-opacity: 0.6;
+  --release-bg-saturate: 1.8;
   --release-card: rgba(255, 255, 255, 0.6);
 }
 
@@ -13,16 +13,16 @@
 @media (prefers-color-scheme: dark) {
   :root:not(.light-mode) {
     --release-scrim: rgba(13, 14, 16, 0.55);
-    --release-blur-opacity: 0.55;
-    --release-blur-saturate: 1.4;
+    --release-bg-opacity: 0.55;
+    --release-bg-saturate: 1.4;
     --release-card: rgba(13, 14, 16, 0.45);
   }
 }
 
 html.dark-mode {
   --release-scrim: rgba(13, 14, 16, 0.55);
-  --release-blur-opacity: 0.55;
-  --release-blur-saturate: 1.4;
+  --release-bg-opacity: 0.55;
+  --release-bg-saturate: 1.4;
   --release-card: rgba(13, 14, 16, 0.45);
 }
 
@@ -32,16 +32,11 @@ body.release-page {
   background: var(--base-color);
 }
 
-.release-blur {
+.release-bg {
   position: fixed;
-  top: -20%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  max-width: none;
-  object-fit: cover;
-  filter: blur(90px) saturate(var(--release-blur-saturate));
-  opacity: var(--release-blur-opacity);
+  inset: 0;
+  filter: saturate(var(--release-bg-saturate));
+  opacity: var(--release-bg-opacity);
   pointer-events: none;
 }
 
@@ -69,12 +64,9 @@ body.release-page {
   flex-direction: column;
   gap: 24px;
 
-  /* Phones start at the top, the cover a gutter below the clock; bigger
-     screens center the player in the window. */
-  @media (min-width: 767px) {
-    justify-content: center;
-    padding-top: max(56px, calc(env(safe-area-inset-top, 0px) + 24px));
-  }
+  /* The page starts at the top, a gutter below the clock, until the cover
+     and the player sit side by side (below), when they're centered in the
+     window. */
 
   .music-player {
     --mp-card-bg: var(--release-card);
@@ -138,6 +130,8 @@ body.release-page {
 @media (min-width: 900px) {
   .release {
     max-width: 1160px;
+    justify-content: center;
+    padding-top: max(56px, calc(env(safe-area-inset-top, 0px) + 24px));
   }
 
   /* Two columns of the same width, the cover and the player, so the cover

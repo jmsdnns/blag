@@ -460,9 +460,10 @@
       color: var(--heading-color);
     }
 
-    /* The current song's share button is blue, like its dot, and sits back
-       at the same half opacity as the others. */
+    /* The current song's share button is blue, like its dot, and at full
+       opacity, where the others sit back at half. */
     li:has(> .current) .mp-share-song {
+      opacity: 1;
       color: var(--highlight-color);
     }
 
