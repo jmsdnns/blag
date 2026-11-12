@@ -17,6 +17,11 @@
   --mp-title-size: clamp(32px, 4.4cqi, 44px);
   /* How far the artist and song name sit in from the edges they meet. */
   --mp-inset: 17px;
+  /* Icons and lines that line up with text sit this much lower than it
+     works out to: browsers round text to whole pixels but not always
+     graphics, and where the two come out a pixel apart, the graphic should
+     be low rather than high. */
+  --mp-nudge: 0.5px;
   --mp-space: 12px;
   /* The seek row's height, and the play button's width and height. */
   --mp-bar: 44px;
@@ -152,6 +157,7 @@
       width: auto;
       height: 36%;
       fill: currentColor;
+      translate: 0 var(--mp-nudge);
     }
 
     .mp-play-icon {
@@ -240,6 +246,8 @@
     border-top: 1px solid var(--base-offset-color);
   }
 
+  /* Trimmed to its digits, so centering it centers them, like the songs'
+     lengths below. */
   .mp-time {
     flex: none;
     font-family: var(--mp-mono);
@@ -247,6 +255,7 @@
     font-size: 13px;
     line-height: 16px;
     color: var(--text-color);
+    text-box: trim-both cap alphabetic;
   }
 
   .mp-duration {
@@ -260,6 +269,7 @@
     flex: 1;
     min-width: 0;
     height: 14px;
+    translate: 0 var(--mp-nudge);
   }
 
   .mp-line {
@@ -413,6 +423,7 @@
         height: 8px;
         border-radius: 50%;
         background: var(--highlight-color);
+        translate: 0 var(--mp-nudge);
       }
 
       b {
@@ -478,10 +489,7 @@
      for a moment once a link is copied. */
   .mp-share-song {
     opacity: 0.5;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
+    display: block;
     padding: 0;
     border: 0;
     border-radius: 6px;
@@ -492,16 +500,17 @@
 
     /* The icon's box (its lower 15/24, under the arrow) is as tall as the
        digits of the song lengths beside it, about 0.77em of the monospace
-       font, so the icon is 0.77 × 24/15 = 1.23em; and it's raised by that
-       box's offset from the icon's middle (3.5/24 of it), so the box is
-       centered in the row with the digits. The button takes the lengths'
-       font and size, so this follows them. */
+       font, so the icon is 0.77 × 24/15 = 1.23em. It sits in a line of
+       text set just like a length (below), lowered by the 1/24 of the icon
+       under its box so the box stands on the same baseline as the digits,
+       and by the nudge more. Its negative top margin keeps it from making
+       that line any taller than a length's, without moving it. */
     svg {
-      flex: none;
       width: 1.23em;
       height: 1.23em;
+      margin-top: -1em;
       fill: currentColor;
-      transform: translateY(-0.18em);
+      vertical-align: calc(-1.23em / 24 - var(--mp-nudge));
     }
 
     .mp-check-icon {
@@ -524,7 +533,7 @@
       }
 
       .mp-check-icon {
-        display: block;
+        display: inline;
       }
     }
   }
@@ -561,6 +570,7 @@
       width: 20px;
       height: 20px;
       fill: currentColor;
+      translate: 0 var(--mp-nudge);
     }
 
     .mp-check-icon {
@@ -604,13 +614,22 @@
     }
   }
 
-  /* Each song's share button, always shown, copies the song's link. */
+  /* Each song's share button, always shown, copies the song's link. Its
+     icon is laid out exactly like the song's length: the same font, size
+     and line, trimmed to the capitals and centered in the row, so the two
+     share a baseline in any browser, whatever it does with the text. The
+     padding makes it easier to hit without moving it. */
   .mp-tracklist .mp-share-song {
     grid-column: 2;
+    align-self: center;
     flex: none;
     width: 32px;
+    padding: 14px 0;
     font-family: var(--mp-mono);
     font-size: 13px;
+    line-height: inherit;
+    text-align: center;
+    text-box: trim-both cap alphabetic;
   }
 
   /* Once a song's link is copied, its whole row says so for a moment, the
@@ -654,6 +673,7 @@
     font-weight: 700;
     line-height: 1.3;
     white-space: nowrap;
+    text-box: trim-both cap alphabetic;
   }
 
   /* Read out by screen readers when a song's link is copied; not shown. */
